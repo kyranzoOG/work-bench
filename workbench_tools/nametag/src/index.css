@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html,
+  body {
+    background-color: #000000;
+    color: #f4f7f2;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+    max-width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  input,
+  textarea {
+    user-select: text;
+    -webkit-user-select: text;
+    -webkit-touch-callout: default;
+  }
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Pistachio-green (#BEF264) grid background */
+.pistachio-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(190, 242, 100, 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(190, 242, 100, 0.22) 1px, transparent 1px),
+    linear-gradient(to right, rgba(190, 242, 100, 0.36) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(190, 242, 100, 0.36) 1px, transparent 1px);
+  background-size:
+    48px 48px,
+    48px 48px,
+    192px 192px,
+    192px 192px;
+}
+
+/* Hide default browser scrollbars while preserving scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mouse-glow {
+    display: none;
+  }
+}

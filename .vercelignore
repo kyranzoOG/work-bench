@@ -1,0 +1,38 @@
+# Dependencies & build outputs (rebuilt on Vercel)
+node_modules
+**/node_modules
+_site
+dist
+dist-electron
+
+# Lockfiles that conflict with Vercel npm installCommand
+bun.lock
+**/bun.lock
+
+# Version control, CI, editor, and workspace artifacts
+.git
+.github
+.vscode
+.aistudio
+**/.aistudio
+.playwright-cli
+
+# Documentation & generated types not needed for web build
+docs
+types/generated
+
+# Non-runtime binary dumps and unused preview assets
+workbench_tools/luanti-skin-studio/*_dump.bin
+workbench_tools/luanti-skin-studio/prompt_full.bin
+public/assets/aistudio
+
+# Local environment & OS files
+.env
+.env.local
+.env.*.local
+electron-builder.env
+*.log
+.DS_Store
+Thumbs.db
+service_worker.js
+workbox-*.js

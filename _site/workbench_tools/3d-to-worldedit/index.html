@@ -1,0 +1,2987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldEdit Converter</title>
+    <meta name="description"
+        content="Convert Minecraft Schematic files (.nbt, .schem), Minetest WorldEdit (.we), and 3D models (.obj, .stl) to Multicraft WorldEdit commands">
+    <meta name="author" content="Kyranzo">
+    <meta name="theme-color" content="#BEF264">
+    <meta name="msapplication-TileColor" content="#BEF264">
+    <meta name="color-scheme" content="dark">
+
+    <!-- Icons (SVG primary where supported + PNG fallback & Apple Touch Icon) -->
+    <link rel="icon" href="craft_editor_pressed_grid.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="craft_editor_pressed.png" type="image/png" sizes="64x64">
+    <link rel="shortcut icon" href="craft_editor_pressed.png" type="image/png">
+    <link rel="apple-touch-icon" href="craft_editor_pressed.png">
+
+    <!-- Open Graph / Discord / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WorldEdit Converter · Kyranzo">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="WorldEdit Converter">
+    <meta property="og:description"
+        content="Convert Minecraft Schematic files (.nbt, .schem), Minetest WorldEdit (.we), and 3D models (.obj, .stl) to Multicraft WorldEdit commands">
+    <meta property="og:image" content="craft_editor_pressed.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="64">
+    <meta property="og:image:height" content="64">
+    <meta property="og:image:alt" content="WorldEdit Converter Logo">
+
+    <!-- Twitter / Discord Summary Card (displays crisp logo thumbnail in Discord message embeds) -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WorldEdit Converter">
+    <meta name="twitter:description"
+        content="Convert Minecraft Schematic files (.nbt, .schem), Minetest WorldEdit (.we), and 3D models (.obj, .stl) to Multicraft WorldEdit commands">
+    <meta name="twitter:image" content="craft_editor_pressed.png">
+    <meta name="twitter:image:alt" content="WorldEdit Converter Logo">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "WorldEdit Converter",
+      "image": "craft_editor_pressed.png",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "description": "Convert Minecraft Schematic files (.nbt, .schem), Minetest WorldEdit (.we), and 3D models (.obj, .stl) to Multicraft WorldEdit commands",
+      "author": {
+        "@type": "Person",
+        "name": "Kyranzo"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Converter Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+    <script src="js/multicraft_items.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/loaders/OBJLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/loaders/MTLLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/loaders/STLLoader.js"></script>
+
+    <style>
+        :root {
+            --bg-black: #000000;
+            --bg-surface: rgba(10, 14, 6, 0.66);
+            --bg-surface-elevated: rgba(14, 20, 8, 0.48);
+            --bg-input: rgba(7, 11, 4, 0.58);
+            --accent: #BEF264;
+            --accent-hover: #cdf77e;
+            --accent-dim: rgba(190, 242, 100, 0.12);
+            --border-card: rgba(190, 242, 100, 0.19);
+            --border-subtle: rgba(190, 242, 100, 0.12);
+            --border-strong: rgba(190, 242, 100, 0.34);
+            --text-primary: #f6f9f2;
+            --text-secondary: #9aa789;
+            --text-muted: #6c775e;
+            --text-on-accent: #090d03;
+            --danger: #f87171;
+            --warning: #fbbf24;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', Consolas, monospace;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Keep typing/paste caret working inside editable form inputs (Safari/iOS requirement) */
+        input[type="text"],
+        input[type="number"],
+        #importTextarea {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
+        img,
+        svg,
+        a {
+            -webkit-user-drag: none;
+        }
+
+        html {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: clip;
+            overflow-y: auto;
+            overscroll-behavior-x: none;
+            background-color: var(--bg-black);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            width: 100%;
+            max-width: 100%;
+            min-height: 100vh;
+            min-height: 100dvh;
+            background-color: var(--bg-black);
+            background-image: url('assets/grid-bg.svg');
+            background-repeat: repeat;
+            background-position: left top;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-rows: auto auto 1fr auto;
+            position: relative;
+            overflow-x: clip;
+            overscroll-behavior-x: none;
+        }
+
+        /* Interactive Glowing Pistachio Grid Canvas */
+        .bg-grid-canvas {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            display: block;
+        }
+
+        .is-hidden {
+            display: none !important;
+        }
+
+        .sr-clipboard-fallback {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .brand-logo-svg {
+            display: block;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            pointer-events: none;
+            flex-shrink: 0;
+        }
+
+        /* ========== Top Brand Header ========== */
+        .studio-header {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.78);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .studio-header-inner {
+            max-width: 780px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            align-items: center;
+        }
+
+        .brand-lockup {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            gap: 12px;
+            min-width: 0;
+        }
+
+        .brand-copy {
+            min-width: 0;
+        }
+
+        .brand-emblem {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: rgba(190, 242, 100, 0.08);
+            border: 1px solid rgba(190, 242, 100, 0.28);
+            display: grid;
+            place-items: center;
+            box-shadow: 0 0 18px rgba(190, 242, 100, 0.16);
+            flex-shrink: 0;
+        }
+
+        .brand-title {
+            font-size: 1.26rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            color: #ffffff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .brand-title-accent {
+            color: var(--accent);
+            text-shadow: 0 0 24px rgba(190, 242, 100, 0.42);
+        }
+
+        .brand-subtitle {
+            font-size: 0.74rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+            letter-spacing: 0.01em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* ========== 3-Step Workflow Bar ========== */
+        .step-bar-wrap {
+            position: relative;
+            z-index: 9;
+            width: 100%;
+            background: rgba(3, 5, 2, 0.78);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .step-bar {
+            max-width: 780px;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .step-tab {
+            appearance: none;
+            background: transparent;
+            border: none;
+            min-height: 48px;
+            padding: 12px 10px;
+            color: var(--text-muted);
+            font-family: var(--font-sans);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+            min-width: 0;
+            transition: color 0.16s ease, background 0.16s ease;
+            white-space: nowrap;
+        }
+
+        .step-label-short {
+            display: none;
+        }
+
+        .step-tab:hover {
+            color: var(--text-primary);
+        }
+
+        .step-tab.active {
+            color: var(--accent);
+            background: linear-gradient(to top, rgba(190, 242, 100, 0.11), rgba(190, 242, 100, 0.015) 75%, transparent);
+            box-shadow: inset 0 -2px 0 0 var(--accent);
+        }
+
+        .step-tab svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        /* ========== Main Centered Grid Workspace ========== */
+        .studio-main {
+            position: relative;
+            z-index: 2;
+            max-width: 780px;
+            width: 100%;
+            min-width: 0;
+            margin: 0 auto;
+            padding: 26px 20px 44px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            align-content: start;
+            gap: 18px;
+        }
+
+        .step-view {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            gap: 18px;
+        }
+
+        /* ========== 3-Column Format Mode Bar ========== */
+        .mode-bar {
+            background: rgba(10, 14, 6, 0.64);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 6px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 6px;
+            min-width: 0;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+        }
+
+        .mode-btn {
+            appearance: none;
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 9px;
+            padding: 10px 14px;
+            color: var(--text-secondary);
+            font-family: var(--font-sans);
+            font-size: 0.81rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background 0.16s ease, color 0.16s ease, transform 0.16s ease;
+            white-space: nowrap;
+        }
+
+        .mode-btn:hover:not(.active) {
+            color: var(--text-primary);
+            background: rgba(190, 242, 100, 0.05);
+        }
+
+        .mode-btn.active {
+            background: var(--accent);
+            color: var(--text-on-accent);
+            font-weight: 700;
+            box-shadow: 0 4px 18px rgba(190, 242, 100, 0.25);
+        }
+
+        .mode-btn svg {
+            width: 15px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+
+        /* ========== Primary Studio Card ========== */
+        .studio-card {
+            background: rgba(10, 14, 6, 0.66);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 26px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            max-width: 100%;
+            gap: 20px;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.72);
+        }
+
+        .card-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 12px;
+            min-width: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .card-title-wrap {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .card-status-dot {
+            width: 10px;
+            height: 10px;
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 6px rgba(190, 242, 100, 0.8));
+        }
+
+        .card-title {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.01em;
+            min-width: 0;
+        }
+
+        .card-header-actions {
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            gap: 8px;
+            min-width: 0;
+        }
+
+        /* ========== Field Labels & Drop Zone ========== */
+        .field-block {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            gap: 9px;
+        }
+
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            color: var(--text-secondary);
+            min-width: 0;
+        }
+
+        .drop-zone {
+            border: 1.5px dashed rgba(190, 242, 100, 0.28);
+            border-radius: 12px;
+            padding: 32px 20px;
+            text-align: center;
+            cursor: pointer;
+            background: rgba(14, 20, 8, 0.42);
+            transition: border-color 0.16s ease, background 0.16s ease, transform 0.16s ease;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            justify-items: center;
+            min-width: 0;
+            gap: 8px;
+        }
+
+        .drop-zone:hover,
+        .drop-zone.dragover {
+            border-color: var(--accent);
+            background: rgba(190, 242, 100, 0.06);
+        }
+
+        .drop-zone input[type="file"] {
+            display: none;
+        }
+
+        .drop-icon-box {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: rgba(190, 242, 100, 0.08);
+            border: 1px solid rgba(190, 242, 100, 0.22);
+            display: grid;
+            place-items: center;
+            margin-bottom: 4px;
+        }
+
+        .drop-zone-text {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .drop-zone-hint {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* Loaded File Status Bar */
+        .status-bar {
+            background: rgba(190, 242, 100, 0.06);
+            border: 1px solid rgba(190, 242, 100, 0.24);
+            border-radius: 11px;
+            padding: 12px 15px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            min-width: 0;
+            gap: 12px;
+        }
+
+        .status-file-meta {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr) auto;
+            align-items: center;
+            min-width: 0;
+            gap: 10px;
+        }
+
+        .status-file-name {
+            font-family: var(--font-mono);
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: #ffffff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            min-width: 0;
+        }
+
+        .status-block-count {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            white-space: nowrap;
+        }
+
+        /* ========== Parameter Sub-Boxes (Sliders, Presets, Inputs) ========== */
+        .param-panel {
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 18px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            gap: 14px;
+        }
+
+        .param-top-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            min-width: 0;
+            gap: 12px;
+        }
+
+        .param-readout {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        /* Custom Pistachio Range Slider */
+        .studio-range {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 6px;
+            background: #1c2414;
+            border-radius: 999px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .studio-range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid #090d03;
+            box-shadow: 0 0 12px rgba(190, 242, 100, 0.55);
+            cursor: pointer;
+            transition: transform 0.14s ease;
+        }
+
+        .studio-range::-webkit-slider-thumb:hover {
+            transform: scale(1.14);
+        }
+
+        .studio-range::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid #090d03;
+            box-shadow: 0 0 12px rgba(190, 242, 100, 0.55);
+            cursor: pointer;
+        }
+
+        .preset-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            min-width: 0;
+            gap: 10px;
+        }
+
+        .preset-chips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
+            min-width: 0;
+            gap: 6px;
+        }
+
+        .preset-chips.maxlines-chips {
+            grid-template-columns: auto repeat(7, minmax(0, 1fr));
+        }
+
+        .preset-btn {
+            appearance: none;
+            background: rgba(9, 13, 5, 0.58);
+            border: 1px solid rgba(190, 242, 100, 0.16);
+            border-radius: 7px;
+            min-height: 34px;
+            padding: 6px 8px;
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            white-space: nowrap;
+            transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+        }
+
+        .preset-btn-bytes {
+            padding: 6px 11px;
+            border-color: rgba(190, 242, 100, 0.28);
+        }
+
+        .preset-btn:hover {
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }
+
+        .preset-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--text-on-accent);
+            font-weight: 700;
+        }
+
+        .param-panel.is-bytes-mode .studio-range,
+        .param-panel.is-bytes-mode .compact-num-input {
+            opacity: 0.45;
+            transition: opacity 0.15s ease;
+        }
+
+        .param-panel.is-bytes-mode .studio-range:hover,
+        .param-panel.is-bytes-mode .compact-num-input:focus {
+            opacity: 0.85;
+        }
+
+        .compact-num-input {
+            width: 96px;
+            min-height: 34px;
+            padding: 6px 10px;
+            background: var(--bg-input);
+            border: 1px solid var(--border-card);
+            border-radius: 7px;
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.8rem;
+            text-align: right;
+        }
+
+        .compact-num-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .param-caption {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+        }
+
+        /* Responsive 2-Column Grid for Inputs */
+        .settings-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            min-width: 0;
+            gap: 14px;
+        }
+
+        .studio-input,
+        .studio-select {
+            width: 100%;
+            min-height: 44px;
+            padding: 10px 14px;
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-card);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.88rem;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .studio-select {
+            appearance: none;
+            -webkit-appearance: none;
+            padding-right: 38px;
+            background-image: url('assets/icons/chevron-down.svg');
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 16px;
+            cursor: pointer;
+        }
+
+        .studio-select option {
+            background-color: #0a0e06;
+            color: var(--text-primary);
+        }
+
+        .studio-input:focus,
+        .studio-select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(190, 242, 100, 0.12);
+        }
+
+        /* Conditional 3D & NBT Sections */
+        .settings-3d,
+        .settings-nbt {
+            display: none;
+            min-width: 0;
+        }
+
+        .settings-3d.visible,
+        .settings-nbt.visible {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 16px;
+        }
+
+        .block-id-group {
+            display: none;
+            min-width: 0;
+        }
+
+        .block-id-group.visible {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        /* Custom Conversion & Unknown Blocks */
+        .custom-convert-header {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            gap: 10px;
+        }
+
+        .custom-convert-header input[type="checkbox"] {
+            width: 17px;
+            height: 17px;
+            accent-color: var(--accent);
+            cursor: pointer;
+        }
+
+        .custom-convert-header label {
+            font-size: 0.86rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        .custom-convert-hint,
+        .unknown-hint {
+            font-size: 0.76rem;
+            color: var(--text-secondary);
+        }
+
+        .custom-convert-list {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 8px;
+            max-height: 240px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            overscroll-behavior-x: none;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .custom-convert-entry {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto;
+            gap: 8px;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-subtle);
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .custom-convert-arrow {
+            color: var(--accent);
+            display: grid;
+            place-items: center;
+        }
+
+        .custom-convert-remove-btn {
+            background: rgba(248, 113, 113, 0.08);
+            border: 1px solid rgba(248, 113, 113, 0.22);
+            color: var(--danger);
+            border-radius: 7px;
+            width: 34px;
+            height: 34px;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+
+        .custom-convert-remove-btn:hover {
+            background: rgba(248, 113, 113, 0.18);
+        }
+
+        .custom-convert-add-btn {
+            width: 100%;
+            padding: 10px 14px;
+            background: rgba(190, 242, 100, 0.05);
+            border: 1px dashed var(--border-strong);
+            border-radius: 9px;
+            color: var(--accent);
+            font-family: var(--font-sans);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.15s ease, border-color 0.15s ease;
+        }
+
+        .custom-convert-add-btn:hover {
+            background: rgba(190, 242, 100, 0.11);
+            border-color: var(--accent);
+        }
+
+        .unknown-header-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .unknown-actions {
+            display: inline-grid;
+            grid-auto-flow: column;
+            gap: 6px;
+        }
+
+        .unknown-action-btn {
+            appearance: none;
+            background: var(--bg-input);
+            border: 1px solid var(--border-card);
+            border-radius: 7px;
+            padding: 6px 10px;
+            color: var(--text-secondary);
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            gap: 5px;
+            transition: border-color 0.15s ease, color 0.15s ease;
+        }
+
+        .unknown-action-btn:hover {
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }
+
+        .unknown-list {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 6px;
+            max-height: 260px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            overscroll-behavior-x: none;
+            margin-top: 8px;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .unknown-item {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 12px;
+            padding: 10px;
+            background: rgba(8, 12, 4, 0.65);
+            border: 1px solid var(--border-subtle);
+            border-radius: 9px;
+            align-items: center;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .unknown-item > div {
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .unknown-name {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--text-primary);
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        .unknown-count {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.73rem;
+            color: var(--accent);
+            margin-top: 2px;
+        }
+
+        .autocomplete-wrapper {
+            position: relative;
+            width: 100%;
+            min-width: 0;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            align-items: center;
+        }
+
+        .autocomplete-wrapper.has-clear .unknown-input,
+        .autocomplete-wrapper.has-clear .studio-input {
+            padding-right: 34px;
+        }
+
+        .input-clear-btn {
+            position: absolute;
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 26px;
+            border-radius: 6px;
+            border: none;
+            background: rgba(190, 242, 100, 0.08);
+            color: var(--text-secondary);
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            transition: background 0.14s ease, color 0.14s ease;
+        }
+
+        .input-clear-btn:hover {
+            background: rgba(190, 242, 100, 0.2);
+            color: #ffffff;
+        }
+
+        .unknown-input {
+            width: 100%;
+            min-width: 0;
+            max-width: 100%;
+            padding: 9px 11px;
+            background: var(--bg-input);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+        }
+
+        .unknown-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        /* Legacy inline list kept hidden; floating portal handles all dropdowns without clipping */
+        .autocomplete-wrapper > .autocomplete-list {
+            display: none !important;
+        }
+
+        /* Body-level Floating Portal Dropdown (Never goes under rows or causes horizontal scroll) */
+        .autocomplete-portal {
+            position: fixed;
+            left: 8px;
+            top: 8px;
+            background: rgba(11, 16, 6, 0.98);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-strong);
+            border-radius: 10px;
+            max-height: 220px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            overscroll-behavior: contain;
+            z-index: 5000;
+            display: none;
+            box-shadow: 0 18px 44px rgba(0, 0, 0, 0.92);
+        }
+
+        .autocomplete-portal.visible {
+            display: block;
+        }
+
+        .autocomplete-item {
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--border-subtle);
+            cursor: pointer;
+            min-width: 0;
+            max-width: 100%;
+            overflow: hidden;
+            transition: background 0.12s ease;
+        }
+
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+
+        .autocomplete-item:hover,
+        .autocomplete-item.is-active {
+            background: rgba(190, 242, 100, 0.14);
+        }
+
+        .item-id {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--accent);
+            min-width: 0;
+            max-width: 100%;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        .item-name {
+            font-size: 0.73rem;
+            color: var(--text-secondary);
+            min-width: 0;
+            max-width: 100%;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            margin-top: 1px;
+        }
+
+        /* Notice Banner */
+        .studio-notice {
+            padding: 11px 14px;
+            border-radius: 10px;
+            background: rgba(248, 113, 113, 0.1);
+            border: 1px solid rgba(248, 113, 113, 0.35);
+            color: #fca5a5;
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+
+        /* ========== Primary & Secondary Buttons ========== */
+        .btn-generate {
+            width: 100%;
+            appearance: none;
+            background: var(--accent);
+            color: var(--text-on-accent);
+            border: none;
+            border-radius: 10px;
+            padding: 15px 22px;
+            font-family: var(--font-sans);
+            font-size: 0.94rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            cursor: pointer;
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            box-shadow: 0 8px 28px rgba(190, 242, 100, 0.24);
+            transition: background 0.16s ease, transform 0.16s ease, opacity 0.16s ease;
+        }
+
+        .btn-generate:hover:not(:disabled) {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-generate:disabled {
+            background: #232c19;
+            color: #6b765d;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+
+        .btn-generate:disabled img {
+            opacity: 0.4;
+        }
+
+        .btn-secondary-sm {
+            appearance: none;
+            background: var(--bg-input);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 8px 13px;
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            gap: 6px;
+            transition: border-color 0.15s ease, color 0.15s ease;
+            white-space: nowrap;
+        }
+
+        .btn-secondary-sm:hover:not(:disabled) {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .btn-secondary-sm:disabled {
+            opacity: 0.45;
+            cursor: not-allowed;
+        }
+
+        /* ========== Step 2: Live 3D Preview ========== */
+        .preview-stage-wrap {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            gap: 16px;
+        }
+
+        .preview-viewport {
+            position: relative;
+            width: 100%;
+            height: 460px;
+            background: #060904;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        #previewCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            cursor: grab;
+            touch-action: none;
+        }
+
+        #previewCanvas:active {
+            cursor: grabbing;
+        }
+
+        .preview-hint {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            width: fit-content;
+            max-width: calc(100% - 24px);
+            background: rgba(8, 12, 4, 0.84);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            padding: 6px 11px;
+            border-radius: 8px;
+            font-size: 0.74rem;
+            pointer-events: none;
+        }
+
+        .preview-controls {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            display: inline-grid;
+            grid-auto-flow: column;
+            gap: 8px;
+        }
+
+        .preview-controls button {
+            background: rgba(11, 15, 7, 0.92);
+            border: 1px solid var(--border-card);
+            color: var(--text-primary);
+            min-height: 38px;
+            padding: 7px 13px;
+            border-radius: 8px;
+            font-family: var(--font-sans);
+            font-size: 0.76rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: border-color 0.15s ease, color 0.15s ease;
+        }
+
+        .preview-controls button:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .preview-info {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.78rem;
+            color: var(--accent);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .preview-footer-grid {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            min-width: 0;
+            gap: 12px;
+            align-items: center;
+        }
+
+        /* Empty States */
+        .empty-card-state {
+            padding: 46px 24px;
+            text-align: center;
+            background: var(--bg-surface-elevated);
+            border: 1px dashed var(--border-card);
+            border-radius: 12px;
+            display: grid;
+            justify-items: center;
+            gap: 12px;
+        }
+
+        .empty-card-state h3 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .empty-card-state p {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            max-width: 420px;
+            line-height: 1.5;
+        }
+
+        /* ========== Step 3: WorldEdit Commands Output ========== */
+        .progress-section {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            gap: 14px;
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 7px;
+            background: #182010;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: var(--accent);
+            box-shadow: 0 0 14px rgba(190, 242, 100, 0.6);
+            transition: width 0.2s ease;
+        }
+
+        .summary-metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            min-width: 0;
+            gap: 12px;
+        }
+
+        .metric-cell {
+            background: var(--bg-input);
+            border: 1px solid var(--border-subtle);
+            border-radius: 9px;
+            padding: 10px 12px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            gap: 4px;
+        }
+
+        .metric-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+        }
+
+        .metric-value {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .metric-value.accent {
+            color: var(--accent);
+        }
+
+        .download-area {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            gap: 16px;
+        }
+
+        .download-item {
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 18px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            max-width: 100%;
+            gap: 14px;
+        }
+
+        .download-item-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            min-width: 0;
+            gap: 10px;
+        }
+
+        .download-item-title-group {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .download-part-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .download-filename {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #ffffff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            min-width: 0;
+        }
+
+        .download-line-count {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        .download-buttons {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            min-width: 0;
+            gap: 10px;
+        }
+
+        .copy-btn {
+            appearance: none;
+            background: var(--accent);
+            color: var(--text-on-accent);
+            border: none;
+            border-radius: 9px;
+            min-height: 46px;
+            padding: 12px 16px;
+            font-family: var(--font-sans);
+            font-size: 0.86rem;
+            font-weight: 800;
+            cursor: pointer;
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background 0.15s ease, transform 0.15s ease;
+        }
+
+        .copy-btn:hover {
+            background: var(--accent-hover);
+        }
+
+        .copy-btn.copied {
+            background: #d9f99d;
+        }
+
+        .download-link {
+            background: var(--bg-input);
+            border: 1px solid var(--border-card);
+            color: var(--text-primary);
+            border-radius: 9px;
+            min-height: 46px;
+            padding: 12px 16px;
+            font-size: 0.84rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: border-color 0.15s ease, color 0.15s ease;
+        }
+
+        .download-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Command Output Preview (Non-Selectable — Copy via Copy Button Only) */
+        .command-preview {
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(6, 9, 3, 0.62);
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .command-preview-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 10px;
+            min-height: 42px;
+            padding: 10px 14px;
+            background: rgba(190, 242, 100, 0.04);
+            border-bottom: 1px solid var(--border-subtle);
+            cursor: pointer;
+            min-width: 0;
+        }
+
+        .command-preview-title {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .command-preview-toggle {
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.74rem;
+            font-weight: 600;
+            color: var(--accent);
+            white-space: nowrap;
+        }
+
+        .command-preview-toggle .chevron-icon {
+            transition: transform 0.16s ease;
+        }
+
+        .command-preview-toggle.expanded .chevron-icon {
+            transform: rotate(180deg);
+        }
+
+        .command-preview-body {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            max-width: 100%;
+            gap: 0;
+        }
+
+        .command-preview-body.collapsed {
+            display: none;
+        }
+
+        .command-preview-content {
+            max-height: 220px;
+            width: 100%;
+            max-width: 100%;
+            overflow-y: auto;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding: 12px 14px;
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            line-height: 1.52;
+            background: rgba(8, 12, 4, 0.56);
+        }
+
+        .cmd-line {
+            color: #cbd5c0;
+            white-space: pre;
+            display: block;
+        }
+
+        .cmd-shift {
+            color: var(--accent);
+        }
+
+        .cmd-set {
+            color: #7dd3fc;
+        }
+
+        .cmd-param {
+            color: #fcd34d;
+        }
+
+        .cmd-more {
+            color: var(--text-muted);
+            padding-top: 4px;
+        }
+
+        /* Conversion Activity Log */
+        .log-details {
+            border: 1px solid var(--border-subtle);
+            border-radius: 11px;
+            background: rgba(7, 10, 4, 0.56);
+            overflow: hidden;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .log-summary {
+            min-height: 44px;
+            padding: 11px 14px;
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            list-style: none;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+        }
+
+        .log-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .log-panel {
+            max-height: 180px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 12px 14px;
+            border-top: 1px solid var(--border-subtle);
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            line-height: 1.55;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+            gap: 3px;
+        }
+
+        .log-entry {
+            color: var(--text-secondary);
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        .log-entry.success {
+            color: var(--accent);
+        }
+
+        .log-entry.warning {
+            color: var(--warning);
+        }
+
+        .log-entry.error {
+            color: var(--danger);
+        }
+
+        /* ========== Import Mappings Modal ========== */
+        .import-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.78);
+            backdrop-filter: blur(6px);
+            z-index: 2000;
+            place-items: center;
+            padding: 16px;
+        }
+
+        .import-modal.active {
+            display: grid;
+        }
+
+        .import-modal-content {
+            background: rgba(10, 14, 6, 0.94);
+            border: 1px solid var(--border-strong);
+            border-radius: 16px;
+            width: 100%;
+            max-width: 520px;
+            min-width: 0;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 16px;
+            padding: 20px;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.9);
+        }
+
+        .import-modal-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .import-modal-title {
+            font-weight: 700;
+            font-size: 0.96rem;
+            color: #ffffff;
+        }
+
+        .import-modal-close {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
+            display: grid;
+            place-items: center;
+        }
+
+        .import-modal-hint {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 10px;
+            overflow-wrap: anywhere;
+        }
+
+        .import-modal-hint code {
+            font-family: var(--font-mono);
+            color: var(--accent);
+            background: rgba(190, 242, 100, 0.08);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        #importTextarea {
+            width: 100%;
+            min-height: 150px;
+            background: var(--bg-input);
+            border: 1px solid var(--border-card);
+            border-radius: 10px;
+            padding: 12px;
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            resize: vertical;
+        }
+
+        #importTextarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .import-modal-footer {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: end;
+            gap: 10px;
+        }
+
+        /* ========== Post-Conversion Schematic Block Report & Inspector Modal ========== */
+        .schem-report-bar {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 16px;
+            background: rgba(12, 18, 7, 0.68);
+            border: 1px solid var(--border-strong);
+            border-radius: 12px;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .schem-report-copy {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 4px;
+            min-width: 0;
+        }
+
+        .schem-report-title {
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: #ffffff;
+            display: inline-grid;
+            grid-auto-flow: column;
+            justify-content: start;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .schem-report-title svg {
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .schem-report-stats {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.76rem;
+            color: var(--text-secondary);
+            line-height: 1.45;
+            overflow-wrap: anywhere;
+        }
+
+        .schem-report-stats .stat-ok {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .schem-report-stats .stat-warn {
+            color: var(--warning);
+            font-weight: 600;
+        }
+
+        .btn-inspector-open {
+            appearance: none;
+            background: rgba(190, 242, 100, 0.12);
+            border: 1px solid var(--border-strong);
+            color: var(--accent);
+            border-radius: 9px;
+            min-height: 44px;
+            padding: 10px 15px;
+            font-family: var(--font-sans);
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            white-space: nowrap;
+            transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+        }
+
+        .btn-inspector-open:hover {
+            background: rgba(190, 242, 100, 0.22);
+            border-color: var(--accent);
+            color: #ffffff;
+        }
+
+        .inspector-studio-card {
+            gap: 16px;
+        }
+
+        .inspector-subtitle {
+            font-size: 0.79rem;
+            color: var(--text-secondary);
+            line-height: 1.48;
+            margin-top: -4px;
+        }
+
+        .inspector-toolbar {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 10px;
+            padding: 0;
+            background: transparent;
+            min-width: 0;
+        }
+
+        .inspector-tabs {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 6px;
+            padding: 4px;
+            background: rgba(6, 10, 3, 0.46);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            min-width: 0;
+        }
+
+        .inspector-tab-btn {
+            appearance: none;
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 7px;
+            padding: 8px 10px;
+            min-height: 38px;
+            color: var(--text-secondary);
+            font-family: var(--font-sans);
+            font-size: 0.78rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            cursor: pointer;
+            text-align: center;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+        }
+
+        .inspector-tab-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .inspector-tab-btn.active {
+            background: rgba(190, 242, 100, 0.14);
+            border-color: var(--border-strong);
+            color: var(--accent);
+        }
+
+        .inspector-search-wrap {
+            position: relative;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            align-items: center;
+            min-width: 0;
+        }
+
+        .inspector-search-icon {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+
+        .inspector-filter-input {
+            width: 100%;
+            min-width: 0;
+            max-width: 100%;
+            padding: 9px 34px 9px 34px;
+            background: var(--bg-input);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.82rem;
+        }
+
+        .inspector-filter-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .inspector-list {
+            max-height: min(56dvh, 520px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            overscroll-behavior: contain;
+            padding: 0 4px 0 0;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 8px;
+            align-content: start;
+            min-width: 0;
+            max-width: 100%;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(190, 242, 100, 0.28) transparent;
+        }
+
+        .inspector-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .inspector-list::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .inspector-list::-webkit-scrollbar-thumb {
+            background: rgba(190, 242, 100, 0.26);
+            border-radius: 999px;
+        }
+
+        .inspector-empty {
+            padding: 32px 16px;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .inspector-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) auto minmax(0, 1.15fr);
+            gap: 12px;
+            align-items: center;
+            padding: 11px 12px;
+            background: rgba(8, 12, 4, 0.46);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            min-width: 0;
+            max-width: 100%;
+            transition: border-color 0.14s ease, background 0.14s ease;
+        }
+
+        .inspector-row.is-unmatched {
+            border-color: rgba(251, 191, 36, 0.36);
+            background: rgba(22, 17, 5, 0.46);
+        }
+
+        .inspector-row.is-customized {
+            border-color: rgba(190, 242, 100, 0.38);
+            background: rgba(13, 21, 7, 0.50);
+        }
+
+        .inspector-source-col {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 3px;
+            min-width: 0;
+        }
+
+        .inspector-source-id {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #ffffff;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        .inspector-source-meta {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            line-height: 1.42;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        .inspector-source-meta .meta-warn {
+            color: var(--warning);
+        }
+
+        .inspector-source-meta .meta-accent {
+            color: var(--accent);
+        }
+
+        .inspector-source-meta .meta-muted {
+            color: var(--text-muted);
+        }
+
+        .inspector-arrow-col {
+            color: var(--accent);
+            display: grid;
+            place-items: center;
+            opacity: 0.85;
+        }
+
+        .inspector-target-col {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 6px;
+            align-items: center;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .inspector-row-actions {
+            display: inline-grid;
+            grid-auto-flow: column;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .inspector-mini-btn {
+            appearance: none;
+            background: var(--bg-input);
+            border: 1px solid var(--border-card);
+            border-radius: 7px;
+            min-height: 36px;
+            padding: 6px 9px;
+            color: var(--text-secondary);
+            font-family: var(--font-sans);
+            font-size: 0.73rem;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: border-color 0.14s ease, color 0.14s ease, background 0.14s ease;
+        }
+
+        .inspector-mini-btn:hover {
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }
+
+        .inspector-mini-btn.active-skip {
+            border-color: rgba(251, 191, 36, 0.5);
+            background: rgba(251, 191, 36, 0.12);
+            color: var(--warning);
+        }
+
+        .inspector-footer {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 0 0;
+            border-top: 1px solid var(--border-subtle);
+            background: transparent;
+            min-width: 0;
+        }
+
+        .inspector-footer-left {
+            display: inline-grid;
+            grid-auto-flow: column;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .inspector-footer-status {
+            font-family: var(--font-mono);
+            font-variant-numeric: tabular-nums;
+            font-size: 0.76rem;
+            color: var(--text-secondary);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .inspector-footer-actions {
+            display: inline-grid;
+            grid-auto-flow: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-regen-commands {
+            width: auto;
+            min-height: 42px;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        /* ========== Footer ========== */
+        .studio-footer {
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.78);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-top: 1px solid var(--border-subtle);
+            padding: 15px 16px;
+            text-align: center;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .studio-footer strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* Coarse Touch Thumb Ergonomics */
+        @media (pointer: coarse) {
+            .studio-range {
+                height: 8px;
+                margin: 4px 0;
+            }
+
+            .studio-range::-webkit-slider-thumb {
+                width: 22px;
+                height: 22px;
+            }
+
+            .studio-range::-moz-range-thumb {
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        /* ========== Responsive Mobile & Tablet Grid Breakpoints ========== */
+        @media (max-width: 720px) {
+            .studio-header-inner {
+                padding: 11px 14px;
+            }
+
+            .brand-emblem {
+                width: 36px;
+                height: 36px;
+                border-radius: 9px;
+            }
+
+            .brand-title {
+                font-size: 1.08rem;
+            }
+
+            .brand-subtitle {
+                font-size: 0.69rem;
+            }
+
+            .studio-main {
+                padding: 14px 12px 28px;
+                gap: 12px;
+            }
+
+            .step-view {
+                gap: 12px;
+            }
+
+            .studio-card {
+                padding: 16px 14px;
+                border-radius: 14px;
+                gap: 15px;
+            }
+
+            .drop-zone {
+                padding: 22px 14px;
+                gap: 6px;
+            }
+
+            .drop-zone-text {
+                font-size: 0.88rem;
+            }
+
+            .drop-zone-hint {
+                font-size: 0.74rem;
+            }
+
+            .param-panel {
+                padding: 14px 12px;
+                gap: 12px;
+            }
+
+            /* Prevent iOS Safari auto-zoom on focus (must be >= 16px) & enforce >=44px touch targets */
+            .studio-input,
+            .studio-select,
+            .compact-num-input,
+            .unknown-input,
+            .inspector-filter-input,
+            #importTextarea {
+                font-size: 16px;
+                min-height: 44px;
+            }
+
+            .settings-grid-2,
+            .download-buttons,
+            .unknown-item,
+            .schem-report-bar {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .btn-inspector-open {
+                width: 100%;
+                min-height: 46px;
+            }
+
+            .inspector-list {
+                max-height: min(58dvh, 460px);
+            }
+
+            .inspector-row {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 8px;
+                padding: 11px;
+            }
+
+            .inspector-arrow-col {
+                display: none;
+            }
+
+            .inspector-mini-btn {
+                min-height: 44px;
+                padding: 8px 11px;
+            }
+
+            .inspector-footer {
+                grid-template-columns: minmax(0, 1fr);
+                padding: 12px 0 0;
+                gap: 10px;
+            }
+
+            .inspector-footer-left {
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .inspector-footer-actions {
+                display: grid;
+                grid-template-columns: 1fr 1.6fr;
+                width: 100%;
+            }
+
+            .btn-regen-commands {
+                width: 100%;
+                min-height: 46px;
+            }
+
+            .summary-metrics-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 8px;
+            }
+
+            .summary-metrics-grid .metric-cell:first-child {
+                grid-column: 1 / -1;
+            }
+
+            .preset-row {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 8px;
+            }
+
+            .preset-chips,
+            .preset-chips.maxlines-chips {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .preset-btn-bytes {
+                grid-column: 1 / -1;
+            }
+
+            .preset-btn {
+                min-height: 38px;
+                font-size: 0.76rem;
+                padding: 6px 4px;
+            }
+
+            .compact-num-input {
+                width: 100%;
+                text-align: left;
+                padding: 9px 12px;
+            }
+
+            .status-bar {
+                grid-template-columns: minmax(0, 1fr);
+                padding: 11px 12px;
+                gap: 10px;
+            }
+
+            .status-bar .btn-secondary-sm {
+                width: 100%;
+                justify-content: center;
+                min-height: 42px;
+            }
+
+            .btn-generate {
+                min-height: 48px;
+                padding: 13px 16px;
+                font-size: 0.9rem;
+            }
+
+            .btn-secondary-sm {
+                min-height: 42px;
+                justify-content: center;
+            }
+
+            .preview-viewport {
+                height: clamp(250px, 44dvh, 340px);
+            }
+
+            .preview-controls {
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .preview-controls button {
+                min-height: 40px;
+                width: 100%;
+            }
+
+            .preview-footer-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 10px;
+            }
+
+            .preview-footer-grid .btn-generate {
+                order: -1;
+            }
+
+            .download-item {
+                padding: 14px 12px;
+                gap: 12px;
+            }
+
+            .copy-btn,
+            .download-link {
+                min-height: 46px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 580px) {
+            /* Compact 3-Column Tab Navigation with Stacked Icon + Concise Label */
+            .step-tab {
+                grid-auto-flow: row;
+                justify-items: center;
+                min-height: 52px;
+                padding: 8px 4px;
+                gap: 4px;
+                font-size: 0.71rem;
+                font-weight: 700;
+            }
+
+            .step-label-full {
+                display: none;
+            }
+
+            .step-label-short {
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
+            }
+
+            /* Keep 3-Column Segmented Format Picker on Mobile (No Tall Vertical Stack) */
+            .mode-bar {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                padding: 5px;
+                gap: 5px;
+                border-radius: 12px;
+            }
+
+            .mode-btn {
+                grid-auto-flow: row;
+                justify-items: center;
+                min-height: 50px;
+                padding: 7px 4px;
+                gap: 4px;
+                font-size: 0.71rem;
+                border-radius: 8px;
+            }
+
+            /* Stack Card Header Actions Cleanly */
+            .card-header {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 10px;
+                padding-bottom: 12px;
+            }
+
+            .card-header-actions {
+                display: grid;
+                grid-auto-flow: row;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                width: 100%;
+                gap: 8px;
+            }
+
+            .card-header-actions .preview-info {
+                grid-column: 1 / -1;
+            }
+
+            /* Clean 2-Row + Right Remove Button Layout for Custom Block Rules */
+            .custom-convert-entry {
+                grid-template-columns: minmax(0, 1fr) 42px;
+                gap: 8px;
+                padding: 10px;
+                background: rgba(8, 12, 4, 0.52);
+                border: 1px solid var(--border-subtle);
+                border-radius: 10px;
+            }
+
+            .custom-convert-entry .autocomplete-wrapper:nth-of-type(1) {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .custom-convert-entry .autocomplete-wrapper:nth-of-type(2) {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .custom-convert-arrow {
+                display: none;
+            }
+
+            .custom-convert-remove-btn {
+                grid-column: 2;
+                grid-row: 1 / span 2;
+                width: 42px;
+                height: 100%;
+                min-height: 44px;
+            }
+
+            .unknown-header-row {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 8px;
+            }
+
+            .unknown-actions {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                width: 100%;
+            }
+
+            .unknown-action-btn {
+                min-height: 40px;
+                justify-content: center;
+            }
+
+            .download-item-header {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 4px;
+            }
+
+            .import-modal-footer {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                justify-content: stretch;
+            }
+
+            .inspector-tab-btn {
+                font-size: 0.71rem;
+                padding: 8px 4px;
+            }
+
+            .inspector-target-col {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 6px;
+            }
+
+            .inspector-row-actions {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                width: 100%;
+            }
+
+            .inspector-footer-actions {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .inspector-footer-actions .btn-regen-commands {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Interactive Glowing Pistachio Grid Background -->
+    <canvas id="bgGridCanvas" class="bg-grid-canvas" aria-hidden="true"></canvas>
+
+    <!-- Top Studio Header -->
+    <header class="studio-header">
+        <div class="studio-header-inner">
+            <div class="brand-lockup">
+                <div class="brand-emblem">
+                    <img src="craft_editor_pressed_grid.svg" alt="WorldEdit Converter" width="26" height="26" class="brand-logo-svg" draggable="false">
+                </div>
+                <div class="brand-copy">
+                    <h1 class="brand-title">WorldEdit <span class="brand-title-accent">Converter</span></h1>
+                    <p class="brand-subtitle">3D Model &amp; Schematic WorldEdit Command Studio for MultiCraft &amp; Minetest</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3-Step Horizontal Workflow Bar -->
+    <div class="step-bar-wrap">
+        <nav class="step-bar" role="tablist" aria-label="Conversion workflow steps">
+            <button type="button" class="step-tab active" id="stepTab1" role="tab" aria-selected="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <span class="step-label-full">1. Converter Studio</span>
+                <span class="step-label-short">1. Studio</span>
+            </button>
+            <button type="button" class="step-tab" id="stepTab2" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span class="step-label-full">2. Live Preview</span>
+                <span class="step-label-short">2. Preview</span>
+            </button>
+            <button type="button" class="step-tab" id="stepTab3" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="4 17 10 11 4 5"></polyline>
+                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span class="step-label-full">3. WorldEdit Commands</span>
+                <span class="step-label-short">3. Commands</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Main Centered Responsive Grid Workspace -->
+    <main class="studio-main">
+
+        <!-- ==================== STEP 1: CONVERTER STUDIO ==================== -->
+        <div class="step-view" id="stepView1">
+
+            <!-- Format Mode Selector Bar (3 Tabs: Schematics, WorldEdit, 3D Models) -->
+            <div class="mode-bar" role="tablist" aria-label="Input format mode">
+                <button type="button" class="mode-btn active" data-mode="schem" role="tab" aria-selected="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span>Schematics</span>
+                </button>
+                <button type="button" class="mode-btn" data-mode="we" role="tab" aria-selected="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <span>WorldEdit (.we)</span>
+                </button>
+                <button type="button" class="mode-btn" data-mode="3d" role="tab" aria-selected="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <span>3D Models</span>
+                </button>
+            </div>
+
+            <!-- Main Configuration Card -->
+            <section class="studio-card">
+                <div class="card-header">
+                    <div class="card-title-wrap">
+                        <svg class="card-status-dot" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                            <circle cx="5" cy="5" r="4.5" fill="#BEF264"/>
+                        </svg>
+                        <h2 class="card-title">Source &amp; Conversion Configuration</h2>
+                    </div>
+                </div>
+
+                <!-- File Upload Drop Zone -->
+                <div class="field-block">
+                    <label class="section-label" for="fileInput">UPLOAD SOURCE SCHEMATIC OR 3D MODEL</label>
+                    <div class="drop-zone" id="dropZone">
+                        <div class="drop-icon-box">
+                            <img src="assets/icons/upload-voxel.svg" alt="" width="24" height="24">
+                        </div>
+                        <div class="drop-zone-text" id="dropTitle">Click or drop .schem or .nbt file</div>
+                        <div class="drop-zone-hint" id="dropHint">Minecraft Sponge Schematics &amp; Structure NBT (all formats auto-detected)</div>
+                        <input type="file" id="fileInput" accept=".nbt,.schem,.we,.obj,.stl,.mtl,*/*" multiple>
+                    </div>
+                </div>
+
+                <!-- Loaded File Status Strip (Hidden until user uploads a real file) -->
+                <div class="status-bar is-hidden" id="statusBar">
+                    <div class="status-file-meta">
+                        <img src="assets/icons/check.svg" alt="" width="16" height="16">
+                        <span class="status-file-name" id="fileName"></span>
+                        <span class="status-block-count" id="blockCount"></span>
+                    </div>
+                    <button type="button" class="btn-secondary-sm" id="previewBtn" disabled>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <span>Inspect 3D Preview</span>
+                    </button>
+                </div>
+
+                <!-- Max Lines / 10k Bytes per Command Part Box -->
+                <div class="param-panel" id="maxLinesPanel">
+                    <div class="param-top-row">
+                        <label class="section-label" id="maxLinesLabel" for="maxLines">MAX COMMAND LINES PER PART (MAX 100,000)</label>
+                        <span class="param-readout" id="maxLinesDisplay">30,000</span>
+                    </div>
+                    <input type="range" class="studio-range" id="maxLinesSlider" min="1000" max="100000" step="1000" value="30000" aria-label="Max command lines slider">
+                    <div class="preset-row">
+                        <div class="preset-chips maxlines-chips">
+                            <button type="button" class="preset-btn preset-btn-bytes" id="maxBytes10kBtn" data-maxbytes-preset="10000">10k Bytes</button>
+                            <button type="button" class="preset-btn" data-maxlines-preset="5000">5k</button>
+                            <button type="button" class="preset-btn" data-maxlines-preset="10000">10k</button>
+                            <button type="button" class="preset-btn" data-maxlines-preset="20000">20k</button>
+                            <button type="button" class="preset-btn active" data-maxlines-preset="30000">30k</button>
+                            <button type="button" class="preset-btn" data-maxlines-preset="50000">50k</button>
+                            <button type="button" class="preset-btn" data-maxlines-preset="75000">75k</button>
+                            <button type="button" class="preset-btn" data-maxlines-preset="100000">100k</button>
+                        </div>
+                        <input type="number" class="compact-num-input" id="maxLines" value="30000" min="1000" max="100000">
+                    </div>
+                    <p class="param-caption" id="maxLinesCaption">Automatically divides generated WorldEdit commands into sequential copyable parts when total lines exceed this limit, or select 10k Bytes to cap each part at 10,000 bytes without breaking lines.</p>
+                </div>
+
+                <!-- Scale Multiplier Box -->
+                <div class="param-panel">
+                    <div class="param-top-row">
+                        <label class="section-label" for="scale">BUILD SCALE MULTIPLIER (1X – 10X)</label>
+                        <span class="param-readout" id="scaleDisplay">1x</span>
+                    </div>
+                    <input type="range" class="studio-range" id="scaleSlider" min="1" max="10" step="1" value="1" aria-label="Scale multiplier slider">
+                    <div class="preset-row">
+                        <div class="preset-chips">
+                            <button type="button" class="preset-btn active" data-scale-preset="1">1x</button>
+                            <button type="button" class="preset-btn" data-scale-preset="2">2x</button>
+                            <button type="button" class="preset-btn" data-scale-preset="3">3x</button>
+                            <button type="button" class="preset-btn" data-scale-preset="4">4x</button>
+                            <button type="button" class="preset-btn" data-scale-preset="5">5x</button>
+                            <button type="button" class="preset-btn" data-scale-preset="8">8x</button>
+                            <button type="button" class="preset-btn" data-scale-preset="10">10x</button>
+                        </div>
+                        <input type="number" class="compact-num-input" id="scale" value="1" min="1" max="10">
+                    </div>
+                </div>
+
+                <!-- 3D Model Voxelizer Settings -->
+                <div class="settings-3d" id="settings3D">
+                    <div class="param-panel">
+                        <div class="settings-grid-2">
+                            <div class="field-block">
+                                <div class="param-top-row">
+                                    <label class="section-label" for="resolution">VOXEL RESOLUTION</label>
+                                    <span class="param-readout" id="resolutionDisplay">0.5</span>
+                                </div>
+                                <input type="number" class="studio-input" id="resolution" value="0.5" min="0.01" max="10" step="0.01">
+                                <div class="preset-chips">
+                                    <button type="button" class="preset-btn" data-res-preset="0.1">0.1</button>
+                                    <button type="button" class="preset-btn" data-res-preset="0.25">0.25</button>
+                                    <button type="button" class="preset-btn active" data-res-preset="0.5">0.5</button>
+                                    <button type="button" class="preset-btn" data-res-preset="1">1.0</button>
+                                    <button type="button" class="preset-btn" data-res-preset="2">2.0</button>
+                                </div>
+                            </div>
+                            <div class="field-block">
+                                <label class="section-label" for="colorMode">COLOR PALETTE MODE</label>
+                                <select class="studio-select" id="colorMode">
+                                    <option value="single">Single Block</option>
+                                    <option value="wool">Wool Only</option>
+                                    <option value="concrete">Concrete Only</option>
+                                    <option value="terracotta">Terracotta Only</option>
+                                    <option value="glass">Glass Only</option>
+                                    <option value="all" selected>All Color Blocks</option>
+                                </select>
+                                <p class="param-caption">Matches OBJ/MTL or vertex RGB colors to nearest MultiCraft blocks.</p>
+                            </div>
+                        </div>
+                        <div class="field-block block-id-group" id="blockIdGroup">
+                            <label class="section-label" for="blockId">TARGET MULTICRAFT BLOCK ID</label>
+                            <div class="autocomplete-wrapper">
+                                <input type="text" class="studio-input" id="blockId" value="default:stone">
+                                <div class="autocomplete-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schematic & WorldEdit Block Mapping Settings -->
+                <div class="settings-nbt visible" id="settingsNBT">
+                    <div class="param-panel" id="settingsCustomConvert">
+                        <div class="custom-convert-header">
+                            <input type="checkbox" id="customConvertEnabled">
+                            <label for="customConvertEnabled">Enable Custom Block Replacement Rules</label>
+                        </div>
+                        <div class="custom-convert-hint is-hidden" id="customConvertHint">
+                            Override specific source blocks with any MultiCraft block ID (empty = keep default · air = skip block)
+                        </div>
+                        <div class="custom-convert-list is-hidden" id="customConvertList"></div>
+                        <button type="button" class="custom-convert-add-btn is-hidden" id="customConvertAddBtn">
+                            + Add Block Replacement Rule
+                        </button>
+                    </div>
+
+                    <div class="param-panel is-hidden" id="unknownBlocksSection">
+                        <div class="unknown-header-row">
+                            <span class="section-label">UNMAPPED SOURCE BLOCKS</span>
+                            <div class="unknown-actions">
+                                <button type="button" class="unknown-action-btn" id="exportUnknownBtn" title="Export mappings">
+                                    <img src="assets/icons/export.svg" alt="" width="14" height="14">
+                                    <span>Export</span>
+                                </button>
+                                <button type="button" class="unknown-action-btn" id="importUnknownBtn" title="Import mappings">
+                                    <img src="assets/icons/import.svg" alt="" width="14" height="14">
+                                    <span>Import</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="unknown-hint">Leave blank for automatic fallback (`default:*`), or enter `air` to skip</div>
+                        <div class="unknown-list" id="unknownList"></div>
+                    </div>
+                </div>
+
+                <!-- Inline Validation Notice -->
+                <div class="studio-notice is-hidden" id="studioNotice" role="alert"></div>
+
+                <!-- Primary Generate CTA Button -->
+                <button type="button" class="btn-generate" id="convertBtn" disabled>
+                    <img src="assets/icons/convert-bolt.svg" alt="" width="18" height="18">
+                    <span>Generate WorldEdit Commands</span>
+                </button>
+            </section>
+        </div>
+
+        <!-- ==================== STEP 2: LIVE 3D PREVIEW ==================== -->
+        <div class="step-view is-hidden" id="stepView2">
+            <section class="studio-card">
+                <div class="card-header">
+                    <div class="card-title-wrap">
+                        <svg class="card-status-dot" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                            <circle cx="5" cy="5" r="4.5" fill="#BEF264"/>
+                        </svg>
+                        <h2 class="card-title">Interactive 3D Voxel Preview</h2>
+                    </div>
+                    <div class="card-header-actions">
+                        <span class="preview-info" id="previewInfo"></span>
+                        <button type="button" class="btn-secondary-sm" id="previewClose">Back to Studio</button>
+                    </div>
+                </div>
+
+                <!-- Empty State when no file is uploaded -->
+                <div class="empty-card-state" id="previewEmptyState">
+                    <img src="craft_editor_pressed_grid.svg" alt="" width="40" height="40" class="brand-logo-svg" draggable="false">
+                    <h3>No Source File Loaded</h3>
+                    <p>Upload a schematic (.schem, .nbt, .we) or 3D mesh (.obj, .stl) in Converter Studio to inspect its voxel geometry in 3D.</p>
+                    <button type="button" class="btn-secondary-sm" data-goto-step="1">Return to Converter Studio</button>
+                </div>
+
+                <!-- Active 3D Canvas Stage -->
+                <div class="preview-stage-wrap is-hidden" id="previewModal">
+                    <div class="preview-viewport">
+                        <canvas id="previewCanvas"></canvas>
+                        <div class="preview-hint">Drag to rotate · Scroll or pinch to zoom</div>
+                        <div class="preview-controls">
+                            <button type="button" id="resetViewBtn">Reset Camera</button>
+                            <button type="button" id="toggleWireBtn">Wireframe</button>
+                        </div>
+                    </div>
+                    <div class="preview-footer-grid">
+                        <button type="button" class="btn-secondary-sm" data-goto-step="1">Configure Settings</button>
+                        <button type="button" class="btn-generate" id="previewGenerateBtn" disabled>
+                            <img src="assets/icons/convert-bolt.svg" alt="" width="18" height="18" draggable="false">
+                            <span>Generate WorldEdit Commands</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== STEP 3: WORLDEDIT COMMANDS ==================== -->
+        <div class="step-view is-hidden" id="stepView3">
+            <section class="studio-card">
+                <div class="card-header">
+                    <div class="card-title-wrap">
+                        <svg class="card-status-dot" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                            <circle cx="5" cy="5" r="4.5" fill="#BEF264"/>
+                        </svg>
+                        <h2 class="card-title">Generated WorldEdit Commands</h2>
+                    </div>
+                    <div class="card-header-actions">
+                        <button type="button" class="btn-secondary-sm" data-goto-step="2">3D Preview</button>
+                        <button type="button" class="btn-secondary-sm" data-goto-step="1">Edit Configuration</button>
+                    </div>
+                </div>
+
+                <!-- Conversion Progress & Metrics -->
+                <div class="progress-section is-hidden" id="progressSection">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="summary-metrics-grid">
+                        <div class="metric-cell">
+                            <span class="metric-label">SOURCE FILE</span>
+                            <span class="metric-value" id="summaryFileName">—</span>
+                        </div>
+                        <div class="metric-cell">
+                            <span class="metric-label">LOADED GEOMETRY</span>
+                            <span class="metric-value" id="summaryBlockCount">—</span>
+                        </div>
+                        <div class="metric-cell">
+                            <span class="metric-label">GENERATED OUTPUT</span>
+                            <span class="metric-value accent" id="commandCount">0 commands</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post-Conversion Block Mapping Report & Editor Trigger (.nbt / .schem only) -->
+                <div class="schem-report-bar is-hidden" id="schemBlockReportBar">
+                    <div class="schem-report-copy">
+                        <div class="schem-report-title">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                            <span>Minecraft to MultiCraft Block Report</span>
+                        </div>
+                        <div class="schem-report-stats" id="schemBlockReportStats"></div>
+                    </div>
+                    <button type="button" class="btn-inspector-open" id="openBlockInspectorBtn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="4" y1="21" x2="4" y2="14"></line>
+                            <line x1="4" y1="10" x2="4" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12" y2="3"></line>
+                            <line x1="20" y1="21" x2="20" y2="16"></line>
+                            <line x1="20" y1="12" x2="20" y2="3"></line>
+                            <line x1="1" y1="14" x2="7" y2="14"></line>
+                            <line x1="9" y1="8" x2="15" y2="8"></line>
+                            <line x1="17" y1="16" x2="23" y2="16"></line>
+                        </svg>
+                        <span>Inspect &amp; Edit Blocks</span>
+                    </button>
+                </div>
+
+                <!-- Empty State before conversion -->
+                <div class="empty-card-state" id="commandsEmptyState">
+                    <img src="craft_editor_pressed_grid.svg" alt="" width="40" height="40" class="brand-logo-svg" draggable="false">
+                    <h3>No Commands Generated Yet</h3>
+                    <p>Upload a schematic or 3D model in Converter Studio and click Generate WorldEdit Commands to get copyable command blocks.</p>
+                    <button type="button" class="btn-secondary-sm" data-goto-step="1">Go to Converter Studio</button>
+                </div>
+
+                <!-- Copyable Command Parts Output -->
+                <div class="download-area" id="downloadArea"></div>
+
+                <!-- Conversion Activity Log -->
+                <details class="log-details" open>
+                    <summary class="log-summary">
+                        <span>Conversion Activity Log</span>
+                        <img src="assets/icons/chevron-down.svg" alt="" width="14" height="14" draggable="false">
+                    </summary>
+                    <div class="log-panel" id="logPanel"></div>
+                </details>
+            </section>
+        </div>
+
+        <!-- ==================== STEP 3B: SCHEMATIC BLOCK INSPECTOR & EDITOR (.nbt / .schem) ==================== -->
+        <div class="step-view is-hidden" id="blockInspectorModal" role="region" aria-labelledby="inspectorModalTitle">
+            <section class="studio-card inspector-studio-card">
+                <div class="card-header">
+                    <div class="card-title-wrap">
+                        <svg class="card-status-dot" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                            <circle cx="5" cy="5" r="4.5" fill="#BEF264"/>
+                        </svg>
+                        <h2 class="card-title" id="inspectorModalTitle">Minecraft to MultiCraft Block Inspector</h2>
+                    </div>
+                    <div class="card-header-actions">
+                        <button type="button" class="btn-secondary-sm" id="inspectorModalClose">Back to Commands</button>
+                    </div>
+                </div>
+
+                <p class="inspector-subtitle">Inspect unmatched Minecraft blocks and converted MultiCraft blocks. Edit any target block below and re-generate commands.</p>
+
+                <div class="inspector-toolbar">
+                    <div class="inspector-tabs" role="tablist" aria-label="Block mapping categories">
+                        <button type="button" class="inspector-tab-btn active" data-inspector-tab="all" id="inspectorTabAll" role="tab" aria-selected="true">All Blocks (0)</button>
+                        <button type="button" class="inspector-tab-btn" data-inspector-tab="notfound" id="inspectorTabNotFound" role="tab" aria-selected="false">Not Found (0)</button>
+                        <button type="button" class="inspector-tab-btn" data-inspector-tab="converted" id="inspectorTabConverted" role="tab" aria-selected="false">Converted (0)</button>
+                    </div>
+                    <div class="inspector-search-wrap">
+                        <svg class="inspector-search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" class="inspector-filter-input" id="inspectorFilterInput" placeholder="Filter detected Minecraft or MultiCraft blocks...">
+                        <button type="button" class="input-clear-btn is-hidden" id="inspectorFilterClearBtn" aria-label="Clear filter">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="inspector-list" id="inspectorBlockList"></div>
+
+                <div class="inspector-footer">
+                    <div class="inspector-footer-left">
+                        <span class="inspector-footer-status" id="inspectorFooterStatus">0 blocks inspected</span>
+                        <button type="button" class="inspector-mini-btn is-hidden" id="inspectorResetAllBtn">Reset All</button>
+                    </div>
+                    <div class="inspector-footer-actions">
+                        <button type="button" class="btn-secondary-sm" id="inspectorCancelBtn">Cancel</button>
+                        <button type="button" class="btn-generate btn-regen-commands" id="inspectorApplyRegenBtn">
+                            <img src="assets/icons/convert-bolt.svg" alt="" width="16" height="16" draggable="false">
+                            <span>Re-generate Commands</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Import Unknown Block Mappings Modal -->
+    <div class="import-modal" id="importModal">
+        <div class="import-modal-content">
+            <div class="import-modal-header">
+                <span class="import-modal-title">Import Unknown Block Mappings</span>
+                <button type="button" class="import-modal-close" id="importModalClose" aria-label="Close modal">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="import-modal-body">
+                <div class="import-modal-hint">
+                    Format: <code>source_block -&gt; target_block</code> (one per line)<br>
+                    Example: <code>minecraft:deepslate -&gt; default:stone</code>
+                </div>
+                <textarea id="importTextarea" placeholder="Paste block mappings here..."></textarea>
+            </div>
+            <div class="import-modal-footer">
+                <button type="button" class="btn-secondary-sm" id="importCancelBtn">Cancel</button>
+                <button type="button" class="btn-secondary-sm" id="importApplyBtn">Apply Mappings</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shared Floating Portal for Block Search Autocomplete -->
+    <div class="autocomplete-portal" id="autocompletePortal" role="listbox" aria-label="Block search suggestions"></div>
+
+    <!-- Footer -->
+    <footer class="studio-footer">
+        Built by <strong>Kyranzo</strong>
+    </footer>
+
+    <script src="js/converter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Page Not Found — Workbench</title>
+	<meta name="theme-color" content="#0a0a0a" />
+	<meta name="color-scheme" content="dark" />
+	<link rel="icon" href="/workbench_assets/workbench.png" type="image/png" />
+	<style>
+		*, *::before, *::after { box-sizing: border-box; }
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #0a0a0a;
+			color: #f4f4f5;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+		}
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 24px;
+		}
+		.card {
+			width: 100%;
+			max-width: 440px;
+			padding: 36px 32px;
+			background: #141414;
+			border: 1px solid #262626;
+			border-radius: 12px;
+			text-align: center;
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+		}
+		.logo {
+			width: 48px;
+			height: 48px;
+			object-fit: contain;
+			margin-bottom: 16px;
+			filter: drop-shadow(0 0 12px rgba(190, 242, 100, 0.35));
+		}
+		.code {
+			font-size: 13px;
+			font-weight: 700;
+			letter-spacing: 0.16em;
+			text-transform: uppercase;
+			color: #BEF264;
+			margin: 0 0 8px;
+		}
+		h1 {
+			font-size: 24px;
+			font-weight: 700;
+			margin: 0 0 10px;
+			color: #ffffff;
+		}
+		p {
+			font-size: 14px;
+			line-height: 1.55;
+			color: #a1a1aa;
+			margin: 0 0 24px;
+		}
+		a.btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 10px 20px;
+			background: #BEF264;
+			color: #0a0a0a;
+			font-size: 14px;
+			font-weight: 700;
+			text-decoration: none;
+			border-radius: 8px;
+			transition: filter 0.15s ease, transform 0.15s ease;
+		}
+		a.btn:hover {
+			filter: brightness(1.06);
+			transform: translateY(-1px);
+		}
+	</style>
+</head>
+<body>
+	<main class="card">
+		<img class="logo" src="/workbench_assets/workbench.png" alt="Workbench" />
+		<p class="code">Error 404</p>
+		<h1>Page Not Found</h1>
+		<p>The page or resource you requested does not exist on this Workbench deployment.</p>
+		<a class="btn" href="/">Return to Workbench</a>
+	</main>
+</body>
+</html>

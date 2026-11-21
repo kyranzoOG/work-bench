@@ -1,0 +1,112 @@
+# Workbench — Complete Reference
+
+> Workbench is a free, modern, browser-based low-poly 3D modeling, texturing, and animation studio tailored for MultiCraft, Luanti, Minetest, and general low-poly 3D workflows. It runs completely in modern WebGL browsers with zero installation required.
+
+- Canonical URL: https://workbench.bond/
+- Official Wiki: https://about.workbench.bond/wiki
+- Concise Index: https://workbench.bond/llms.txt
+- XML Sitemap: https://workbench.bond/sitemap.xml
+- Community Discord: https://discord.gg/HMDT9pWWcz
+
+---
+
+## 1. Overview
+
+Workbench combines a full-featured low-poly 3D modeling and animation workstation with an integrated suite of specialized MultiCraft and Luanti creator tools inside a single tabbed web interface. Users can open multiple 3D projects and utility tools side-by-side in tabs without leaving the browser.
+
+### Key Highlights
+
+- **Zero Install Web App**: Runs directly in desktop and mobile browsers powered by WebGL and Three.js.
+- **Multi-Tab Workspace**: Switch seamlessly between 3D modeling tabs, built-in creator tools, and the Start Screen.
+- **Dark & Pistachio Aesthetic**: Designed for comfortable long modeling sessions with crisp high-contrast dark surfaces (`#0a0a0a`) and pistachio green (`#BEF264`) accents.
+- **Offline-Friendly Assets**: Local asset storage, project autosave in browser storage, and direct local file import/export.
+
+---
+
+## 2. 3D Modeling & Animation Workstation
+
+### Core Modes
+
+1. **Edit Mode**:
+   - Create and organize cubes, meshes, locators, and nested bone/group hierarchies in the Outliner.
+   - Precision 3D transform gizmos for Translate, Resize, Rotate, and Pivot/Origin adjustments.
+   - Box UV and Per-Face UV editing with pixel-exact snapping and live UV viewport.
+   - Mirror modeling, inflation, face extrusion, and mesh subdivision tools.
+
+2. **Paint Mode**:
+   - Paint directly onto 3D surfaces in real time or on the synchronized 2D texture canvas.
+   - Brush, Eraser, Fill Bucket, Color Picker, Gradient, Draw Shape, and Copy/Paste tools.
+   - Layered textures, custom color palettes, opacity/blend controls, and PNG texture import/export.
+
+3. **Animate Mode**:
+   - Multi-track keyframe timeline supporting Position, Rotation, and Scale channels per bone.
+   - Linear, smooth (Catmull-Rom), Bezier, and step interpolation curves.
+   - Real-time animation playback, looping, scrubbing, and Molang expression support.
+
+4. **Display Mode**:
+   - Configure first-person, third-person, GUI, ground, and frame display transforms for item and block models.
+
+### Supported 3D Formats & Codecs
+
+- **MultiCraft Character**: Pre-rigged MultiCraft character modeling template with ready-to-edit textures and limbs.
+- **Generic Model**: Unrestricted low-poly 3D modeling format for game engines, renders, and custom pipelines.
+- **Blitz3D (`.b3d`)**: Built-in Blitz3D codec allowing direct opening of `.b3d` models via Open Model into a Generic Model tab.
+- **Project Format (`.bbmodel`)**: Full project save/load preserving geometry, bones, textures, UV maps, and animations.
+- **Minecraft / Voxel Formats**: Java Block/Item JSON, Bedrock Geometry JSON, Modded Entity, OptiFine JEM/JPM.
+- **Standard 3D Export**: glTF / GLB, Wavefront OBJ + MTL, Collada DAE, FBX, Sketchfab-ready meshes, and 2D/3D PNG renders.
+
+---
+
+## 3. Integrated Workbench Tools
+
+Workbench includes dedicated creator tools accessible directly from the Start Screen in full-screen tabs:
+
+### 3.1 Luanti Skin Studio
+- URL: https://workbench.bond/workbench_tools/luanti-skin-studio/index.html
+- Target: MultiCraft, Luanti
+- Capabilities: Design, customize, and export HD 128x64 character skins with an interactive real-time 3D rotating skin preview, customizable clothing/accessory layers, and curated color palettes.
+
+### 3.2 Multicraft Seed Viewer
+- URL: https://workbench.bond/workbench_tools/mtc-seed-viewer/index.html
+- Target: MultiCraft Mapgen v7
+- Capabilities: Explore and visualize MultiCraft mapgen seeds, biomes, and terrain height maps with interactive 2D map navigation, zoom, and coordinate lookup.
+
+### 3.3 Luanti Brush Studio
+- URL: https://workbench.bond/workbench_tools/brush_metadata_editor/dist/index.html
+- Target: Luanti, MultiCraft, WorldEdit
+- Capabilities: Visual brush command generator for Terraform and WorldEdit workflows featuring radius/shape controls, block presets, and live isometric voxel preview.
+
+### 3.4 MultiCraft Metadata Editor
+- URL: https://workbench.bond/workbench_tools/metadata/dist/index.html
+- Target: MultiCraft, Minetest
+- Capabilities: Modernized item metadata editor supporting custom item names, lore, color formatting codes, tool capabilities, enchantments, custom item imports, and instant command generation.
+
+### 3.5 Microcontroller Emulator
+- URL: https://workbench.bond/workbench_tools/microcontroller-emulator/dist/index.html
+- Target: Mesecons, MultiCraft
+- Capabilities: Interactive Mesecons microcontroller logic sandbox with A-D pin toggles, 256-byte EEPROM memory inspection, step-by-step debugger, and Lua-like scripting.
+
+### 3.6 Name Tag Asset Catalog & Inspector
+- URL: https://workbench.bond/workbench_tools/nametag/index.html
+- Target: MultiCraft, Minetest
+- Capabilities: Comprehensive searchable database and technical ID inspector covering MultiCraft & Minetest blocks, items, tools, food, and mobs.
+
+### 3.7 Creator Access Portal Tools
+- Authorized Workbench creators can sign in or redeem an access token from the top **Access** menu bar to unlock additional WorldEdit and pixel-art conversion utilities directly inside Workbench.
+
+---
+
+## 4. Technical Requirements & Compatibility
+
+- **Platform**: Web Browser (Chrome, Edge, Firefox, Safari on Windows, macOS, Linux, ChromeOS, Android, iOS).
+- **Graphics**: WebGL-capable browser for the interactive 3D viewport.
+- **Pricing**: Free to use.
+- **Hosting**: Static web application optimized for global CDN delivery at `workbench.bond`.
+
+---
+
+## 5. Community, Wiki & Partners
+
+- **Official Wiki**: https://about.workbench.bond/wiki
+- **Workbench Community Discord**: https://discord.gg/HMDT9pWWcz
+- **Official Partner — MultiCraft Build Tiers**: A showcase of popular builders in MultiCraft, featuring the community's well-known building creators (a community feature available in MultiCraft that Minecraft does not have). Discord: https://discord.gg/h3kwTkmHZw

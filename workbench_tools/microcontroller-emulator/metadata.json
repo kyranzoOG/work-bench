@@ -1,0 +1,6 @@
+{
+  "name": "Microcontroller Emulator",
+  "description": "Advanced Microcontroller and Mesecons Logic Sandbox and Emulator with A-D pins, 256-byte EEPROM, step debugger, and Lua-like scripting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

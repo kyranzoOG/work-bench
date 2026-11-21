@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Workbench — Free 3D Modeling, Animation &amp; MultiCraft Studio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#BEF264" />
+	<meta name="msapplication-TileColor" content="#BEF264" />
+	<meta name="color-scheme" content="dark" />
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+	<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+	<meta name="application-name" content="Workbench" />
+	<meta name="apple-mobile-web-app-title" content="Workbench" />
+	<meta name="author" content="Workbench" />
+	<meta name="description" content="Workbench is a free browser-based low-poly 3D modeling, texturing, and animation studio with MultiCraft, Luanti, Blitz3D, and voxel creation tools." />
+	<meta name="keywords" content="Workbench, 3D modeling, low-poly 3D editor, MultiCraft, Luanti, Minetest, Blitz3D, b3d model editor, voxel animation, skin studio, seed viewer, metadata editor, name tag catalog, browser 3D studio" />
+	<link rel="canonical" href="https://workbench.bond/" />
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="https://workbench.bond/sitemap.xml" />
+	<link rel="alternate" type="text/plain" title="LLMs.txt" href="https://workbench.bond/llms.txt" />
+	<link rel="alternate" type="text/plain" title="LLMs Full Documentation" href="https://workbench.bond/llms-full.txt" />
+
+	<!-- OpenGraph (Discord, Facebook, LinkedIn, Slack, WhatsApp, Telegram, iMessage) -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Workbench" />
+	<meta property="og:title" content="Workbench" />
+	<meta property="og:description" content="Workbench is a free browser-based low-poly 3D modeling, texturing, and animation studio with MultiCraft, Luanti, Blitz3D, and voxel creation tools." />
+	<meta property="og:url" content="https://workbench.bond/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:image" content="https://workbench.bond/workbench_assets/workbench.png" />
+	<meta property="og:image:secure_url" content="https://workbench.bond/workbench_assets/workbench.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="512" />
+	<meta property="og:image:height" content="512" />
+	<meta property="og:image:alt" content="Workbench Logo" />
+
+	<!-- Twitter / X & Discord Small Thumbnail Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Workbench" />
+	<meta name="twitter:description" content="Workbench is a free browser-based low-poly 3D modeling, texturing, and animation studio with MultiCraft, Luanti, Blitz3D, and voxel creation tools." />
+	<meta name="twitter:image" content="https://workbench.bond/workbench_assets/workbench.png" />
+	<meta name="twitter:image:alt" content="Workbench Logo" />
+
+	<!-- Schema.org Structured Data for Google Search -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "WebApplication",
+				"name": "Workbench",
+				"alternateName": "Workbench 3D Studio",
+				"url": "https://workbench.bond/",
+				"image": "https://workbench.bond/workbench_assets/workbench.png",
+				"description": "Workbench is a free browser-based low-poly 3D modeling, texturing, and animation studio with MultiCraft, Luanti, Blitz3D, and voxel creation tools.",
+				"applicationCategory": "DesignApplication",
+				"applicationSubCategory": "3D Modeling & Animation",
+				"operatingSystem": "All",
+				"browserRequirements": "Requires a WebGL-capable browser with JavaScript enabled",
+				"isAccessibleForFree": true,
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "USD"
+				},
+				"sameAs": [
+					"https://discord.gg/HMDT9pWWcz",
+					"https://about.workbench.bond/wiki"
+				],
+				"featureList": [
+					"Low-poly 3D modeling and mesh editing",
+					"Real-time 3D and 2D pixel texture painting",
+					"Bone hierarchy and keyframe animation timeline",
+					"MultiCraft Character modeling and Blitz3D (.b3d) model support",
+					"Integrated Luanti Skin Studio, Multicraft Seed Viewer, Brush Studio, Metadata Editor, Microcontroller Emulator, and Name Tag Catalog"
+				]
+			},
+			{
+				"@type": "WebSite",
+				"name": "Workbench",
+				"url": "https://workbench.bond/",
+				"description": "Free browser-based low-poly 3D modeling, texturing, animation, and MultiCraft/Luanti creator studio."
+			},
+			{
+				"@type": "Organization",
+				"name": "Workbench",
+				"url": "https://workbench.bond/",
+				"logo": "https://workbench.bond/workbench_assets/workbench.png",
+				"sameAs": [
+					"https://discord.gg/HMDT9pWWcz",
+					"https://about.workbench.bond/wiki"
+				]
+			}
+		]
+	}
+	</script>
+
+	<link rel="manifest" href="manifest.webmanifest">
+	<link rel="shortcut icon" href="workbench_assets/workbench.png" type="image/png" />
+	<link rel="icon" href="workbench_assets/workbench.png" type="image/png" />
+	<link rel="apple-touch-icon" href="workbench_assets/workbench.png">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<link rel="stylesheet" href="css/spectrum.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<link rel="stylesheet" href="css/setup.css" id="setup_stylesheet">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/window.css">
+	<link rel="stylesheet" href="css/start_screen.css">
+	<link rel="stylesheet" href="css/panels.css">
+	<link rel="stylesheet" href="css/dialogs.css">
+	<style type="text/css" id="theme_css"></style>
+	<style type="text/css" id="theme_thumbnail_css"></style>
+</head>
+<body spellcheck="false" class="maximized">
+	<script>
+		if (typeof module === 'object') {window.module = module; module = undefined;}//jQuery Fix
+		window.Blockbench = window.Blockbench || {};
+		window.Workbench = window.Blockbench;
+		
+		if (localStorage.getItem('theme')) {
+			try {
+				let stored_theme = JSON.parse(localStorage.getItem('theme'));
+				if (!stored_theme.colors || stored_theme.colors.accent !== '#BEF264') {
+					localStorage.removeItem('theme');
+				} else if (stored_theme.colors.dark) {
+					document.getElementById('theme_css').textContent = `@layer theme {body {--color-dark: ${stored_theme.colors.dark};}};`
+				}
+			} catch (err) {
+				localStorage.removeItem('theme');
+			}
+		}
+		window.ErrorLog = [];
+		window.onerror = (message, file, line) => {
+			if (message.includes('ResizeObserver loop completed with undelivered notifications')) return;
+			window.ErrorLog.push({message, file, line})
+			if (typeof Blockbench != 'undefined' && Blockbench.setup_successful) return;
+
+			let error_element = document.querySelector('#loading_error_detail');
+			if (error_element && !error_element.innerText) {
+				error_element.innerText = `${message}\nIn .${file.split(location.origin).join('')}:${line}`
+			}
+			let version = document.querySelector('#loading_error_version');
+			if (version && window.Blockbench) {
+				version.innerText = Blockbench.version;
+			}
+		}
+		window.factoryResetAndReload = function() {
+			let lang_key = 'menu.help.developer.reset_storage.confirm';
+			let result = window.confirm((window.tl && tl(lang_key) != lang_key) ? tl(lang_key) : 'Are you sure you want to reset Workbench to factory settings? This will delete all custom settings, keybindings and installed plugins.');
+			if (result) {
+				localStorage.clear();
+				if ('Blockbench' in window) Blockbench.addFlag('no_localstorage_saving');
+				console.log('Cleared Local Storage');
+				window.location.reload(true);
+			}
+		}
+	</script>
+	<div id="loading_error_message" style="display: none;">
+		<div>An error occurred while loading Workbench</div>
+		<div id="loading_error_detail" style="color: var(--color-subtle_text);"></div>
+		<button onclick="window.Blockbench ? window.Blockbench.reload() : window.location.reload(true)" class="large" style="margin-right: auto; margin-left: auto;">Reload</button>
+		<button onclick="factoryResetAndReload()" class="large" style="margin-right: auto; margin-left: auto;">Factory Reset</button>
+		<button onclick="window.close()" class="large" style="margin-right: auto; margin-left: auto;">Quit</button>
+		<div id="loading_error_version" style="color: var(--color-subtle_text);"></div>
+	</div>
+	<canvas id="workbench_interactive_bg" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 0;"></canvas>
+	<script type="module" src="dist/bundle.js?v=3"></script>
+	<div style="display: none;"></div>
+	<div id="dialog_wrapper"></div>
+	<header>
+		<ul id="mac_window_menu" hidden></ul>
+		<div id="corner_logo" class="app-drag-region" style="display: flex; align-items: center; gap: 8px; padding-left: 8px;">
+			<img class="blockbench_logo" src="workbench_assets/workbench.png" alt="Workbench" style="height: 22px; width: 22px; object-fit: contain; vertical-align: middle; filter: drop-shadow(0 0 6px rgba(190, 242, 100, 0.4));" />
+			<span style="font-weight: 800; font-size: 13px; letter-spacing: 2px; color: #ffffff; text-transform: uppercase;">WORKBENCH</span>
+		</div>
+		<ul id="menu_bar" class="scroll_horizontal"></ul>
+		<div id="title_bar_home_button" class="tool hidden" onclick="Interface.tab_bar.openNewTab()"><i class="material-icons icon">home</i></div>
+		<div class="app-drag-region" id="header_free_bar"></div>
+		<div id="update_menu"></div>
+		<div id="settings_profiles_header_menu" class="hidden tool">
+			<i class="material-icons icon">manage_accounts</i>
+		</div>
+		<ul id="windows_window_menu" hidden>
+			<li id="window_controls_button_minimize">
+				<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M14 8v1H3V8h11z"/></svg>
+			</li>
+			<li id="window_controls_button_maximize">
+				<svg class="restore" width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M3 5v9h9V5H3zm8 8H4V6h7v7z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5 5h1V4h7v7h-1v1h2V3H5v2z"/></svg>
+				<svg class="maximize" width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M3 3v10h10V3H3zm9 9H4V4h8v8z"/></svg>
+			</li>
+			<li class="wwm_r" id="window_controls_button_close">
+				<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.116 8l-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z"/></svg>
+			</li>
+		</ul>
+	</header>	
+	<div id="page_wrapper" class="invisible start_screen">
+		<div id="blackout" class="darken"></div>
+		<div id="tab_bar" :class="{drag_mode: drag_target_index !== null}">
+			<div id="tab_bar_list" @wheel="mousewheelBar($event)" ref="tab_bar_list">
+				<div
+					class="project_tab"
+					v-for="(project, index) in tabs" :key="project.uuid"
+					:class="{
+						selected: project.selected,
+						new_tab: project.is_new_tab,
+						dragging: index == drag_target_index,
+						move_back:  (drag_position_index !== null && index > drag_target_index && drag_position_index >= index),
+						move_forth: (drag_position_index !== null && index < drag_target_index && drag_position_index <= index)
+					}"
+					:title="project.name || project.geometry_name || ''"
+					@dblclick="project.openSettings()"
+					@contextmenu="project.showContextMenu($event)"
+					@mousedown="mouseDown(project, $event)"
+					@mouseup="mouseUp(project, $event)"
+					@mouseenter="mouseEnter(project, $event)"
+					@mouseleave="mouseLeave(project, $event)"
+				>
+					<dynamic-icon :icon="project.format ? project.format.icon : 'home'"></dynamic-icon>
+					<label class="project_tab_session_badge" v-if="project.EditSession"><i class="material-icons">group</i>{{ project.EditSession.client_count }}</label>
+					<label>{{ project.getDisplayName(false) }}<span v-if="project.getFileExtension?.()">.{{ project.getFileExtension() }}</span></label>
+					<div class="project_tab_close_button" :class="{unsaved: !project.saved}" :title="close_tab_label" @click="project.close()">
+						<i class="material-icons close_icon">clear</i>
+						<i class="material-icons unsaved_icon" v-if="!project.saved">fiber_manual_record</i>
+					</div>
+				</div>
+				<div id="new_tab_button" v-if="!new_tab.visible" @click="openNewTab()" :title="new_tab.name">
+					<i class="material-icons">add</i>
+				</div>
+			</div>
+			<div id="search_tab_button" v-if="projects.length > 1" @click="tabOverview()" :title="search_tabs_label">
+				<i class="material-icons">view_module</i>
+			</div>
+		</div>
+		<dialog id="action_selector"></dialog>
+		<div id="start_screen"></div>
+		<div id="tool_screen"></div>
+		<div id="credits_screen">
+			<div class="credits_page_inner">
+				<div class="credits_top_bar">
+					<button type="button" id="credits_back_home_btn" class="credits_back_home_btn">
+						<i class="material-icons">arrow_back</i>
+						<span>Back to Home</span>
+					</button>
+					<div class="info_tabs" role="tablist" aria-label="Info Sections">
+						<button type="button" class="info_tab_btn active" data-info-tab="credits" role="tab" aria-selected="true" aria-controls="info_panel_credits">
+							<i class="material-icons">groups</i>
+							<span>Credits</span>
+						</button>
+						<button type="button" class="info_tab_btn" data-info-tab="partners" role="tab" aria-selected="false" aria-controls="info_panel_partners">
+							<i class="material-icons">handshake</i>
+							<span>Partners</span>
+						</button>
+					</div>
+				</div>
+				<section class="credits_section info_tab_panel active" id="info_panel_credits" data-info-panel="credits" role="tabpanel">
+					<h1 class="credits_heading">Credits</h1>
+					<ul class="credits_list">
+						<li class="credits_item"><span class="credits_dash">-</span> <span class="credits_name">Kyranzo</span> <span class="credits_role">— Creator of Workbench</span></li>
+						<li class="credits_item"><span class="credits_dash">-</span> <span class="credits_name">AlvinTechly</span> <span class="credits_role">— Developer</span></li>
+						<li class="credits_item"><span class="credits_dash">-</span> <span class="credits_name">X9JM</span> <span class="credits_role">— Developer</span></li>
+						<li class="credits_item"><span class="credits_dash">-</span> <span class="credits_name">Confuxion</span> <span class="credits_role">— Developer</span></li>
+						<li class="credits_item"><span class="credits_dash">-</span> <span class="credits_name">Multi_Nono</span> <span class="credits_role">— Creator of tools used in Workbench</span></li>
+						<li class="credits_item"><span class="credits_dash">-</span> <span class="credits_name">Dark_Multi</span> <span class="credits_role">— Creator of tools used in Workbench</span></li>
+					</ul>
+				</section>
+				<section class="credits_section info_tab_panel" id="info_panel_partners" data-info-panel="partners" role="tabpanel" hidden>
+					<h1 class="credits_heading">Partners</h1>
+					<div class="partner_card">
+						<div class="partner_card_header">
+							<div class="discord_logo_badge" aria-hidden="true">
+								<svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+									<path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+								</svg>
+							</div>
+							<div class="partner_card_titles">
+								<span class="partner_eyebrow">OFFICIAL PARTNER</span>
+								<h2 class="partner_title">MultiCraft Build Tiers</h2>
+							</div>
+						</div>
+						<p class="credits_description">MultiCraft Build Tiers is an official community partner of Workbench.</p>
+						<p class="credits_description">A showcase of popular builders in MultiCraft, featuring the community's well-known building creators. This is a feature available in MultiCraft that Minecraft does not have.</p>
+						<p class="credits_description"><strong>What is Build Tiers?</strong> Build Tiers is a dedicated MultiCraft community hub that highlights, reviews, and ranks builders into skill tiers—celebrating standout builds, inspiring creators, and recognizing top building talent across MultiCraft.</p>
+						<div class="partner_card_actions">
+							<a class="discord_join_button" href="https://discord.gg/h3kwTkmHZw" target="_blank" rel="noopener noreferrer">
+								<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+									<path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+								</svg>
+								<span>Join Build Tiers Discord</span>
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div id="work_screen" hidden>
+			<div id="main_toolbar">
+				<div class="toolbar_wrapper narrow tools"></div>
+				<div class="toolbar_wrapper narrow tool_options"></div>
+				<ul id="mode_selector" v-if="showModes()">
+					<li
+						v-for="mode in options"
+						v-if="Condition(mode.condition)"
+						v-bind:class="{selected: mode.selected}"
+						v-on:mousedown="mode.select()"
+					>
+						<dynamic-icon :icon="mode.icon"></dynamic-icon>
+						{{ mode.name }}
+					</li>
+				</ul>
+			</div>
+			
+			<div id="left_bar" class="sidebar"></div>
+			<div id="right_bar" class="sidebar"></div>
+			<div id="center">
+				<ul id="toast_notification_list"></ul>
+				<div id="top_slot"></div>
+				<div id="preview">
+					<div class="clamped_reference_images"></div>
+				</div>
+				<div id="bottom_slot"></div>
+				<div id="mobile_panel_overlay" hidden></div>
+			</div>
+			<div id="status_bar"></div>
+			<div id="panel_selector_bar"></div>
+		</div>
+	</div>
+	<script type="module">
+		let browser_check_passed = false;
+		// Browser compatibility check
+		try {
+			eval('[1].at(0)');
+			let stylesheet = document.getElementById('setup_stylesheet');
+			if (!stylesheet || !stylesheet.sheet?.cssRules?.length) {
+				throw 'Stylesheet not loaded';
+			}
+			browser_check_passed = true;
+		} catch (err) {
+			console.error(err);
+			let error_element = document.querySelector('#loading_error_detail');
+			if (error_element) error_element.innerHTML = `Incompatible browser version. Please update your web browser.`;
+		}
+
+		function checkLoaded() {
+			if (window.Blockbench?.setup_successful) {
+				let msg = document.getElementById('loading_error_message');
+				if (msg) msg.style.display = 'none';
+				return;
+			}
+			if (!window.Blockbench?.setup_successful || !browser_check_passed) {
+				let msg = document.getElementById('loading_error_message');
+				if (msg) msg.style.display = 'block';
+				if (window.require) {
+					require('@electron/remote').getCurrentWindow().webContents.openDevTools();
+				} else if (window.openDevTools) {
+					window.openDevTools();
+				}
+			}
+		}
+
+		setTimeout(checkLoaded, 2500);
+	</script>
+</body>
+</html>

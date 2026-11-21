@@ -1,0 +1,8 @@
+{
+  "name": "Luanti Brush Studio",
+  "description": "Minetest and Luanti brush command generator for Terraform and WorldEdit workflows with live isometric voxel preview.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

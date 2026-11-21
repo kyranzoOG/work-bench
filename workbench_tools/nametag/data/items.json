@@ -1,0 +1,8530 @@
+{
+	"category" : "items",
+	"count" : 398.0,
+	"entries" : 
+	[
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "",
+			"mod_origin" : "unknown",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"wield_image" : 
+				[
+					{
+						"expression" : "wieldhand.png",
+						"filename" : "wieldhand.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0
+			},
+			"id" : "amethyst_geode:amethyst_brick_item",
+			"mod_origin" : "amethyst_geode",
+			"name" : "\u001b(T@amethyst_geode)Amethyst Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "amethyst_brick.png",
+						"filename" : "amethyst_brick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "amethyst_geode:amethyst_shard",
+			"mod_origin" : "amethyst_geode",
+			"name" : "\u001b(T@amethyst_geode)Amethyst Shard\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "amethyst_shard.png",
+						"filename" : "amethyst_shard.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0
+			},
+			"id" : "amethyst_geode:basalt_brick_item",
+			"mod_origin" : "amethyst_geode",
+			"name" : "\u001b(T@amethyst_geode)Basalt Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "amethyst_basalt_brick.png",
+						"filename" : "amethyst_basalt_brick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0
+			},
+			"id" : "amethyst_geode:calcite_brick_item",
+			"mod_origin" : "amethyst_geode",
+			"name" : "\u001b(T@amethyst_geode)Calcite Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "amethyst_calcite_brick.png",
+						"filename" : "amethyst_calcite_brick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:aluminum_bar",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Aluminum Bar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_aluminum_bar.png",
+						"filename" : "basic_materials_aluminum_bar.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"strip" : 1.0
+			},
+			"id" : "basic_materials:aluminum_strip",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Aluminum Strip\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_aluminum_strip.png",
+						"filename" : "basic_materials_aluminum_strip.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"wire" : 1.0
+			},
+			"id" : "basic_materials:aluminum_wire",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Spool of aluminum wire\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_aluminum_wire.png",
+						"filename" : "basic_materials_aluminum_wire.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:brass_ingot",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Brass Ingot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_brass_ingot.png",
+						"filename" : "basic_materials_brass_ingot.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:carbon_steel_bar",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Carbon Steel Bar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_carbon_steel_bar.png",
+						"filename" : "basic_materials_carbon_steel_bar.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"chainlinks" : 1.0
+			},
+			"id" : "basic_materials:chainlink_brass",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Chainlinks (brass)\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_chainlink_brass.png",
+						"filename" : "basic_materials_chainlink_brass.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"chainlinks" : 1.0
+			},
+			"id" : "basic_materials:chainlink_steel",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Chainlinks (steel)\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_chainlink_steel.png",
+						"filename" : "basic_materials_chainlink_steel.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"strip" : 1.0
+			},
+			"id" : "basic_materials:copper_strip",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Copper Strip\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_copper_strip.png",
+						"filename" : "basic_materials_copper_strip.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"wire" : 1.0
+			},
+			"id" : "basic_materials:copper_wire",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Spool of copper wire\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_copper_wire.png",
+						"filename" : "basic_materials_copper_wire.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:empty_spool",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Empty wire spool\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_empty_spool.png",
+						"filename" : "basic_materials_empty_spool.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:energy_crystal_simple",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Simple energy crystal\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_energy_crystal.png",
+						"filename" : "basic_materials_energy_crystal.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:gear_steel",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Steel gear\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_gear_steel.png",
+						"filename" : "basic_materials_gear_steel.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"strip" : 1.0
+			},
+			"id" : "basic_materials:gold_strip",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Gold Strip\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_gold_strip.png",
+						"filename" : "basic_materials_gold_strip.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"wire" : 1.0
+			},
+			"id" : "basic_materials:gold_wire",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Spool of gold wire\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_gold_wire.png",
+						"filename" : "basic_materials_gold_wire.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:heating_element",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Heating element\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_heating_element.png",
+						"filename" : "basic_materials_heating_element.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:ic",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Simple Integrated Circuit\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_ic.png",
+						"filename" : "basic_materials_ic.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"strip" : 1.0
+			},
+			"id" : "basic_materials:lead_strip",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Lead Strip\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_lead_strip.png",
+						"filename" : "basic_materials_lead_strip.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:motor",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Simple Motor\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_motor.png",
+						"filename" : "basic_materials_motor.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:oil_extract",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Oil extract\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_oil_extract.png",
+						"filename" : "basic_materials_oil_extract.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:padlock",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Padlock\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_padlock.png",
+						"filename" : "basic_materials_padlock.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:paraffin",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Unprocessed paraffin\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_paraffin.png",
+						"filename" : "basic_materials_paraffin.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:plastic_sheet",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Plastic sheet\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_plastic_sheet.png",
+						"filename" : "basic_materials_plastic_sheet.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"strip" : 1.0
+			},
+			"id" : "basic_materials:plastic_strip",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Plastic strips\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_plastic_strip.png",
+						"filename" : "basic_materials_plastic_strip.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:silicon",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Silicon lump\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_silicon.png",
+						"filename" : "basic_materials_silicon.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"wire" : 1.0
+			},
+			"id" : "basic_materials:silver_wire",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Spool of silver wire\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_silver_wire.png",
+						"filename" : "basic_materials_silver_wire.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:stainless_steel_bar",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Stainless Steel Bar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_stainless_steel_bar.png",
+						"filename" : "basic_materials_stainless_steel_bar.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"strip" : 1.0
+			},
+			"id" : "basic_materials:stainless_steel_strip",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Stainless Steel Strip\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_stainless_steel_strip.png",
+						"filename" : "basic_materials_stainless_steel_strip.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"wire" : 1.0
+			},
+			"id" : "basic_materials:stainless_steel_wire",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Spool of stainless steel wire\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_stainless_steel_wire.png",
+						"filename" : "basic_materials_stainless_steel_wire.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:steel_bar",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Steel Bar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_steel_bar.png",
+						"filename" : "basic_materials_steel_bar.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"strip" : 1.0
+			},
+			"id" : "basic_materials:steel_strip",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Steel Strip\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_steel_strip.png",
+						"filename" : "basic_materials_steel_strip.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"wire" : 1.0
+			},
+			"id" : "basic_materials:steel_wire",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Spool of steel wire\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_steel_wire.png",
+						"filename" : "basic_materials_steel_wire.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:terracotta_base",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Uncooked Terracotta Base\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_terracotta_base.png",
+						"filename" : "basic_materials_terracotta_base.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "basic_materials:wet_cement",
+			"mod_origin" : "basic_materials",
+			"name" : "\u001b(T@basic_materials)Wet Cement\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "basic_materials_wet_cement.png",
+						"filename" : "basic_materials_wet_cement.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "beach_biome:coconut_milk",
+			"mod_origin" : "beach_biome",
+			"name" : "\u001b(T@beach_biome)Coconut Milk\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "beach_biome_coconut_milk.png",
+						"filename" : "beach_biome_coconut_milk.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"vessel" : 1.0
+			},
+			"id" : "bees:honey_bottle",
+			"mod_origin" : "bees",
+			"name" : "\u001b(T@bees)Honey Bottle\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bees_honey_bottle.png",
+						"filename" : "bees_honey_bottle.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "bees:honeycomb",
+			"mod_origin" : "bees",
+			"name" : "\u001b(T@bees)Honeycomb\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bees_honeycomb.png",
+						"filename" : "bees_honeycomb.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"vessel" : 1.0
+			},
+			"id" : "bees:jar_empty",
+			"mod_origin" : "bees",
+			"name" : "\u001b(T@bees)Empty Jar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bees_jar_empty.png",
+						"filename" : "bees_jar_empty.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"vessel" : 1.0
+			},
+			"id" : "bees:jar_honey",
+			"mod_origin" : "bees",
+			"name" : "\u001b(T@bees)Honey Jar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bees_jar_honey.png",
+						"filename" : "bees_jar_honey.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "bees:spawn_bee",
+			"mod_origin" : "bees",
+			"name" : "\u001b(T@bees)Bee\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bees_bee_egg.png",
+						"filename" : "bees_bee_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "bluestone_materials:glue",
+			"mod_origin" : "bluestone_materials",
+			"name" : "\u001b(T@bluestone_materials)Glue\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mesecons_glue.png",
+						"filename" : "mesecons_glue.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"boat" : 1.0,
+				"flammable" : 2.0
+			},
+			"id" : "boats:acacia_wood",
+			"mod_origin" : "boats",
+			"name" : "\u001b(T@boats)Acacia Wooden Boat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "boats_acacia_wood_inv.png",
+						"filename" : "boats_acacia_wood_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"boat" : 1.0,
+				"flammable" : 2.0
+			},
+			"id" : "boats:bamboo_wood",
+			"mod_origin" : "boats",
+			"name" : "\u001b(T@boats)Bamboo Boat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "boats_bamboo_wood_inv.png",
+						"filename" : "boats_bamboo_wood_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"boat" : 1.0,
+				"flammable" : 2.0
+			},
+			"id" : "boats:birch_wood",
+			"mod_origin" : "boats",
+			"name" : "\u001b(T@boats)Birch Wooden Boat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "boats_birch_wood_inv.png",
+						"filename" : "boats_birch_wood_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"boat" : 1.0,
+				"flammable" : 2.0
+			},
+			"id" : "boats:cherry_blossom_wood",
+			"mod_origin" : "boats",
+			"name" : "\u001b(T@boats)Cherry Blossom Wooden Boat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "boats_cherry_blossom_wood_inv.png",
+						"filename" : "boats_cherry_blossom_wood_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"boat" : 1.0,
+				"flammable" : 2.0
+			},
+			"id" : "boats:jungle_wood",
+			"mod_origin" : "boats",
+			"name" : "\u001b(T@boats)Jungle Wooden Boat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "boats_jungle_wood_inv.png",
+						"filename" : "boats_jungle_wood_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"boat" : 1.0,
+				"flammable" : 2.0
+			},
+			"id" : "boats:pine_wood",
+			"mod_origin" : "boats",
+			"name" : "\u001b(T@boats)Pine Wooden Boat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "boats_pine_wood_inv.png",
+						"filename" : "boats_pine_wood_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"boat" : 1.0,
+				"flammable" : 2.0
+			},
+			"id" : "boats:wood",
+			"mod_origin" : "boats",
+			"name" : "\u001b(T@boats)Apple Wooden Boat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "boats_wood_inv.png",
+						"filename" : "boats_wood_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"nohit" : 1.0
+			},
+			"id" : "bonemeal:bone",
+			"mod_origin" : "bonemeal",
+			"name" : "\u001b(T@bonemeal)Bone Meal\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bonemeal_item.png",
+						"filename" : "bonemeal_item.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"tool" : 1.0
+			},
+			"id" : "bucket:bucket_empty",
+			"mod_origin" : "bucket",
+			"name" : "\u001b(T@bucket)Empty Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"bucket" : 1.0
+			},
+			"id" : "bucket:bucket_lava",
+			"mod_origin" : "bucket",
+			"name" : "\u001b(T@bucket)Lava Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^bucket_lava.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_milk" : 1.0
+			},
+			"id" : "bucket:bucket_milk",
+			"mod_origin" : "bucket",
+			"name" : "\u001b(T@mobs_animals)Milk Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^mobs_bucket_milk.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"bucket" : 1.0,
+				"water_bucket" : 1.0
+			},
+			"id" : "bucket:bucket_river_water",
+			"mod_origin" : "bucket",
+			"name" : "\u001b(T@bucket)River Water Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^bucket_river_water.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"bucket" : 1.0,
+				"water_bucket" : 1.0
+			},
+			"id" : "bucket:bucket_water",
+			"mod_origin" : "bucket",
+			"name" : "\u001b(T@bucket)Water Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^bucket_water.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "chains:chain_links_copper",
+			"mod_origin" : "chains",
+			"name" : "\u001b(T@chains)Copper Chain Links\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "chains_chain_links_copper.png",
+						"filename" : "chains_chain_links_copper.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "chains:chain_links_gold",
+			"mod_origin" : "chains",
+			"name" : "\u001b(T@chains)Golden Chain Links\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "chains_chain_links_gold.png",
+						"filename" : "chains_chain_links_gold.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "chains:chain_links_steel",
+			"mod_origin" : "chains",
+			"name" : "\u001b(T@chains)Steel Chain Links\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "chains_chain_links_steel.png",
+						"filename" : "chains_chain_links_steel.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "charoite:charoite",
+			"mod_origin" : "charoite",
+			"name" : "\u001b(T@charoite)Charoite\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "charoite_item.png",
+						"filename" : "charoite_item.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"nohit" : 1.0
+			},
+			"id" : "composter:compost",
+			"mod_origin" : "composter",
+			"name" : "\u001b(T@composter)Compost\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "composter_compost.png",
+						"filename" : "composter_compost.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_berry" : 1.0,
+				"food_blueberries" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "default:blueberries",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Blueberries\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_blueberries.png",
+						"filename" : "default_blueberries.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"wieldview" : 2.0
+			},
+			"id" : "default:bone",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Bone\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bonemeal_bone.png",
+						"filename" : "bonemeal_bone.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"coal" : 1.0,
+				"flammable" : 1.0
+			},
+			"id" : "default:charcoal_lump",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Charcoal Lump\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_charcoal_lump.png",
+						"filename" : "default_charcoal_lump.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0
+			},
+			"id" : "default:clay_brick",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Clay Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_clay_brick.png",
+						"filename" : "default_clay_brick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:clay_lump",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Clay Lump\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_clay_lump.png",
+						"filename" : "default_clay_lump.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"coal" : 1.0,
+				"flammable" : 1.0
+			},
+			"id" : "default:coal_lump",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Coal Lump\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_coal_lump.png",
+						"filename" : "default_coal_lump.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0
+			},
+			"id" : "default:color_brick",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@bricks)Color Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bricks_color_brick.png",
+						"filename" : "bricks_color_brick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0
+			},
+			"id" : "default:dark_brick",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@bricks)Dark Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bricks_dark_brick.png",
+						"filename" : "bricks_dark_brick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:diamond",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Diamond\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_diamond.png",
+						"filename" : "default_diamond.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:emerald",
+			"mod_origin" : "default",
+			"name" : "\u001b(c@#00e87e)\u001b(T@default)Emerald\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_emerald.png",
+						"filename" : "default_emerald.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "default:fish",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@mobs_water)Cooked Fish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_fish_cooked.png",
+						"filename" : "mobs_water_fish_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_fish_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "default:fish_raw",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@mobs_water)Raw Fish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_fish_raw.png",
+						"filename" : "mobs_water_fish_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:flint",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Flint\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_flint.png",
+						"filename" : "default_flint.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:glowstone_dust",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Glowstone Dust\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_glowstone_dust.png",
+						"filename" : "default_glowstone_dust.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:gold_ingot",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Gold Ingot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_gold_ingot.png",
+						"filename" : "default_gold_ingot.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0
+			},
+			"id" : "default:light_brick",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@bricks)Light Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bricks_light_brick.png",
+						"filename" : "bricks_light_brick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 3.0
+			},
+			"id" : "default:paper",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Paper\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_paper.png",
+						"filename" : "default_paper.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:ruby",
+			"mod_origin" : "default",
+			"name" : "\u001b(c@#d80a1b)\u001b(T@default)Ruby\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_ruby.png",
+						"filename" : "default_ruby.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:snow_brick",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@bricks)Snow Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bricks_snow_brick.png",
+						"filename" : "bricks_snow_brick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 3.0
+			},
+			"id" : "default:snowball",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Snowball\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_snowball.png",
+						"filename" : "default_snowball.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:steel_ingot",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Steel Ingot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_steel_ingot.png",
+						"filename" : "default_steel_ingot.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"stick" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "default:stick",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Stick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_stick.png",
+						"filename" : "default_stick.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default:sugar",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Sugar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_sugar.png",
+						"filename" : "default_sugar.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "default_extended:copper_ingot",
+			"mod_origin" : "default_extended",
+			"name" : "\u001b(T@default_extended)Copper Ingot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_extended_copper_ingot.png",
+						"filename" : "default_extended_copper_ingot.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_acacia_wood",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Acacia Wood Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_acacia_wood.png",
+						"filename" : "doors_item_acacia_wood.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_acacia_wood_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Acacia Wood Door with Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_acacia_wood_glass.png",
+						"filename" : "doors_item_acacia_wood_glass.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_acacia_wood_room_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Acacia Wood Interior Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_acacia_wood_room_glass_medium.png",
+						"filename" : "doors_item_acacia_wood_room_glass_medium.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_acacia_wood_room_glass_big",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Acacia Wood Interior Glass Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_acacia_wood_room_glass_big.png",
+						"filename" : "doors_item_acacia_wood_room_glass_big.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_birch_wood",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Birch Wood Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_birch_wood.png",
+						"filename" : "doors_item_birch_wood.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_birch_wood_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Birch Wood Door with Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_birch_wood_glass.png",
+						"filename" : "doors_item_birch_wood_glass.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_birch_wood_room_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Birch Wood Interior Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_birch_wood_room_glass_medium.png",
+						"filename" : "doors_item_birch_wood_room_glass_medium.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_birch_wood_room_glass_big",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Birch Wood Interior Glass Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_birch_wood_room_glass_big.png",
+						"filename" : "doors_item_birch_wood_room_glass_big.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_cherry_blossom_wood",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Cherry Blossom Wood Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_cherry_blossom_wood.png",
+						"filename" : "doors_item_cherry_blossom_wood.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_cherry_blossom_wood_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Cherry Blossom Wood Door with Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_cherry_blossom_wood_glass.png",
+						"filename" : "doors_item_cherry_blossom_wood_glass.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_cherry_blossom_wood_room_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Cherry Blossom Wood Interior Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_cherry_blossom_wood_room_glass_medium.png",
+						"filename" : "doors_item_cherry_blossom_wood_room_glass_medium.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_cherry_blossom_wood_room_glass_big",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Cherry Blossom Wood Interior Glass Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_cherry_blossom_wood_room_glass_big.png",
+						"filename" : "doors_item_cherry_blossom_wood_room_glass_big.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"cracky" : 1.0,
+				"door" : 1.0,
+				"level" : 2.0
+			},
+			"id" : "doors:door_copper",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Copper Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_copper.png",
+						"filename" : "doors_item_copper.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"cracky" : 3.0,
+				"door" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "doors:door_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Glass Interior Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_glass.png",
+						"filename" : "doors_item_glass.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"cracky" : 1.0,
+				"door" : 1.0,
+				"level" : 2.0
+			},
+			"id" : "doors:door_gold",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Gold Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_gold.png",
+						"filename" : "doors_item_gold.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"cracky" : 1.0,
+				"door" : 1.0,
+				"level" : 2.0
+			},
+			"id" : "doors:door_grill",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Grilled Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_grill.png",
+						"filename" : "doors_item_grill.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_jungle_wood",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Jungle Wood Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_jungle_wood.png",
+						"filename" : "doors_item_jungle_wood.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_jungle_wood_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Jungle Wood Door with Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_jungle_wood_glass.png",
+						"filename" : "doors_item_jungle_wood_glass.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_jungle_wood_room_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Jungle Wood Interior Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_jungle_wood_room_glass_medium.png",
+						"filename" : "doors_item_jungle_wood_room_glass_medium.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_jungle_wood_room_glass_big",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Jungle Wood Interior Glass Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_jungle_wood_room_glass_big.png",
+						"filename" : "doors_item_jungle_wood_room_glass_big.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_pine_wood",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Pine Wood Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_pine_wood.png",
+						"filename" : "doors_item_pine_wood.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_pine_wood_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Pine Wood Door with Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_pine_wood_glass.png",
+						"filename" : "doors_item_pine_wood_glass.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_pine_wood_room_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Pine Wood Interior Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_pine_wood_room_glass_medium.png",
+						"filename" : "doors_item_pine_wood_room_glass_medium.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_pine_wood_room_glass_big",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Pine Wood Interior Glass Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_pine_wood_room_glass_big.png",
+						"filename" : "doors_item_pine_wood_room_glass_big.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"cracky" : 1.0,
+				"door" : 1.0,
+				"level" : 2.0
+			},
+			"id" : "doors:door_steel",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Steel Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_steel.png",
+						"filename" : "doors_item_steel.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_wood",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Apple Wood Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_wood.png",
+						"filename" : "doors_item_wood.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_wood_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Apple Wood Door with Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_wood_glass.png",
+						"filename" : "doors_item_wood_glass.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_wood_room_glass",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Apple Wood Interior Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_wood_room_glass_medium.png",
+						"filename" : "doors_item_wood_room_glass_medium.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"choppy" : 2.0,
+				"door" : 1.0,
+				"flammable" : 2.0,
+				"oddly_breakable_by_hand" : 2.0
+			},
+			"id" : "doors:door_wood_room_glass_big",
+			"mod_origin" : "doors",
+			"name" : "\u001b(T@doors)Apple Wood Interior Glass Door\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "doors_item_wood_room_glass_big.png",
+						"filename" : "doors_item_wood_room_glass_big.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "draconis:draconic_steel_ingot_fire",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Fire-Forged Draconic Steel Ingot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_draconic_steel_ingot_fire.png",
+						"filename" : "draconis_draconic_steel_ingot_fire.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "draconis:draconic_steel_ingot_ice",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Ice-Forged Draconic Steel Ingot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_draconic_steel_ingot_ice.png",
+						"filename" : "draconis_draconic_steel_ingot_ice.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"bone" : 1.0
+			},
+			"id" : "draconis:dragon_bone",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Dragon Bone\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_bone.png",
+						"filename" : "draconis_dragon_bone.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"block_give_command" : 1.0
+			},
+			"id" : "draconis:dragonbinder",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Dragonbinder\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragonbinder.png",
+						"filename" : "draconis_dragonbinder.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "draconis:dragonstone_crucible",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Dragonstone Crucible\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragonstone_crucible.png",
+						"filename" : "draconis_dragonstone_crucible.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "draconis:dragonstone_crucible_full",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Dragonstone Crucible (Full)\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragonstone_crucible_full.png",
+						"filename" : "draconis_dragonstone_crucible_full.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "draconis:libri_draconis",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Libri Draconis\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_libri_draconis.png",
+						"filename" : "draconis_libri_draconis.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_fire_dragon_black",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Fire Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Black\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#393939",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_fire_dragon_bronze",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Fire Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Bronze\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#ff6d00",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_fire_dragon_gold",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Fire Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Gold\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#ffa300",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_fire_dragon_green",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Fire Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Green\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#0abc00",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_fire_dragon_red",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Fire Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Red\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#b10000",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_ice_dragon_light_blue",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Ice Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Light Blue\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#9df8ff",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_ice_dragon_sapphire",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Ice Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Sapphire\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#001fea",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_ice_dragon_silver",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Ice Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Silver\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#c5e4ed",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_ice_dragon_slate",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Ice Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)Slate\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#4c646b",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"dragon_scales" : 1.0
+			},
+			"id" : "draconis:scales_ice_dragon_white",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Ice Dragon Scales\u001bE\n\u001b(c@#a9a9a9)\u001b(T@draconis)White\u001bE\u001b(c@#ffffff)",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_dragon_scales.png^[multiply:#e4e4e4",
+						"filename" : "draconis_dragon_scales.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "draconis:spawn_fire_dragon",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Creative Fire Dragon Egg\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_creative_egg_fire.png",
+						"filename" : "draconis_creative_egg_fire.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "draconis:spawn_ice_dragon",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Creative Ice Dragon Egg\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_creative_egg_ice.png",
+						"filename" : "draconis_creative_egg_ice.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "draconis:spawn_jungle_wyvern",
+			"mod_origin" : "draconis",
+			"name" : "\u001b(T@draconis)Creative Jungle Wyvern Egg\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "draconis_creative_egg_jungle.png",
+						"filename" : "draconis_creative_egg_jungle.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_black" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:black",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Black Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_black.png",
+						"filename" : "dye_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_blue" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:blue",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Blue Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_blue.png",
+						"filename" : "dye_blue.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_brown" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:brown",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Brown Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_brown.png",
+						"filename" : "dye_brown.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_cyan" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:cyan",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Cyan Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_cyan.png",
+						"filename" : "dye_cyan.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_dark_green" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:dark_green",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Dark Green Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_dark_green.png",
+						"filename" : "dye_dark_green.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_dark_grey" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:dark_grey",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Dark Grey Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_dark_grey.png",
+						"filename" : "dye_dark_grey.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_green" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:green",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Green Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_green.png",
+						"filename" : "dye_green.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_grey" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:grey",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Grey Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_grey.png",
+						"filename" : "dye_grey.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_magenta" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:magenta",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Magenta Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_magenta.png",
+						"filename" : "dye_magenta.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_orange" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:orange",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Orange Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_orange.png",
+						"filename" : "dye_orange.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_pink" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:pink",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Pink Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_pink.png",
+						"filename" : "dye_pink.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_red" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:red",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Red Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_red.png",
+						"filename" : "dye_red.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_violet" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:violet",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Violet Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_violet.png",
+						"filename" : "dye_violet.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_white" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:white",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)White Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_white.png",
+						"filename" : "dye_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"color_yellow" : 1.0,
+				"dye" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "dye:yellow",
+			"mod_origin" : "dye",
+			"name" : "\u001b(T@dye)Yellow Dye\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "dye_yellow.png",
+						"filename" : "dye_yellow.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0
+			},
+			"id" : "fabric:cloth",
+			"mod_origin" : "fabric",
+			"name" : "\u001b(T@fabric)Cloth\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fabric_cloth.png",
+						"filename" : "fabric_cloth.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_bread" : 1.0
+			},
+			"id" : "farming:bread",
+			"mod_origin" : "farming",
+			"name" : "\u001b(T@farming_plants)Bread\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_bread.png",
+						"filename" : "farming_bread.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 1.0,
+				"food_flour" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming:flour",
+			"mod_origin" : "farming",
+			"name" : "\u001b(T@farming_plants)Flour\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_flour.png",
+						"filename" : "farming_flour.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"materials" : 1.0
+			},
+			"id" : "farming:string",
+			"mod_origin" : "farming",
+			"name" : "\u001b(T@farming_plants)String\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_string.png",
+						"filename" : "farming_string.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food_wheat" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming:wheat",
+			"mod_origin" : "farming",
+			"name" : "\u001b(T@farming_plants)Wheat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_wheat.png",
+						"filename" : "farming_wheat.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:carrot",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Carrot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_carrot.png",
+						"filename" : "farming_plants_carrot.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:carrot_golden",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Golden Carrot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_carrot_golden.png",
+						"filename" : "farming_plants_carrot_golden.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:chocolate",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Chocolate\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_chocolate.png",
+						"filename" : "farming_plants_chocolate.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:cocoa_bean",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Cocoa Bean\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_cocoa_bean.png",
+						"filename" : "farming_plants_cocoa_bean.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:cookie",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Cookie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_cookie.png",
+						"filename" : "farming_plants_cookie.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:corn",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Corn\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_corn.png",
+						"filename" : "farming_plants_corn.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:corn_baked",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Baked Corn\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_corn_baked.png",
+						"filename" : "farming_plants_corn_baked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:cotton",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Cotton\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_cotton.png",
+						"filename" : "farming_plants_cotton.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:cucumber",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Cucumber\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_cucumber.png",
+						"filename" : "farming_plants_cucumber.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:melon",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Melon Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_melon.png",
+						"filename" : "farming_plants_melon.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:potato",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Potato\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_potato.png",
+						"filename" : "farming_plants_potato.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:potato_baked",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Baked Potato\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_potato_baked.png",
+						"filename" : "farming_plants_potato_baked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:potato_poisonous",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Poisonous Potato\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_potato_poisonous.png",
+						"filename" : "farming_plants_potato_poisonous.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:pumpkin",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Pumpkin Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin.png",
+						"filename" : "farming_plants_pumpkin.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:pumpkin_backed",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Baked Pumpkin Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin_backed.png",
+						"filename" : "farming_plants_pumpkin_backed.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:seed_sunflower_fried",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Fried Sunflower Seeds\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_sunflower_seed_fried.png",
+						"filename" : "farming_plants_sunflower_seed_fried.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"food_berry" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:strawberry",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Strawberry\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_strawberry.png",
+						"filename" : "farming_plants_strawberry.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:tomato",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Tomato\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_tomato.png",
+						"filename" : "farming_plants_tomato.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:watermelon",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Watermelon Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_watermelon.png",
+						"filename" : "farming_plants_watermelon.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:watermelon_golden",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Golden Watermelon Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_watermelon_golden.png",
+						"filename" : "farming_plants_watermelon_golden.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "fireworks:firecracker",
+			"mod_origin" : "fireworks",
+			"name" : "\u001b(T@fireworks)Firecracker\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_firecracker.png",
+						"filename" : "fireworks_firecracker.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "fireworks_firecracker.png^[transformR90",
+						"filename" : "fireworks_firecracker.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "fireworks:large_firecracker_placeholder",
+			"mod_origin" : "fireworks",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_large_firecracker_inv.png",
+						"filename" : "fireworks_large_firecracker_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "fireworks_large_firecracker_inv.png",
+						"filename" : "fireworks_large_firecracker_inv.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "flowers_vases:bouquet_placeholder_rose",
+			"mod_origin" : "flowers_vases",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "flowers_vases_bouquet_rose_inv.png",
+						"filename" : "flowers_vases_bouquet_rose_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "flowers_vases_bouquet_rose_inv.png",
+						"filename" : "flowers_vases_bouquet_rose_inv.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "flowers_vases:bouquet_placeholder_tulip",
+			"mod_origin" : "flowers_vases",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "flowers_vases_bouquet_tulip_inv.png",
+						"filename" : "flowers_vases_bouquet_tulip_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "flowers_vases_bouquet_tulip_inv.png",
+						"filename" : "flowers_vases_bouquet_tulip_inv.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "halloween_broomstick:spawn_broomstick",
+			"mod_origin" : "halloween_broomstick",
+			"name" : "\u001b(T@halloween_broomstick)Broomstick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_broomstick_egg.png",
+						"filename" : "halloween_broomstick_egg.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "halloween_broomstick_egg.png",
+						"filename" : "halloween_broomstick_egg.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "halloween_candy:basket_placeholder",
+			"mod_origin" : "halloween_candy",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_basket.png",
+						"filename" : "halloween_candy_basket.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "halloween_candy_basket.png",
+						"filename" : "halloween_candy_basket.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 2.0,
+				"halloween_candy" : 1.0
+			},
+			"id" : "halloween_candy:candy_apple",
+			"mod_origin" : "halloween_candy",
+			"name" : "\u001b(T@halloween_candy)Apple Candy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_candy_apple.png",
+						"filename" : "halloween_candy_candy_apple.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 2.0,
+				"halloween_candy" : 1.0
+			},
+			"id" : "halloween_candy:candy_blueberry",
+			"mod_origin" : "halloween_candy",
+			"name" : "\u001b(T@halloween_candy)Blueberry Candy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_candy_blueberry.png",
+						"filename" : "halloween_candy_candy_blueberry.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 2.0,
+				"halloween_candy" : 1.0
+			},
+			"id" : "halloween_candy:candy_pumpkin",
+			"mod_origin" : "halloween_candy",
+			"name" : "\u001b(T@halloween_candy)Pumpkin Candy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_candy_pumpkin.png",
+						"filename" : "halloween_candy_candy_pumpkin.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 2.0,
+				"halloween_candy" : 1.0
+			},
+			"id" : "halloween_candy:candy_strawberry",
+			"mod_origin" : "halloween_candy",
+			"name" : "\u001b(T@halloween_candy)Strawberry Candy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_candy_strawberry.png",
+						"filename" : "halloween_candy_candy_strawberry.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "halloween_mobs:spawn_gargul",
+			"mod_origin" : "halloween_mobs",
+			"name" : "\u001b(T@halloween_mobs)Gargoyle\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_mobs_gargul_egg.png",
+						"filename" : "halloween_mobs_gargul_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "halloween_mobs:spawn_skeleton_boss",
+			"mod_origin" : "halloween_mobs",
+			"name" : "\u001b(T@halloween_mobs)Skeleton Boss\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_mobs_skeleton_boss_egg.png",
+						"filename" : "halloween_mobs_skeleton_boss_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "kitchen_furniture:toast",
+			"mod_origin" : "kitchen_furniture",
+			"name" : "\u001b(T@kitchen_furniture)Toast\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "kitchen_furniture_toast.png",
+						"filename" : "kitchen_furniture_toast.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:HDD",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Hard Drive\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_harddrive.png",
+						"filename" : "laptop_harddrive.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:bat",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Battery\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_bat.png",
+						"filename" : "laptop_bat.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:case",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Case\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_case.png",
+						"filename" : "laptop_case.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:cpu_65536",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Transpose 65536 Processor\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_cpu_65536.png",
+						"filename" : "laptop_cpu_65536.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:cpu_c6",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Ziram c6 Processor\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_cpu_c6.png",
+						"filename" : "laptop_cpu_c6.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:cpu_d75a",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Interlink D75A Processor\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_cpu_d75a.png",
+						"filename" : "laptop_cpu_d75a.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:cpu_jetcore",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Interlink jetCore Processor\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_cpu_jetcore.png",
+						"filename" : "laptop_cpu_jetcore.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:crt",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)CRT Screen\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_crt.png",
+						"filename" : "laptop_crt.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:crt_amber",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Amber CRT Screen\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_crt_amber.png",
+						"filename" : "laptop_crt_amber.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:crt_green",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Green CRT Screen\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_crt_green.png",
+						"filename" : "laptop_crt_green.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:fan",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Fan\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_fan.png",
+						"filename" : "laptop_fan.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"laptop_removable_floppy" : 1.0
+			},
+			"id" : "laptop:floppy",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)High density floppy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_diskette.png",
+						"filename" : "laptop_diskette.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:gpu",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)GPU\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_gpu.png",
+						"filename" : "laptop_gpu.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:lcd",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)LCD Screen\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_lcd.png",
+						"filename" : "laptop_lcd.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:motherboard",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Motherboard\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_motherboard.png",
+						"filename" : "laptop_motherboard.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:printed_paper",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)Printed paper\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_printed_paper.png",
+						"filename" : "laptop_printed_paper.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "laptop:psu",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)PSU\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_psu.png",
+						"filename" : "laptop_psu.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_bishop_black_1",
+			"mod_origin" : "laptop",
+			"name" : "Black Bishop",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_bishop_black.png",
+						"filename" : "laptop_realchess_bishop_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_bishop_black_2",
+			"mod_origin" : "laptop",
+			"name" : "Black Bishop",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_bishop_black.png",
+						"filename" : "laptop_realchess_bishop_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_bishop_white_1",
+			"mod_origin" : "laptop",
+			"name" : "White Bishop",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_bishop_white.png",
+						"filename" : "laptop_realchess_bishop_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_bishop_white_2",
+			"mod_origin" : "laptop",
+			"name" : "White Bishop",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_bishop_white.png",
+						"filename" : "laptop_realchess_bishop_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_king_black",
+			"mod_origin" : "laptop",
+			"name" : "Black King",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_king_black.png",
+						"filename" : "laptop_realchess_king_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_king_white",
+			"mod_origin" : "laptop",
+			"name" : "White King",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_king_white.png",
+						"filename" : "laptop_realchess_king_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_knight_black_1",
+			"mod_origin" : "laptop",
+			"name" : "Black Knight",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_knight_black.png",
+						"filename" : "laptop_realchess_knight_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_knight_black_2",
+			"mod_origin" : "laptop",
+			"name" : "Black Knight",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_knight_black.png",
+						"filename" : "laptop_realchess_knight_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_knight_white_1",
+			"mod_origin" : "laptop",
+			"name" : "White Knight",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_knight_white.png",
+						"filename" : "laptop_realchess_knight_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_knight_white_2",
+			"mod_origin" : "laptop",
+			"name" : "White Knight",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_knight_white.png",
+						"filename" : "laptop_realchess_knight_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_black_1",
+			"mod_origin" : "laptop",
+			"name" : "Black Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_black.png",
+						"filename" : "laptop_realchess_pawn_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_black_2",
+			"mod_origin" : "laptop",
+			"name" : "Black Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_black.png",
+						"filename" : "laptop_realchess_pawn_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_black_3",
+			"mod_origin" : "laptop",
+			"name" : "Black Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_black.png",
+						"filename" : "laptop_realchess_pawn_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_black_4",
+			"mod_origin" : "laptop",
+			"name" : "Black Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_black.png",
+						"filename" : "laptop_realchess_pawn_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_black_5",
+			"mod_origin" : "laptop",
+			"name" : "Black Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_black.png",
+						"filename" : "laptop_realchess_pawn_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_black_6",
+			"mod_origin" : "laptop",
+			"name" : "Black Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_black.png",
+						"filename" : "laptop_realchess_pawn_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_black_7",
+			"mod_origin" : "laptop",
+			"name" : "Black Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_black.png",
+						"filename" : "laptop_realchess_pawn_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_black_8",
+			"mod_origin" : "laptop",
+			"name" : "Black Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_black.png",
+						"filename" : "laptop_realchess_pawn_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_white_1",
+			"mod_origin" : "laptop",
+			"name" : "White Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_white.png",
+						"filename" : "laptop_realchess_pawn_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_white_2",
+			"mod_origin" : "laptop",
+			"name" : "White Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_white.png",
+						"filename" : "laptop_realchess_pawn_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_white_3",
+			"mod_origin" : "laptop",
+			"name" : "White Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_white.png",
+						"filename" : "laptop_realchess_pawn_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_white_4",
+			"mod_origin" : "laptop",
+			"name" : "White Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_white.png",
+						"filename" : "laptop_realchess_pawn_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_white_5",
+			"mod_origin" : "laptop",
+			"name" : "White Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_white.png",
+						"filename" : "laptop_realchess_pawn_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_white_6",
+			"mod_origin" : "laptop",
+			"name" : "White Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_white.png",
+						"filename" : "laptop_realchess_pawn_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_white_7",
+			"mod_origin" : "laptop",
+			"name" : "White Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_white.png",
+						"filename" : "laptop_realchess_pawn_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_pawn_white_8",
+			"mod_origin" : "laptop",
+			"name" : "White Pawn",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_pawn_white.png",
+						"filename" : "laptop_realchess_pawn_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_queen_black",
+			"mod_origin" : "laptop",
+			"name" : "Black Queen",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_queen_black.png",
+						"filename" : "laptop_realchess_queen_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_queen_white",
+			"mod_origin" : "laptop",
+			"name" : "White Queen",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_queen_white.png",
+						"filename" : "laptop_realchess_queen_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_rook_black_1",
+			"mod_origin" : "laptop",
+			"name" : "Black Rook",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_rook_black.png",
+						"filename" : "laptop_realchess_rook_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_rook_black_2",
+			"mod_origin" : "laptop",
+			"name" : "Black Rook",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_rook_black.png",
+						"filename" : "laptop_realchess_rook_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_rook_white_1",
+			"mod_origin" : "laptop",
+			"name" : "White Rook",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_rook_white.png",
+						"filename" : "laptop_realchess_rook_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "laptop:realchess_rook_white_2",
+			"mod_origin" : "laptop",
+			"name" : "White Rook",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_realchess_rook_white.png",
+						"filename" : "laptop_realchess_rook_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"laptop_removable_usb" : 1.0
+			},
+			"id" : "laptop:usbstick",
+			"mod_origin" : "laptop",
+			"name" : "\u001b(T@laptop)USB storage stick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "laptop_usb.png",
+						"filename" : "laptop_usb.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "light_nodes:switcher",
+			"mod_origin" : "light_nodes",
+			"name" : "\u001b(T@light_nodes)Light Switcher\u001bE\n\u001b(T@light_nodes)[Rightclick] to increase light level\u001bE\n\u001b(T@light_nodes)[Leftclick] to decrease light level\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "light_nodes_switcher.png",
+						"filename" : "light_nodes_switcher.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"transport" : 1.0
+			},
+			"id" : "magic_carpet:double",
+			"mod_origin" : "magic_carpet",
+			"name" : "\u001b(T@magic_carpet)Large Magic Carpet\u001bE\n\u001b(c@silver)\u001b(T@magic_carpet)Has a passenger seat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "magic_carpet_double_inv.png",
+						"filename" : "magic_carpet_double_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"transport" : 1.0
+			},
+			"id" : "magic_carpet:single",
+			"mod_origin" : "magic_carpet",
+			"name" : "\u001b(T@magic_carpet)Magic Carpet\u001bE\n\u001b(c@silver)\u001b(T@magic_carpet)Doesn't have a passenger seat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "magic_carpet_single_inv.png",
+						"filename" : "magic_carpet_single_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "mesecons_materials:fiber",
+			"mod_origin" : "mesecons_materials",
+			"name" : "\u001b(T@mesecons_materials)Fiber\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mesecons_fiber.png",
+						"filename" : "mesecons_fiber.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0
+			},
+			"id" : "mobs:leather",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Leather\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_leather.png",
+						"filename" : "mobs_leather.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs:meat",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Cooked Meat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_meat.png",
+						"filename" : "mobs_meat.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs:meat_raw",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Raw Meat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_meat_raw.png",
+						"filename" : "mobs_meat_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs:nametag",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Name Tag\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_nametag.png",
+						"filename" : "mobs_nametag.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs:pork",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Cooked Pork\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_pork_cooked.png",
+						"filename" : "mobs_pork_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs:pork_raw",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Raw Pork\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_pork_raw.png",
+						"filename" : "mobs_pork_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs:saddle",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Saddle\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_saddle.png",
+						"filename" : "mobs_saddle.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_cheese" : 1.0
+			},
+			"id" : "mobs_animals:cheese",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cheese\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_cheese.png",
+						"filename" : "mobs_cheese.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "mobs_cheese_wield.png",
+						"filename" : "mobs_cheese_wield.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_chicken" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs_animals:chicken_cooked",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cooked Chicken\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_cooked.png",
+						"filename" : "mobs_chicken_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"egg" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "mobs_animals:chicken_egg",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Egg\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_egg.png",
+						"filename" : "mobs_chicken_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "mobs_animals:chicken_egg_fried",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Fried Egg\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_egg_fried.png",
+						"filename" : "mobs_chicken_egg_fried.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_chicken_raw" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_animals:chicken_raw",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Raw Chicken\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_raw.png",
+						"filename" : "mobs_chicken_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "mobs_animals:crab_meat_fried",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Fried Crab Meat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_crab_meat_fried.png",
+						"filename" : "mobs_crab_meat_fried.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "mobs_animals:crab_meat_raw",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Raw Crab Meat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_crab_meat_raw.png",
+						"filename" : "mobs_crab_meat_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"feather" : 1.0,
+				"flammable" : 2.0,
+				"wieldview" : 2.0
+			},
+			"id" : "mobs_animals:feather",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_common)Feather\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_feather.png",
+						"filename" : "mobs_chicken_feather.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs_animals:lamb",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cooked Lamb\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_lamb.png",
+						"filename" : "mobs_lamb.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_animals:lamb_raw",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Raw Lamb\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_lamb_raw.png",
+						"filename" : "mobs_lamb_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0
+			},
+			"id" : "mobs_animals:peacock_feather",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Peacock Feather\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_peacock_feather.png",
+						"filename" : "mobs_peacock_feather.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs_animals:rabbit_cooked",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cooked Rabbit\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rabbit_cooked.png",
+						"filename" : "mobs_rabbit_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0
+			},
+			"id" : "mobs_animals:rabbit_hide",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Rabbit Hide\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rabbit_hide.png",
+						"filename" : "mobs_rabbit_hide.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_animals:rabbit_raw",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Raw Rabbit\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rabbit_raw.png",
+						"filename" : "mobs_rabbit_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_animals:rat_dead",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Rat Carcass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rat_dead.png",
+						"filename" : "mobs_rat_dead.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs_animals:rat_fried",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Fried Rat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rat_fried.png",
+						"filename" : "mobs_rat_fried.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_bat",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Bat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_bat_egg.png",
+						"filename" : "mobs_bat_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_bear_brown",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Brown Bear\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_bear_egg.png",
+						"filename" : "mobs_bear_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_bear_polar",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Polar Bear\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_bear_polar_egg.png",
+						"filename" : "mobs_bear_polar_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_bird",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Bird\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_bird_egg.png",
+						"filename" : "mobs_bird_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_cat",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_cat_egg.png",
+						"filename" : "mobs_cat_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_cat_fat",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Fat Cat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_fat_cat_egg.png",
+						"filename" : "mobs_fat_cat_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_cat_fat_manul",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Pallas's Cat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_fat_cat_manul_egg.png",
+						"filename" : "mobs_fat_cat_manul_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_cat_margay",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Wild Cat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_cat_wild_egg.png",
+						"filename" : "mobs_cat_wild_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_chicken",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Chicken\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_egg_inv.png",
+						"filename" : "mobs_chicken_egg_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_cow",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cow\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_cow_egg.png",
+						"filename" : "mobs_cow_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_crab",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Crab\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_crab_egg.png",
+						"filename" : "mobs_crab_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_crow",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Crow\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_crow_egg.png",
+						"filename" : "mobs_crow_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_dirty_pug",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Dirty Pug\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_pug_dirty_egg.png",
+						"filename" : "mobs_pug_dirty_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_dog_pug",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Pug\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_pug_egg.png",
+						"filename" : "mobs_pug_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_dog_shepherd",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)German Shepherd\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_dog_shepherd_egg.png",
+						"filename" : "mobs_dog_shepherd_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_dog_wolfhound",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Wolfhound\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_dog_wolfhound_egg.png",
+						"filename" : "mobs_dog_wolfhound_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_fox",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Fox\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_fox_egg.png",
+						"filename" : "mobs_fox_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_goat",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Goat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_goat_egg.png",
+						"filename" : "mobs_goat_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_gull",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Seagull\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_gull_egg.png",
+						"filename" : "mobs_gull_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_hedgehog",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Hedgehog\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_hedgehog_egg.png",
+						"filename" : "mobs_hedgehog_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_lion",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Lion\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_lion_egg.png",
+						"filename" : "mobs_lion_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_panda",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Panda\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_panda_egg.png",
+						"filename" : "mobs_panda_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_parrot",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Parrot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_parrot_egg.png",
+						"filename" : "mobs_parrot_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_peacock",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Peacock\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_peacock_egg.png",
+						"filename" : "mobs_peacock_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_penguin",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Penguin\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_penguin_egg.png",
+						"filename" : "mobs_penguin_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_pig",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Pig\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_pig_egg.png",
+						"filename" : "mobs_pig_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_rabbit",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Rabbit\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rabbit_egg_inv.png",
+						"filename" : "mobs_rabbit_egg_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_rat",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Rat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rat_egg.png",
+						"filename" : "mobs_rat_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_red_panda",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Red Panda\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_red_panda_egg.png",
+						"filename" : "mobs_red_panda_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_seal",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Seal\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_seal_egg.png",
+						"filename" : "mobs_seal_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_sheep",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Sheep\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_sheep_white_egg.png",
+						"filename" : "mobs_sheep_white_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0,
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_talking_parrot",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Parrot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_parrot_egg.png",
+						"filename" : "mobs_parrot_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_turkey",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Turkey\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_turkey_egg_inv.png",
+						"filename" : "mobs_turkey_egg_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_turtle",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Desert Turtle\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_turtle_desert_egg.png",
+						"filename" : "mobs_turtle_desert_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_turtle_sea",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Sea Turtle\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_turtle_sea_egg.png",
+						"filename" : "mobs_turtle_sea_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_wolf_shepherd",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Wolf\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_wolf_shepherd_egg.png",
+						"filename" : "mobs_wolf_shepherd_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_animals:spawn_wolf_wolfhound",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Wild Wolfhound\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_wolf_wolfhound_egg.png",
+						"filename" : "mobs_wolf_wolfhound_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_camel:spawn_camel",
+			"mod_origin" : "mobs_camel",
+			"name" : "\u001b(T@mobs_camel)Camel\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_camel_egg.png",
+						"filename" : "mobs_camel_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_horse:spawn_deer",
+			"mod_origin" : "mobs_horse",
+			"name" : "\u001b(T@mobs_horse)Deer\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_horse_deer_egg.png",
+						"filename" : "mobs_horse_deer_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_horse:spawn_horse_brown",
+			"mod_origin" : "mobs_horse",
+			"name" : "\u001b(T@mobs_horse)Horse\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_horse_brown_egg.png",
+						"filename" : "mobs_horse_brown_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "mobs_monsters:rotten_flesh",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Rotten Flesh\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_rotten_flesh.png",
+						"filename" : "mobs_monsters_rotten_flesh.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0
+			},
+			"id" : "mobs_monsters:slime",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Slime\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_slime.png",
+						"filename" : "mobs_monsters_slime.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_giant_crab",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Giant Crab\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_giant_crab_egg.png",
+						"filename" : "mobs_monsters_giant_crab_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_mummy",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Mummy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_mummy_egg.png",
+						"filename" : "mobs_monsters_mummy_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_scarecrow",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Scarecrow\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_scarecrow_egg.png",
+						"filename" : "mobs_monsters_scarecrow_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_skeleton",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Skeleton\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_skeleton_egg.png",
+						"filename" : "mobs_monsters_skeleton_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_slug",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Glowing Slug\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_slug_egg.png",
+						"filename" : "mobs_monsters_slug_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_small_spider",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Small Spider\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_spider_small_egg.png",
+						"filename" : "mobs_monsters_spider_small_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_spider",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Spider\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_spider_egg.png",
+						"filename" : "mobs_monsters_spider_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_yeti",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Yeti\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_yeti_egg.png",
+						"filename" : "mobs_monsters_yeti_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_zombie",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Zombie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_zombie_egg.png",
+						"filename" : "mobs_monsters_zombie_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_monsters:spawn_zombie_giant",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Giant Zombie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_zombie_giant_egg.png",
+						"filename" : "mobs_monsters_zombie_giant_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_npc:spawn_npc_man",
+			"mod_origin" : "mobs_npc",
+			"name" : "\u001b(T@mobs_npc)Villager\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_npc_egg.png",
+						"filename" : "mobs_npc_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_npc:spawn_trader",
+			"mod_origin" : "mobs_npc",
+			"name" : "\u001b(T@mobs_npc)Trader\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_trader_egg.png",
+						"filename" : "mobs_trader_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:clownfish",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Clownfish in Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^bucket_river_water.png^mobs_water_clownfish_bucket.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "mobs_water:clownfish_cooked",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Cooked Clownfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_clownfish_cooked.png",
+						"filename" : "mobs_water_clownfish_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_fish_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_water:clownfish_raw",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Raw Clownfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_clownfish_raw.png",
+						"filename" : "mobs_water_clownfish_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0
+			},
+			"id" : "mobs_water:crocodile_leather",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Crocodile Leather\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_crocodile_leather.png",
+						"filename" : "mobs_water_crocodile_leather.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:fish_medium",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Medium Fish in Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^bucket_river_water.png^mobs_water_fish_medium_bucket.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:fish_small",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Small Fish in Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^bucket_river_water.png^mobs_water_fish_small_bucket.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:piranha",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Piranha in Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^bucket_river_water.png^mobs_water_piranha_bucket.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "mobs_water:piranha_cooked",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Cooked Piranha\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_piranha_cooked.png",
+						"filename" : "mobs_water_piranha_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_fish_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_water:piranha_raw",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Raw Piranha\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_piranha_raw.png",
+						"filename" : "mobs_water_piranha_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:salmon",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Salmon in Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^bucket_river_water.png^mobs_water_salmon_bucket.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "mobs_water:salmon_cooked",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Cooked Salmon\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_salmon_cooked.png",
+						"filename" : "mobs_water_salmon_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_fish_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_water:salmon_raw",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Raw Salmon\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_salmon_raw.png",
+						"filename" : "mobs_water_salmon_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:spawn_crocodile",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Crocodile\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_crocodile_egg_inv.png",
+						"filename" : "mobs_water_crocodile_egg_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:spawn_dolphin",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Dolphin\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_dolphin_egg.png",
+						"filename" : "mobs_water_dolphin_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:spawn_frog",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Frog\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_frog_egg_inv.png",
+						"filename" : "mobs_water_frog_egg_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:spawn_giant_jelly",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Giant Jellyfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_giant_jelly_egg.png",
+						"filename" : "mobs_water_giant_jelly_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:spawn_octopus",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Octopus\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_octopus_egg.png",
+						"filename" : "mobs_water_octopus_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:spawn_shark",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Shark\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_shark_egg.png",
+						"filename" : "mobs_water_shark_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_water:spawn_squid",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Squid\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_squid_egg.png",
+						"filename" : "mobs_water_squid_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"spawn_egg" : 1.0
+			},
+			"id" : "mobs_witch:spawn_witch",
+			"mod_origin" : "mobs_witch",
+			"name" : "\u001b(T@mobs_witch)Swamp Witch\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_witch_egg.png",
+						"filename" : "mobs_witch_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"arrow" : 1.0,
+				"flammable" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "nextgen_bows:arrow",
+			"mod_origin" : "nextgen_bows",
+			"name" : "\u001b(T@nextgen_bows)Arrow\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "nextgen_bows_arrow.png",
+						"filename" : "nextgen_bows_arrow.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_blue",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#264bae^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_brown",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#622f13^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_cyan",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#00ede1^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_dark_green",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#006b00^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_green",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#03bc38^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_magenta",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#c714bc^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_orange",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#fd780f^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_pink",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#ff7abc^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_red",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#c90e1a^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_violet",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#8537b2^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_item_yellow",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fireworks_1.png^[multiply:#e9cc0d^fireworks_2.png^[transformR90",
+						"filename" : "fireworks_1.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_node",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "nextgen_bows_arrow_entity.png",
+						"filename" : "nextgen_bows_arrow_entity.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "nextgen_bows:arrow_node_steel",
+			"mod_origin" : "nextgen_bows",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "nextgen_bows_arrow_steel_entity.png",
+						"filename" : "nextgen_bows_arrow_steel_entity.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"arrow" : 1.0,
+				"flammable" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "nextgen_bows:arrow_steel",
+			"mod_origin" : "nextgen_bows",
+			"name" : "\u001b(T@nextgen_bows)Steel Arrow\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "nextgen_bows_arrow_steel.png",
+						"filename" : "nextgen_bows_arrow_steel.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "ocean:pearl",
+			"mod_origin" : "ocean",
+			"name" : "\u001b(T@ocean)Pearl\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "ocean_pearl.png",
+						"filename" : "ocean_pearl.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "ocean_pearl.png",
+						"filename" : "ocean_pearl.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "ocean:seashell",
+			"mod_origin" : "ocean",
+			"name" : "\u001b(T@ocean)Seashell\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "ocean_seashell_inv.png",
+						"filename" : "ocean_seashell_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "ocean_seashell_inv.png",
+						"filename" : "ocean_seashell_inv.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "ocean:seashell_empty",
+			"mod_origin" : "ocean",
+			"name" : "\u001b(T@ocean)Empty Seashell\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "ocean_seashell_empty_inv.png",
+						"filename" : "ocean_seashell_empty_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "ocean_seashell_empty_inv.png",
+						"filename" : "ocean_seashell_empty_inv.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "ocean:starfish",
+			"mod_origin" : "ocean",
+			"name" : "\u001b(T@ocean)Starfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "ocean_starfish_inv.png",
+						"filename" : "ocean_starfish_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "ocean_starfish_inv.png",
+						"filename" : "ocean_starfish_inv.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "ocean:starfish_fried",
+			"mod_origin" : "ocean",
+			"name" : "\u001b(T@ocean)Fried Starfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "ocean_starfish_fried_inv.png",
+						"filename" : "ocean_starfish_fried_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "ocean_starfish_fried_inv.png",
+						"filename" : "ocean_starfish_fried_inv.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0,
+				"quartz_brick_item" : 1.0
+			},
+			"id" : "quartz:quartz_brick_item",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Quartz Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_brick_item.png",
+						"filename" : "quartz_brick_item.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0,
+				"quartz_brick_item" : 1.0
+			},
+			"id" : "quartz:quartz_brick_item_black",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Black Quartz Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_brick_item_black.png",
+						"filename" : "quartz_brick_item_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0,
+				"quartz_brick_item" : 1.0
+			},
+			"id" : "quartz:quartz_brick_item_blue",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Blue Quartz Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_brick_item_blue.png",
+						"filename" : "quartz_brick_item_blue.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0,
+				"quartz_brick_item" : 1.0
+			},
+			"id" : "quartz:quartz_brick_item_green",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Green Quartz Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_brick_item_green.png",
+						"filename" : "quartz_brick_item_green.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0,
+				"quartz_brick_item" : 1.0
+			},
+			"id" : "quartz:quartz_brick_item_grey",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Grey Quartz Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_brick_item_grey.png",
+						"filename" : "quartz_brick_item_grey.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0,
+				"quartz_brick_item" : 1.0
+			},
+			"id" : "quartz:quartz_brick_item_pink",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Pink Quartz Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_brick_item_pink.png",
+						"filename" : "quartz_brick_item_pink.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0,
+				"quartz_brick_item" : 1.0
+			},
+			"id" : "quartz:quartz_brick_item_violet",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Violet Quartz Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_brick_item_violet.png",
+						"filename" : "quartz_brick_item_violet.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"brick_item" : 1.0,
+				"quartz_brick_item" : 1.0
+			},
+			"id" : "quartz:quartz_brick_item_yellow",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Yellow Quartz Brick\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_brick_item_yellow.png",
+						"filename" : "quartz_brick_item_yellow.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "quartz:quartz_crystal",
+			"mod_origin" : "quartz",
+			"name" : "\u001b(T@quartz)Quartz Crystal\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "quartz_crystal.png",
+						"filename" : "quartz_crystal.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"transport" : 1.0
+			},
+			"id" : "raft:large",
+			"mod_origin" : "raft",
+			"name" : "\u001b(T@raft)Raft\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "raft_inv.png",
+						"filename" : "raft_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0
+			},
+			"id" : "stained_glass:piece",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece.png",
+						"filename" : "stained_glass_piece.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_black" : 1.0
+			},
+			"id" : "stained_glass:piece_black",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Black Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_black.png",
+						"filename" : "stained_glass_piece_black.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_white" : 1.0
+			},
+			"id" : "stained_glass:piece_blue",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Blue Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_blue.png",
+						"filename" : "stained_glass_piece_blue.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_warm" : 1.0
+			},
+			"id" : "stained_glass:piece_brown",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Brown Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_brown.png",
+						"filename" : "stained_glass_piece_brown.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_white" : 1.0
+			},
+			"id" : "stained_glass:piece_cyan",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Cyan Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_cyan.png",
+						"filename" : "stained_glass_piece_cyan.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_green" : 1.0
+			},
+			"id" : "stained_glass:piece_dark_green",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Dark Green Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_dark_green.png",
+						"filename" : "stained_glass_piece_dark_green.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_black" : 1.0
+			},
+			"id" : "stained_glass:piece_dark_grey",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Dark Grey Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_dark_grey.png",
+						"filename" : "stained_glass_piece_dark_grey.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_green" : 1.0
+			},
+			"id" : "stained_glass:piece_green",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Green Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_green.png",
+						"filename" : "stained_glass_piece_green.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_black" : 1.0
+			},
+			"id" : "stained_glass:piece_grey",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Grey Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_grey.png",
+						"filename" : "stained_glass_piece_grey.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_violet" : 1.0
+			},
+			"id" : "stained_glass:piece_magenta",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Magenta Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_magenta.png",
+						"filename" : "stained_glass_piece_magenta.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_warm" : 1.0
+			},
+			"id" : "stained_glass:piece_orange",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Orange Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_orange.png",
+						"filename" : "stained_glass_piece_orange.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_violet" : 1.0
+			},
+			"id" : "stained_glass:piece_pink",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Pink Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_pink.png",
+						"filename" : "stained_glass_piece_pink.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_warm" : 1.0
+			},
+			"id" : "stained_glass:piece_red",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Red Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_red.png",
+						"filename" : "stained_glass_piece_red.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_violet" : 1.0
+			},
+			"id" : "stained_glass:piece_violet",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Violet Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_violet.png",
+						"filename" : "stained_glass_piece_violet.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_white" : 1.0
+			},
+			"id" : "stained_glass:piece_white",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of White Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_white.png",
+						"filename" : "stained_glass_piece_white.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"glass_piece" : 1.0,
+				"glass_piece_warm" : 1.0
+			},
+			"id" : "stained_glass:piece_yellow",
+			"mod_origin" : "stained_glass",
+			"name" : "\u001b(T@stained_glass)Piece of Yellow Glass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "stained_glass_piece_yellow.png",
+						"filename" : "stained_glass_piece_yellow.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "summer_furniture:beach_chair_placeholder",
+			"mod_origin" : "summer_furniture",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "summer_furniture_chair_inv.png",
+						"filename" : "summer_furniture_chair_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "summer_furniture_chair_inv.png",
+						"filename" : "summer_furniture_chair_inv.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "summer_furniture:bucket_sand",
+			"mod_origin" : "summer_furniture",
+			"name" : "\u001b(T@summer_furniture)Sand Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "summer_furniture_bucket_sand.png",
+						"filename" : "summer_furniture_bucket_sand.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "summer_furniture_bucket_sand.png",
+						"filename" : "summer_furniture_bucket_sand.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"bucket" : 1.0,
+				"water_bucket" : 1.0
+			},
+			"id" : "swamp_biome:bucket_swamp_water",
+			"mod_origin" : "swamp_biome",
+			"name" : "\u001b(T@swamp_biome)Swamp Water Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^swamp_biome_bucket_swamp_water.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "swamp_biome:duskfloret_flower",
+			"mod_origin" : "swamp_biome",
+			"name" : "\u001b(T@swamp_biome)Duskfloret Flower\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "swamp_biome_duskfloret_flower.png",
+						"filename" : "swamp_biome_duskfloret_flower.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "swamp_biome_duskfloret_flower.png",
+						"filename" : "swamp_biome_duskfloret_flower.png"
+					}
+				]
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"nohit" : 1.0
+			},
+			"id" : "swamp_biome:peat_fertilizer",
+			"mod_origin" : "swamp_biome",
+			"name" : "\u001b(T@swamp_biome)Peat Fertilizer\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "swamp_biome_peat_fertilizer.png",
+						"filename" : "swamp_biome_peat_fertilizer.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 1.0
+			},
+			"id" : "swamp_biome:peat_lump",
+			"mod_origin" : "swamp_biome",
+			"name" : "\u001b(T@swamp_biome)Peat Lump\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "swamp_biome_peat_lump.png",
+						"filename" : "swamp_biome_peat_lump.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : null,
+			"id" : "tnt:gunpowder",
+			"mod_origin" : "tnt",
+			"name" : "\u001b(T@tnt)Gunpowder\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "tnt_gunpowder_inventory.png",
+						"filename" : "tnt_gunpowder_inventory.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "unknown",
+			"mod_origin" : "unknown",
+			"name" : "Unknown Item",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "unknown_item.png",
+						"filename" : "unknown_item.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"transport" : 1.0
+			},
+			"id" : "womens_day_balloons:hot_air_balloon",
+			"mod_origin" : "womens_day_balloons",
+			"name" : "\u001b(T@hot_air_balloon)Hot Air Balloon\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "hot_air_balloon_inv.png",
+						"filename" : "hot_air_balloon_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "womens_day_balloons:hot_air_balloon_ballast",
+			"mod_origin" : "womens_day_balloons",
+			"name" : "\u001b(T@hot_air_balloon)Hot Air Balloon Ballast\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "hot_air_balloon_ballast_inv.png",
+						"filename" : "hot_air_balloon_ballast_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "womens_day_balloons:hot_air_balloon_basket",
+			"mod_origin" : "womens_day_balloons",
+			"name" : "\u001b(T@hot_air_balloon)Hot Air Balloon Basket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "hot_air_balloon_basket_inv.png",
+						"filename" : "hot_air_balloon_basket_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		},
+		{
+			"groups" : 
+			{
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "womens_day_balloons:hot_air_balloon_shell",
+			"mod_origin" : "womens_day_balloons",
+			"name" : "\u001b(T@hot_air_balloon)Hot Air Balloon Shell\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "hot_air_balloon_shell_inv.png",
+						"filename" : "hot_air_balloon_shell_inv.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "item"
+		}
+	],
+	"exported_at" : "2026-10-24T17:04:01Z",
+	"format_version" : 1.0
+}

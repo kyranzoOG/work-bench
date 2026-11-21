@@ -1,0 +1,211 @@
+import type { BrushPreset, LuantiNodeItem } from '../types/brush';
+
+export const TERRAFORM_SHAPES = [
+  { value: 'sphere', label: 'Sphere', summary: 'Uniform radial brush' },
+  { value: 'cube', label: 'Cube', summary: 'Axis-aligned voxel box' },
+  { value: 'cylinder', label: 'Cylinder', summary: 'Vertical flat-cap column' },
+  { value: 'dome', label: 'Dome', summary: 'Upper hemisphere shell' },
+  { value: 'cone', label: 'Cone', summary: 'Tapered spire volume' },
+  { value: 'pyramid', label: 'Pyramid', summary: 'Stepped square taper' },
+  { value: 'disc', label: 'Disc', summary: 'Single-layer planar sweep' },
+  { value: 'line', label: 'Line', summary: 'Directional ray extrusion' },
+];
+
+export const TERRAFORM_MASKS = [
+  { value: 'none', label: 'None (Replace All)' },
+  { value: 'air', label: 'Air Only (air)' },
+  { value: 'surface', label: 'Exposed Surface (surface)' },
+  { value: 'solid', label: 'Solid Nodes Only (solid)' },
+  { value: 'liquid', label: 'Liquids Only (liquid)' },
+  { value: '!air', label: 'Non-Air Only (!air)' },
+  { value: 'custom', label: 'Custom Node Filter' },
+];
+
+export const TERRAFORM_MODIFIER_FLAGS = [
+  { flag: '-hollow', label: 'Hollow', hint: 'Shell perimeter only' },
+  { flag: '-surface', label: 'Surface', hint: 'Paint top exposure' },
+  { flag: '-smooth', label: 'Smooth', hint: 'Blend jagged terrain' },
+  { flag: '-natural', label: 'Natural', hint: 'Organic falloff noise' },
+  { flag: '-erode', label: 'Erode', hint: 'Carve weathered edges' },
+  { flag: '-noisy', label: 'Noisy', hint: 'Perturb radius edge' },
+  { flag: '-scatter', label: 'Scatter', hint: 'Sparse node placement' },
+];
+
+export const WORLDEDIT_COMMANDS = [
+  { value: '//brush', label: '//brush — Bind active brush' },
+  { value: '//sphere', label: '//sphere — Solid sphere at pos1' },
+  { value: '//hollowsphere', label: '//hollowsphere — Hollow sphere' },
+  { value: '//dome', label: '//dome — Solid hemisphere dome' },
+  { value: '//hollowdome', label: '//hollowdome — Hollow dome shell' },
+  { value: '//cylinder', label: '//cylinder — Vertical cylinder' },
+  { value: '//hollowcylinder', label: '//hollowcylinder — Hollow cylinder' },
+  { value: '//pyramid', label: '//pyramid — Stepped pyramid' },
+  { value: '//cube', label: '//cube — Centered cube volume' },
+  { value: '//hollowcube', label: '//hollowcube — Hollow cube shell' },
+  { value: '//set', label: '//set — Fill region with node' },
+  { value: '//replace', label: '//replace — Swap target nodes' },
+  { value: '//mix', label: '//mix — Blend region nodes' },
+  { value: '//smooth', label: '//smooth — Terrain pass' },
+  { value: '//dig', label: '//dig — Clear selection to air' },
+];
+
+export const WORLDEDIT_SHAPES = [
+  { value: 'sphere', label: 'Sphere' },
+  { value: 'cube', label: 'Cube' },
+  { value: 'cylinder', label: 'Cylinder' },
+  { value: 'dome', label: 'Dome' },
+  { value: 'pyramid', label: 'Pyramid' },
+  { value: 'selection', label: 'Region Selection' },
+];
+
+export const WORLDEDIT_MODIFIER_FLAGS = [
+  { flag: '-h', label: '-h Hollow', hint: 'Generate hollow shell' },
+  { flag: '-a', label: '-a Ignore Air', hint: 'Skip air nodes' },
+  { flag: '-s', label: '-s Surface', hint: 'Exposed faces only' },
+  { flag: '-p', label: '-p Preserve', hint: 'Keep existing solid' },
+  { flag: '-r', label: '-r Randomize', hint: 'Weighted mix noise' },
+];
+
+export const BRUSH_PRESETS: BrushPreset[] = [
+  {
+    id: 'mountain-sculpt',
+    name: 'Mountain Sculptor',
+    category: 'Terrain',
+    description: 'Large organic stone sphere with natural falloff for rapid ridge shaping.',
+    mode: 'terraform',
+    iconKey: 'mountain',
+    terraform: {
+      target: 'default:stone',
+      shape: 'sphere',
+      mask: 'air',
+      customMaskNode: '',
+      size: 12,
+      modifiers: '-natural -smooth',
+    },
+  },
+  {
+    id: 'cavern-carve',
+    name: 'Cavern Carve',
+    category: 'Excavation',
+    description: 'Hollow out underground chambers while preserving exterior crust.',
+    mode: 'terraform',
+    iconKey: 'cavern',
+    terraform: {
+      target: 'air',
+      shape: 'sphere',
+      mask: 'solid',
+      customMaskNode: '',
+      size: 9,
+      modifiers: '-noisy -erode',
+    },
+  },
+  {
+    id: 'riverbed-smooth',
+    name: 'Riverbed Smooth',
+    category: 'Hydrology',
+    description: 'Flatten and blend shoreline gravel along river channels.',
+    mode: 'terraform',
+    iconKey: 'river',
+    terraform: {
+      target: 'default:gravel',
+      shape: 'disc',
+      mask: 'surface',
+      customMaskNode: '',
+      size: 8,
+      modifiers: '-surface -smooth',
+    },
+  },
+  {
+    id: 'sandstone-dome',
+    name: 'Sandstone Dome',
+    category: 'Architecture',
+    description: 'Hollow sandstone cupola generated directly via WorldEdit.',
+    mode: 'worldedit',
+    iconKey: 'dome',
+    worldedit: {
+      command: '//hollowdome',
+      shape: 'dome',
+      params: '14 default:sandstone',
+      modifiers: '-h',
+    },
+  },
+  {
+    id: 'castle-wall-mix',
+    name: 'Castle Wall Mix',
+    category: 'Masonry',
+    description: 'Weathered cobble and stone brick blend across selected walls.',
+    mode: 'worldedit',
+    iconKey: 'wall',
+    worldedit: {
+      command: '//mix',
+      shape: 'selection',
+      params: 'default:cobble 60% default:stonebrick 40%',
+      modifiers: '-r',
+    },
+  },
+  {
+    id: 'meadow-scatter',
+    name: 'Meadow Scatter',
+    category: 'Foliage',
+    description: 'Lightly scatter grass turf onto exposed terrain surfaces.',
+    mode: 'terraform',
+    iconKey: 'scatter',
+    terraform: {
+      target: 'default:dirt_with_grass',
+      shape: 'disc',
+      mask: 'surface',
+      customMaskNode: '',
+      size: 10,
+      modifiers: '-surface -scatter',
+    },
+  },
+  {
+    id: 'obsidian-spire',
+    name: 'Obsidian Spire',
+    category: 'Landmark',
+    description: 'Tall tapered basalt-obsidian cone for dramatic volcanic peaks.',
+    mode: 'terraform',
+    iconKey: 'spire',
+    terraform: {
+      target: 'default:obsidian',
+      shape: 'cone',
+      mask: 'none',
+      customMaskNode: '',
+      size: 7,
+      modifiers: '-natural',
+    },
+  },
+  {
+    id: 'glass-shell',
+    name: 'Glass Bio-Shell',
+    category: 'Structure',
+    description: 'Thin transparent glass sphere skipping existing solid terrain.',
+    mode: 'worldedit',
+    iconKey: 'shell',
+    worldedit: {
+      command: '//brush',
+      shape: 'sphere',
+      params: '10 default:glass',
+      modifiers: '-h -p',
+    },
+  },
+];
+
+export const LUANTI_NODES: LuantiNodeItem[] = [
+  { id: 'default:stone', label: 'Stone', group: 'Stone' },
+  { id: 'default:cobble', label: 'Cobble', group: 'Stone' },
+  { id: 'default:stonebrick', label: 'Stone Brick', group: 'Structure' },
+  { id: 'default:obsidian', label: 'Obsidian', group: 'Stone' },
+  { id: 'default:dirt_with_grass', label: 'Grass Dirt', group: 'Terrain' },
+  { id: 'default:dirt', label: 'Dirt', group: 'Terrain' },
+  { id: 'default:sand', label: 'Sand', group: 'Terrain' },
+  { id: 'default:desert_sand', label: 'Desert Sand', group: 'Terrain' },
+  { id: 'default:gravel', label: 'Gravel', group: 'Terrain' },
+  { id: 'default:sandstone', label: 'Sandstone', group: 'Structure' },
+  { id: 'default:snowblock', label: 'Snow Block', group: 'Terrain' },
+  { id: 'default:ice', label: 'Ice', group: 'Fluid' },
+  { id: 'default:water_source', label: 'Water Source', group: 'Fluid' },
+  { id: 'default:glass', label: 'Glass', group: 'Structure' },
+  { id: 'default:wood', label: 'Wood Planks', group: 'Structure' },
+  { id: 'air', label: 'Air (Carve)', group: 'Fluid' },
+];

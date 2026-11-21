@@ -1,0 +1,3967 @@
+{
+	"category" : "food",
+	"count" : 126.0,
+	"entries" : 
+	[
+		{
+			"groups" : 
+			{
+				"attached_node" : 1.0,
+				"flammable" : 1.0,
+				"flora" : 1.0,
+				"food" : 1.0,
+				"food_mushroom" : 1.0,
+				"mushroom" : 1.0,
+				"nohit" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "autumn:mushroom_golden",
+			"mod_origin" : "autumn",
+			"name" : "\u001b(T@autumn)Golden Mushroom\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "autumn_mushroom_golden.png",
+						"filename" : "autumn_mushroom_golden.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "autumn_mushroom_golden.png",
+						"filename" : "autumn_mushroom_golden.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "beach_biome:coconut_milk",
+			"mod_origin" : "beach_biome",
+			"name" : "\u001b(T@beach_biome)Coconut Milk\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "beach_biome_coconut_milk.png",
+						"filename" : "beach_biome_coconut_milk.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"vessel" : 1.0
+			},
+			"id" : "bees:honey_bottle",
+			"mod_origin" : "bees",
+			"name" : "\u001b(T@bees)Honey Bottle\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bees_honey_bottle.png",
+						"filename" : "bees_honey_bottle.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"vessel" : 1.0
+			},
+			"id" : "bees:jar_empty",
+			"mod_origin" : "bees",
+			"name" : "\u001b(T@bees)Empty Jar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bees_jar_empty.png",
+						"filename" : "bees_jar_empty.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"vessel" : 1.0
+			},
+			"id" : "bees:jar_honey",
+			"mod_origin" : "bees",
+			"name" : "\u001b(T@bees)Honey Jar\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bees_jar_honey.png",
+						"filename" : "bees_jar_honey.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_milk" : 1.0
+			},
+			"id" : "bucket:bucket_milk",
+			"mod_origin" : "bucket",
+			"name" : "\u001b(T@mobs_animals)Milk Bucket\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "bucket.png^mobs_bucket_milk.png",
+						"filename" : "bucket.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"apple" : 1.0,
+				"dig_immediate" : 3.0,
+				"flammable" : 2.0,
+				"fleshy" : 3.0,
+				"food" : 1.0,
+				"leafdecay" : 3.0,
+				"leafdecay_drop" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "default:apple",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Red Apple\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_apple.png",
+						"filename" : "default_apple.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "default_apple.png",
+						"filename" : "default_apple.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"cracky" : 2.0,
+				"dig_immediate" : 1.0,
+				"flammable" : 2.0,
+				"fleshy" : 3.0,
+				"food" : 1.0
+			},
+			"id" : "default:apple_gold",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Golden Apple\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_apple_gold.png",
+						"filename" : "default_apple_gold.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "default_apple_gold.png",
+						"filename" : "default_apple_gold.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"apple" : 1.0,
+				"dig_immediate" : 3.0,
+				"flammable" : 2.0,
+				"fleshy" : 3.0,
+				"food" : 1.0,
+				"leafdecay" : 3.0,
+				"leafdecay_drop" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "default:apple_green",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Green Apple\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_apple_green.png",
+						"filename" : "default_apple_green.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "default_apple_green.png",
+						"filename" : "default_apple_green.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_berry" : 1.0,
+				"food_blueberries" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "default:blueberries",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default)Blueberries\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_blueberries.png",
+						"filename" : "default_blueberries.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "default:fish",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@mobs_water)Cooked Fish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_fish_cooked.png",
+						"filename" : "mobs_water_fish_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_fish_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "default:fish_raw",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@mobs_water)Raw Fish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_fish_raw.png",
+						"filename" : "mobs_water_fish_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"dig_immediate" : 3.0,
+				"flammable" : 2.0,
+				"fleshy" : 3.0,
+				"food" : 1.0
+			},
+			"id" : "default:mandarin",
+			"mod_origin" : "default",
+			"name" : "\u001b(T@default_extended)Mandarin\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "default_extended_mandarin.png",
+						"filename" : "default_extended_mandarin.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "default_extended_mandarin.png",
+						"filename" : "default_extended_mandarin.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_bread" : 1.0
+			},
+			"id" : "farming:bread",
+			"mod_origin" : "farming",
+			"name" : "\u001b(T@farming_plants)Bread\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_bread.png",
+						"filename" : "farming_bread.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "farming_plants:bowl",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Soup Bowl\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_bowl.png",
+						"filename" : "farming_bowl.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_bowl.png",
+						"filename" : "farming_plants_bowl.png"
+					},
+					{
+						"expression" : "blank.png",
+						"filename" : "blank.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 1.0
+			},
+			"id" : "farming_plants:bowl_soup_chicken",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Chicken Soup Bowl\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_bowl.png^farming_plants_soup_chicken_inv.png",
+						"filename" : "farming_bowl.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_bowl.png",
+						"filename" : "farming_plants_bowl.png"
+					},
+					{
+						"expression" : "farming_plants_soup_chicken.png",
+						"filename" : "farming_plants_soup_chicken.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 1.0
+			},
+			"id" : "farming_plants:bowl_soup_corn",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Corn Chowder Bowl\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_bowl.png^farming_plants_soup_corn_inv.png",
+						"filename" : "farming_bowl.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_bowl.png",
+						"filename" : "farming_plants_bowl.png"
+					},
+					{
+						"expression" : "farming_plants_soup_corn.png",
+						"filename" : "farming_plants_soup_corn.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 1.0
+			},
+			"id" : "farming_plants:bowl_soup_pork",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Pork Soup Bowl\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_bowl.png^farming_plants_soup_pork_inv.png",
+						"filename" : "farming_bowl.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_bowl.png",
+						"filename" : "farming_plants_bowl.png"
+					},
+					{
+						"expression" : "farming_plants_soup_pork.png",
+						"filename" : "farming_plants_soup_pork.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 1.0
+			},
+			"id" : "farming_plants:bowl_soup_rabbit",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Rabbit Soup Bowl\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_bowl.png^farming_plants_soup_rabbit_inv.png",
+						"filename" : "farming_bowl.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_bowl.png",
+						"filename" : "farming_plants_bowl.png"
+					},
+					{
+						"expression" : "farming_plants_soup_rabbit.png",
+						"filename" : "farming_plants_soup_rabbit.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 1.0
+			},
+			"id" : "farming_plants:bowl_soup_vegetable",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Vegetable Soup Bowl\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_bowl.png^farming_plants_soup_vegetable_inv.png",
+						"filename" : "farming_bowl.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_bowl.png",
+						"filename" : "farming_plants_bowl.png"
+					},
+					{
+						"expression" : "farming_plants_soup_vegetable.png",
+						"filename" : "farming_plants_soup_vegetable.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:carrot",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Carrot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_carrot.png",
+						"filename" : "farming_plants_carrot.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:carrot_golden",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Golden Carrot\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_carrot_golden.png",
+						"filename" : "farming_plants_carrot_golden.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:chocolate",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Chocolate\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_chocolate.png",
+						"filename" : "farming_plants_chocolate.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:cookie",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Cookie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_cookie.png",
+						"filename" : "farming_plants_cookie.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:corn",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Corn\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_corn.png",
+						"filename" : "farming_plants_corn.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:corn_baked",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Baked Corn\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_corn_baked.png",
+						"filename" : "farming_plants_corn_baked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:cotton",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Cotton\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_cotton.png",
+						"filename" : "farming_plants_cotton.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:cucumber",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Cucumber\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_cucumber.png",
+						"filename" : "farming_plants_cucumber.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:melon",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Melon Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_melon.png",
+						"filename" : "farming_plants_melon.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"fall_damage_add_percent" : -30.0,
+				"falling_node" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"not_cuttable" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "farming_plants:melon_fruit",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Melon\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_melon_fruit_top.png^farming_plants_melon_fruit_top_normal.png",
+						"filename" : "farming_plants_melon_fruit_top.png"
+					},
+					{
+						"expression" : "farming_plants_melon_fruit_top.png",
+						"filename" : "farming_plants_melon_fruit_top.png"
+					},
+					{
+						"expression" : "farming_plants_melon_fruit_side.png",
+						"filename" : "farming_plants_melon_fruit_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"fall_damage_add_percent" : -30.0,
+				"falling_node" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"not_cuttable" : 1.0,
+				"not_in_creative_inventory" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "farming_plants:melon_fruit_attached",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Melon\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_melon_fruit_top.png^farming_plants_melon_fruit_top_attached.png",
+						"filename" : "farming_plants_melon_fruit_top.png"
+					},
+					{
+						"expression" : "farming_plants_melon_fruit_top.png",
+						"filename" : "farming_plants_melon_fruit_top.png"
+					},
+					{
+						"expression" : "[combine:64x64:0,-16=farming_plants_melon_fruit_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:potato",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Potato\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_potato.png",
+						"filename" : "farming_plants_potato.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:potato_baked",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Baked Potato\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_potato_baked.png",
+						"filename" : "farming_plants_potato_baked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:potato_poisonous",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Poisonous Potato\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_potato_poisonous.png",
+						"filename" : "farming_plants_potato_poisonous.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:pumpkin",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Pumpkin Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin.png",
+						"filename" : "farming_plants_pumpkin.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:pumpkin_backed",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Baked Pumpkin Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin_backed.png",
+						"filename" : "farming_plants_pumpkin_backed.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"fall_damage_add_percent" : -30.0,
+				"falling_node" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"not_cuttable" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "farming_plants:pumpkin_fruit",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Pumpkin\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin_top.png^farming_plants_pumpkin_top_normal.png",
+						"filename" : "farming_plants_pumpkin_top.png"
+					},
+					{
+						"expression" : "farming_plants_pumpkin_top.png",
+						"filename" : "farming_plants_pumpkin_top.png"
+					},
+					{
+						"expression" : "farming_plants_pumpkin_side.png",
+						"filename" : "farming_plants_pumpkin_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"fall_damage_add_percent" : -30.0,
+				"falling_node" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"not_cuttable" : 1.0,
+				"not_in_creative_inventory" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "farming_plants:pumpkin_fruit_attached",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Pumpkin\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin_top.png^farming_plants_pumpkin_top_attached.png",
+						"filename" : "farming_plants_pumpkin_top.png"
+					},
+					{
+						"expression" : "farming_plants_pumpkin_top.png",
+						"filename" : "farming_plants_pumpkin_top.png"
+					},
+					{
+						"expression" : "farming_plants_pumpkin_side.png",
+						"filename" : "farming_plants_pumpkin_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:seed_sunflower_fried",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Fried Sunflower Seeds\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_sunflower_seed_fried.png",
+						"filename" : "farming_plants_sunflower_seed_fried.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"food_berry" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:strawberry",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Strawberry\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_strawberry.png",
+						"filename" : "farming_plants_strawberry.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "farming_plants:tomato",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Tomato\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_tomato.png",
+						"filename" : "farming_plants_tomato.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"farming" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "farming_plants:watermelon",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Watermelon Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_watermelon.png",
+						"filename" : "farming_plants_watermelon.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"fall_damage_add_percent" : -30.0,
+				"falling_node" : 1.0,
+				"flammable" : 4.0,
+				"food" : 1.0,
+				"not_cuttable" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "farming_plants:watermelon_fruit",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Watermelon\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_watermelon_fruit_top.png",
+						"filename" : "farming_plants_watermelon_fruit_top.png"
+					},
+					{
+						"expression" : "farming_plants_watermelon_fruit_top.png",
+						"filename" : "farming_plants_watermelon_fruit_top.png"
+					},
+					{
+						"expression" : "farming_plants_watermelon_fruit_side.png",
+						"filename" : "farming_plants_watermelon_fruit_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "farming_plants:watermelon_golden",
+			"mod_origin" : "farming_plants",
+			"name" : "\u001b(T@farming_plants)Golden Watermelon Slice\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "farming_plants_watermelon_golden.png",
+						"filename" : "farming_plants_watermelon_golden.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"attached_node" : 1.0,
+				"choppy" : 2.0,
+				"dig_immediate" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "flat_bowl:bowl",
+			"mod_origin" : "flat_bowl",
+			"name" : "\u001b(T@flat_bowl)Food Bowl\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "flat_bowl_inv.png",
+						"filename" : "flat_bowl_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "flat_bowl.png",
+						"filename" : "flat_bowl.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "flat_bowl_inv.png",
+						"filename" : "flat_bowl_inv.png"
+					}
+				]
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"attached_node" : 1.0,
+				"flammable" : 1.0,
+				"flora" : 1.0,
+				"food" : 1.0,
+				"food_mushroom" : 1.0,
+				"mushroom" : 1.0,
+				"nohit" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "flowers:mushroom_brown",
+			"mod_origin" : "flowers",
+			"name" : "\u001b(T@flowers)Brown Mushroom\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "flowers_mushroom_brown.png",
+						"filename" : "flowers_mushroom_brown.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "flowers_mushroom_brown.png",
+						"filename" : "flowers_mushroom_brown.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"attached_node" : 1.0,
+				"flammable" : 1.0,
+				"flora" : 1.0,
+				"food" : 1.0,
+				"food_mushroom" : 1.0,
+				"mushroom" : 1.0,
+				"nohit" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "flowers:mushroom_chanterelle",
+			"mod_origin" : "flowers",
+			"name" : "\u001b(T@flowers)Chanterelle Mushroom\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "flowers_mushroom_chanterelle.png",
+						"filename" : "flowers_mushroom_chanterelle.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "flowers_mushroom_chanterelle.png",
+						"filename" : "flowers_mushroom_chanterelle.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"attached_node" : 1.0,
+				"flammable" : 1.0,
+				"flora" : 1.0,
+				"food" : 1.0,
+				"mushroom" : 1.0,
+				"nohit" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "flowers:mushroom_red",
+			"mod_origin" : "flowers",
+			"name" : "\u001b(T@flowers)Red Mushroom\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "flowers_mushroom_red.png",
+						"filename" : "flowers_mushroom_red.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "flowers_mushroom_red.png",
+						"filename" : "flowers_mushroom_red.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default",
+			"mod_origin" : "fruit_drinks",
+			"name" : "\u001b(T@fruit_drinks)Mug for Drinks\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_inv.png",
+						"filename" : "fruit_drinks_default_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default.png",
+						"filename" : "fruit_drinks_default.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_preparing_apple_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_apple.png",
+						"filename" : "fruit_drinks_default_apple.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_preparing_blueberries_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_blueberries.png",
+						"filename" : "fruit_drinks_default_blueberries.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_preparing_chocolate_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_chocolate.png",
+						"filename" : "fruit_drinks_default_chocolate.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_preparing_mandarin_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_mandarin.png",
+						"filename" : "fruit_drinks_default_mandarin.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_preparing_strawberry_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_strawberry.png",
+						"filename" : "fruit_drinks_default_strawberry.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_ready_apple_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "\u001b(T@fruit_drinks)Apple Drink\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_apple_inv.png",
+						"filename" : "fruit_drinks_default_apple_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_apple.png",
+						"filename" : "fruit_drinks_default_apple.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_ready_blueberries_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "\u001b(T@fruit_drinks)Blueberries Drink\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_blueberries_inv.png",
+						"filename" : "fruit_drinks_default_blueberries_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_blueberries.png",
+						"filename" : "fruit_drinks_default_blueberries.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_ready_chocolate_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "\u001b(T@fruit_drinks)Chocolate Drink\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_chocolate_inv.png",
+						"filename" : "fruit_drinks_default_chocolate_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_chocolate.png",
+						"filename" : "fruit_drinks_default_chocolate.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_ready_mandarin_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "\u001b(T@fruit_drinks)Mandarin Drink\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_mandarin_inv.png",
+						"filename" : "fruit_drinks_default_mandarin_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_mandarin.png",
+						"filename" : "fruit_drinks_default_mandarin.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "fruit_drinks:default_ready_strawberry_drink",
+			"mod_origin" : "fruit_drinks",
+			"name" : "\u001b(T@fruit_drinks)Strawberry Drink\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_strawberry_inv.png",
+						"filename" : "fruit_drinks_default_strawberry_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "fruit_drinks_default_strawberry.png",
+						"filename" : "fruit_drinks_default_strawberry.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 2.0,
+				"halloween_candy" : 1.0
+			},
+			"id" : "halloween_candy:candy_apple",
+			"mod_origin" : "halloween_candy",
+			"name" : "\u001b(T@halloween_candy)Apple Candy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_candy_apple.png",
+						"filename" : "halloween_candy_candy_apple.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 2.0,
+				"halloween_candy" : 1.0
+			},
+			"id" : "halloween_candy:candy_blueberry",
+			"mod_origin" : "halloween_candy",
+			"name" : "\u001b(T@halloween_candy)Blueberry Candy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_candy_blueberry.png",
+						"filename" : "halloween_candy_candy_blueberry.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 2.0,
+				"halloween_candy" : 1.0
+			},
+			"id" : "halloween_candy:candy_pumpkin",
+			"mod_origin" : "halloween_candy",
+			"name" : "\u001b(T@halloween_candy)Pumpkin Candy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_candy_pumpkin.png",
+						"filename" : "halloween_candy_candy_pumpkin.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 2.0,
+				"halloween_candy" : 1.0
+			},
+			"id" : "halloween_candy:candy_strawberry",
+			"mod_origin" : "halloween_candy",
+			"name" : "\u001b(T@halloween_candy)Strawberry Candy\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_candy_candy_strawberry.png",
+						"filename" : "halloween_candy_candy_strawberry.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "halloween_stuff:pumpkin_mug",
+			"mod_origin" : "halloween_stuff",
+			"name" : "\u001b(T@halloween_stuff)Pumpkin Mug for Drinks\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_stuff_pumpkin_mug.png",
+						"filename" : "halloween_stuff_pumpkin_mug.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin_side.png",
+						"filename" : "farming_plants_pumpkin_side.png"
+					},
+					{
+						"expression" : "farming_plants_pumpkin_top.png",
+						"filename" : "farming_plants_pumpkin_top.png"
+					},
+					{
+						"expression" : "halloween_stuff_pumpkin_lamp_small_face.png",
+						"filename" : "halloween_stuff_pumpkin_lamp_small_face.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "halloween_stuff:pumpkin_mug_preparing_pumpkin_drink",
+			"mod_origin" : "halloween_stuff",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin_side.png",
+						"filename" : "farming_plants_pumpkin_side.png"
+					},
+					{
+						"expression" : "farming_plants_pumpkin_top.png",
+						"filename" : "farming_plants_pumpkin_top.png"
+					},
+					{
+						"expression" : "halloween_stuff_pumpkin_lamp_small_face.png",
+						"filename" : "halloween_stuff_pumpkin_lamp_small_face.png"
+					},
+					{
+						"expression" : "halloween_stuff_pumpkin_drink.png",
+						"filename" : "halloween_stuff_pumpkin_drink.png"
+					},
+					{
+						"expression" : "halloween_stuff_pumpkin_drink_liquid.png",
+						"filename" : "halloween_stuff_pumpkin_drink_liquid.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"oddly_breakable_by_hand" : 3.0
+			},
+			"id" : "halloween_stuff:pumpkin_mug_ready_pumpkin_drink",
+			"mod_origin" : "halloween_stuff",
+			"name" : "\u001b(T@halloween_stuff)Pumpkin Drink\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "halloween_stuff_pumpkin_drink_inv.png",
+						"filename" : "halloween_stuff_pumpkin_drink_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "farming_plants_pumpkin_side.png",
+						"filename" : "farming_plants_pumpkin_side.png"
+					},
+					{
+						"expression" : "farming_plants_pumpkin_top.png",
+						"filename" : "farming_plants_pumpkin_top.png"
+					},
+					{
+						"expression" : "halloween_stuff_pumpkin_drink_liquid.png",
+						"filename" : "halloween_stuff_pumpkin_drink_liquid.png"
+					},
+					{
+						"expression" : "halloween_stuff_pumpkin_drink.png",
+						"filename" : "halloween_stuff_pumpkin_drink.png"
+					},
+					{
+						"expression" : "halloween_stuff_pumpkin_lamp_small_face.png",
+						"filename" : "halloween_stuff_pumpkin_lamp_small_face.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "kitchen_furniture:toast",
+			"mod_origin" : "kitchen_furniture",
+			"name" : "\u001b(T@kitchen_furniture)Toast\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "kitchen_furniture_toast.png",
+						"filename" : "kitchen_furniture_toast.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs:meat",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Cooked Meat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_meat.png",
+						"filename" : "mobs_meat.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs:meat_raw",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Raw Meat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_meat_raw.png",
+						"filename" : "mobs_meat_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs:pork",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Cooked Pork\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_pork_cooked.png",
+						"filename" : "mobs_pork_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs:pork_raw",
+			"mod_origin" : "mobs",
+			"name" : "\u001b(T@mobs_common)Raw Pork\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_pork_raw.png",
+						"filename" : "mobs_pork_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_cheese" : 1.0
+			},
+			"id" : "mobs_animals:cheese",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cheese\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_cheese.png",
+						"filename" : "mobs_cheese.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "mobs_cheese_wield.png",
+						"filename" : "mobs_cheese_wield.png"
+					}
+				]
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_chicken" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs_animals:chicken_cooked",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cooked Chicken\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_cooked.png",
+						"filename" : "mobs_chicken_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"egg" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "mobs_animals:chicken_egg",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Egg\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_egg.png",
+						"filename" : "mobs_chicken_egg.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "mobs_animals:chicken_egg_fried",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Fried Egg\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_egg_fried.png",
+						"filename" : "mobs_chicken_egg_fried.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_chicken_raw" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_animals:chicken_raw",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Raw Chicken\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_chicken_raw.png",
+						"filename" : "mobs_chicken_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "mobs_animals:crab_meat_fried",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Fried Crab Meat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_crab_meat_fried.png",
+						"filename" : "mobs_crab_meat_fried.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0,
+				"wieldview" : 2.0
+			},
+			"id" : "mobs_animals:crab_meat_raw",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Raw Crab Meat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_crab_meat_raw.png",
+						"filename" : "mobs_crab_meat_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs_animals:lamb",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cooked Lamb\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_lamb.png",
+						"filename" : "mobs_lamb.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_animals:lamb_raw",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Raw Lamb\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_lamb_raw.png",
+						"filename" : "mobs_lamb_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs_animals:rabbit_cooked",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Cooked Rabbit\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rabbit_cooked.png",
+						"filename" : "mobs_rabbit_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_animals:rabbit_raw",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Raw Rabbit\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rabbit_raw.png",
+						"filename" : "mobs_rabbit_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_animals:rat_dead",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Rat Carcass\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rat_dead.png",
+						"filename" : "mobs_rat_dead.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0,
+				"food_meat" : 1.0
+			},
+			"id" : "mobs_animals:rat_fried",
+			"mod_origin" : "mobs_animals",
+			"name" : "\u001b(T@mobs_animals)Fried Rat\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_rat_fried.png",
+						"filename" : "mobs_rat_fried.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "mobs_monsters:rotten_flesh",
+			"mod_origin" : "mobs_monsters",
+			"name" : "\u001b(T@mobs_monsters)Rotten Flesh\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_monsters_rotten_flesh.png",
+						"filename" : "mobs_monsters_rotten_flesh.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "mobs_water:clownfish_cooked",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Cooked Clownfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_clownfish_cooked.png",
+						"filename" : "mobs_water_clownfish_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_fish_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_water:clownfish_raw",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Raw Clownfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_clownfish_raw.png",
+						"filename" : "mobs_water_clownfish_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "mobs_water:piranha_cooked",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Cooked Piranha\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_piranha_cooked.png",
+						"filename" : "mobs_water_piranha_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_fish_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_water:piranha_raw",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Raw Piranha\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_piranha_raw.png",
+						"filename" : "mobs_water_piranha_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0
+			},
+			"id" : "mobs_water:salmon_cooked",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Cooked Salmon\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_salmon_cooked.png",
+						"filename" : "mobs_water_salmon_cooked.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"food" : 1.0,
+				"food_fish_raw" : 1.0,
+				"nohit" : 1.0
+			},
+			"id" : "mobs_water:salmon_raw",
+			"mod_origin" : "mobs_water",
+			"name" : "\u001b(T@mobs_water)Raw Salmon\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "mobs_water_salmon_raw.png",
+						"filename" : "mobs_water_salmon_raw.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "ocean:starfish",
+			"mod_origin" : "ocean",
+			"name" : "\u001b(T@ocean)Starfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "ocean_starfish_inv.png",
+						"filename" : "ocean_starfish_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "ocean_starfish_inv.png",
+						"filename" : "ocean_starfish_inv.png"
+					}
+				]
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"flammable" : 2.0,
+				"food" : 1.0
+			},
+			"id" : "ocean:starfish_fried",
+			"mod_origin" : "ocean",
+			"name" : "\u001b(T@ocean)Fried Starfish\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "ocean_starfish_fried_inv.png",
+						"filename" : "ocean_starfish_fried_inv.png"
+					}
+				],
+				"wield_image" : 
+				[
+					{
+						"expression" : "ocean_starfish_fried_inv.png",
+						"filename" : "ocean_starfish_fried_inv.png"
+					}
+				]
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "pie:apple_0",
+			"mod_origin" : "pie",
+			"name" : "\u001b(T@pie)Apple Pie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "pie_apple_inv.png",
+						"filename" : "pie_apple_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_apple_top.png",
+						"filename" : "pie_apple_top.png"
+					},
+					{
+						"expression" : "pie_apple_bottom.png",
+						"filename" : "pie_apple_bottom.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:apple_1",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_apple_top.png",
+						"filename" : "pie_apple_top.png"
+					},
+					{
+						"expression" : "pie_apple_bottom.png",
+						"filename" : "pie_apple_bottom.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_inside.png",
+						"filename" : "pie_apple_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:apple_2",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_apple_top.png",
+						"filename" : "pie_apple_top.png"
+					},
+					{
+						"expression" : "pie_apple_bottom.png",
+						"filename" : "pie_apple_bottom.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_inside.png",
+						"filename" : "pie_apple_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:apple_3",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_apple_top.png",
+						"filename" : "pie_apple_top.png"
+					},
+					{
+						"expression" : "pie_apple_bottom.png",
+						"filename" : "pie_apple_bottom.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_side.png",
+						"filename" : "pie_apple_side.png"
+					},
+					{
+						"expression" : "pie_apple_inside.png",
+						"filename" : "pie_apple_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "pie:blueberry_0",
+			"mod_origin" : "pie",
+			"name" : "\u001b(T@pie)Blueberry Pie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "pie_blueberry_inv.png",
+						"filename" : "pie_blueberry_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_blueberry_top.png",
+						"filename" : "pie_blueberry_top.png"
+					},
+					{
+						"expression" : "pie_blueberry_bottom.png",
+						"filename" : "pie_blueberry_bottom.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:blueberry_1",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_blueberry_top.png",
+						"filename" : "pie_blueberry_top.png"
+					},
+					{
+						"expression" : "pie_blueberry_bottom.png",
+						"filename" : "pie_blueberry_bottom.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_inside.png",
+						"filename" : "pie_blueberry_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:blueberry_2",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_blueberry_top.png",
+						"filename" : "pie_blueberry_top.png"
+					},
+					{
+						"expression" : "pie_blueberry_bottom.png",
+						"filename" : "pie_blueberry_bottom.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_inside.png",
+						"filename" : "pie_blueberry_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:blueberry_3",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_blueberry_top.png",
+						"filename" : "pie_blueberry_top.png"
+					},
+					{
+						"expression" : "pie_blueberry_bottom.png",
+						"filename" : "pie_blueberry_bottom.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_side.png",
+						"filename" : "pie_blueberry_side.png"
+					},
+					{
+						"expression" : "pie_blueberry_inside.png",
+						"filename" : "pie_blueberry_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "pie:cake_0",
+			"mod_origin" : "pie",
+			"name" : "\u001b(T@pie)Cake\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "pie_cake_inv.png",
+						"filename" : "pie_cake_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_cake_top.png",
+						"filename" : "pie_cake_top.png"
+					},
+					{
+						"expression" : "pie_cake_bottom.png",
+						"filename" : "pie_cake_bottom.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:cake_1",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_cake_top.png",
+						"filename" : "pie_cake_top.png"
+					},
+					{
+						"expression" : "pie_cake_bottom.png",
+						"filename" : "pie_cake_bottom.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_inside.png",
+						"filename" : "pie_cake_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:cake_2",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_cake_top.png",
+						"filename" : "pie_cake_top.png"
+					},
+					{
+						"expression" : "pie_cake_bottom.png",
+						"filename" : "pie_cake_bottom.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_inside.png",
+						"filename" : "pie_cake_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:cake_3",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_cake_top.png",
+						"filename" : "pie_cake_top.png"
+					},
+					{
+						"expression" : "pie_cake_bottom.png",
+						"filename" : "pie_cake_bottom.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_side.png",
+						"filename" : "pie_cake_side.png"
+					},
+					{
+						"expression" : "pie_cake_inside.png",
+						"filename" : "pie_cake_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "pie:chocolate_0",
+			"mod_origin" : "pie",
+			"name" : "\u001b(T@pie)Chocolate Pie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "pie_chocolate_inv.png",
+						"filename" : "pie_chocolate_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_chocolate_top.png",
+						"filename" : "pie_chocolate_top.png"
+					},
+					{
+						"expression" : "pie_chocolate_bottom.png",
+						"filename" : "pie_chocolate_bottom.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:chocolate_1",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_chocolate_top.png",
+						"filename" : "pie_chocolate_top.png"
+					},
+					{
+						"expression" : "pie_chocolate_bottom.png",
+						"filename" : "pie_chocolate_bottom.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_inside.png",
+						"filename" : "pie_chocolate_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:chocolate_2",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_chocolate_top.png",
+						"filename" : "pie_chocolate_top.png"
+					},
+					{
+						"expression" : "pie_chocolate_bottom.png",
+						"filename" : "pie_chocolate_bottom.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_inside.png",
+						"filename" : "pie_chocolate_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:chocolate_3",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_chocolate_top.png",
+						"filename" : "pie_chocolate_top.png"
+					},
+					{
+						"expression" : "pie_chocolate_bottom.png",
+						"filename" : "pie_chocolate_bottom.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_side.png",
+						"filename" : "pie_chocolate_side.png"
+					},
+					{
+						"expression" : "pie_chocolate_inside.png",
+						"filename" : "pie_chocolate_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "pie:mandarin_0",
+			"mod_origin" : "pie",
+			"name" : "\u001b(T@pie)Mandarin Pie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "pie_mandarin_inv.png",
+						"filename" : "pie_mandarin_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_mandarin_top.png",
+						"filename" : "pie_mandarin_top.png"
+					},
+					{
+						"expression" : "pie_mandarin_bottom.png",
+						"filename" : "pie_mandarin_bottom.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:mandarin_1",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_mandarin_top.png",
+						"filename" : "pie_mandarin_top.png"
+					},
+					{
+						"expression" : "pie_mandarin_bottom.png",
+						"filename" : "pie_mandarin_bottom.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_inside.png",
+						"filename" : "pie_mandarin_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:mandarin_2",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_mandarin_top.png",
+						"filename" : "pie_mandarin_top.png"
+					},
+					{
+						"expression" : "pie_mandarin_bottom.png",
+						"filename" : "pie_mandarin_bottom.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_inside.png",
+						"filename" : "pie_mandarin_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:mandarin_3",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_mandarin_top.png",
+						"filename" : "pie_mandarin_top.png"
+					},
+					{
+						"expression" : "pie_mandarin_bottom.png",
+						"filename" : "pie_mandarin_bottom.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_side.png",
+						"filename" : "pie_mandarin_side.png"
+					},
+					{
+						"expression" : "pie_mandarin_inside.png",
+						"filename" : "pie_mandarin_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "pie:melon_0",
+			"mod_origin" : "pie",
+			"name" : "\u001b(T@pie)Melon Pie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "pie_melon_inv.png",
+						"filename" : "pie_melon_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_melon_top.png",
+						"filename" : "pie_melon_top.png"
+					},
+					{
+						"expression" : "pie_melon_bottom.png",
+						"filename" : "pie_melon_bottom.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:melon_1",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_melon_top.png",
+						"filename" : "pie_melon_top.png"
+					},
+					{
+						"expression" : "pie_melon_bottom.png",
+						"filename" : "pie_melon_bottom.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_inside.png",
+						"filename" : "pie_melon_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:melon_2",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_melon_top.png",
+						"filename" : "pie_melon_top.png"
+					},
+					{
+						"expression" : "pie_melon_bottom.png",
+						"filename" : "pie_melon_bottom.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_inside.png",
+						"filename" : "pie_melon_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:melon_3",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_melon_top.png",
+						"filename" : "pie_melon_top.png"
+					},
+					{
+						"expression" : "pie_melon_bottom.png",
+						"filename" : "pie_melon_bottom.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_side.png",
+						"filename" : "pie_melon_side.png"
+					},
+					{
+						"expression" : "pie_melon_inside.png",
+						"filename" : "pie_melon_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "pie:pumpkin_0",
+			"mod_origin" : "pie",
+			"name" : "\u001b(T@pie)Pumpkin Pie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "pie_pumpkin_inv.png",
+						"filename" : "pie_pumpkin_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_pumpkin_top.png",
+						"filename" : "pie_pumpkin_top.png"
+					},
+					{
+						"expression" : "pie_pumpkin_bottom.png",
+						"filename" : "pie_pumpkin_bottom.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:pumpkin_1",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_pumpkin_top.png",
+						"filename" : "pie_pumpkin_top.png"
+					},
+					{
+						"expression" : "pie_pumpkin_bottom.png",
+						"filename" : "pie_pumpkin_bottom.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_inside.png",
+						"filename" : "pie_pumpkin_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:pumpkin_2",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_pumpkin_top.png",
+						"filename" : "pie_pumpkin_top.png"
+					},
+					{
+						"expression" : "pie_pumpkin_bottom.png",
+						"filename" : "pie_pumpkin_bottom.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_inside.png",
+						"filename" : "pie_pumpkin_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:pumpkin_3",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_pumpkin_top.png",
+						"filename" : "pie_pumpkin_top.png"
+					},
+					{
+						"expression" : "pie_pumpkin_bottom.png",
+						"filename" : "pie_pumpkin_bottom.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_side.png",
+						"filename" : "pie_pumpkin_side.png"
+					},
+					{
+						"expression" : "pie_pumpkin_inside.png",
+						"filename" : "pie_pumpkin_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0
+			},
+			"id" : "pie:strawberry_0",
+			"mod_origin" : "pie",
+			"name" : "\u001b(T@pie)Strawberry Pie\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "pie_strawberry_inv.png",
+						"filename" : "pie_strawberry_inv.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_strawberry_top.png",
+						"filename" : "pie_strawberry_top.png"
+					},
+					{
+						"expression" : "pie_strawberry_bottom.png",
+						"filename" : "pie_strawberry_bottom.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:strawberry_1",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_strawberry_top.png",
+						"filename" : "pie_strawberry_top.png"
+					},
+					{
+						"expression" : "pie_strawberry_bottom.png",
+						"filename" : "pie_strawberry_bottom.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_inside.png",
+						"filename" : "pie_strawberry_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:strawberry_2",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_strawberry_top.png",
+						"filename" : "pie_strawberry_top.png"
+					},
+					{
+						"expression" : "pie_strawberry_bottom.png",
+						"filename" : "pie_strawberry_bottom.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_inside.png",
+						"filename" : "pie_strawberry_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"falling_node" : 1.0,
+				"food" : 1.0,
+				"not_in_creative_inventory" : 1.0
+			},
+			"id" : "pie:strawberry_3",
+			"mod_origin" : "pie",
+			"name" : "",
+			"textures" : 
+			{
+				"inventory_image" : null,
+				"tiles" : 
+				[
+					{
+						"expression" : "pie_strawberry_top.png",
+						"filename" : "pie_strawberry_top.png"
+					},
+					{
+						"expression" : "pie_strawberry_bottom.png",
+						"filename" : "pie_strawberry_bottom.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_side.png",
+						"filename" : "pie_strawberry_side.png"
+					},
+					{
+						"expression" : "pie_strawberry_inside.png",
+						"filename" : "pie_strawberry_inside.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		},
+		{
+			"groups" : 
+			{
+				"attached_node" : 1.0,
+				"flammable" : 1.0,
+				"flora" : 1.0,
+				"food" : 1.0,
+				"mushroom" : 1.0,
+				"nohit" : 1.0,
+				"snappy" : 3.0
+			},
+			"id" : "swamp_biome:glowing_mushroom",
+			"mod_origin" : "swamp_biome",
+			"name" : "\u001b(T@swamp_biome)Glowing Mushroom\u001bE",
+			"textures" : 
+			{
+				"inventory_image" : 
+				[
+					{
+						"expression" : "swamp_biome_glowing_mushroom.png",
+						"filename" : "swamp_biome_glowing_mushroom.png"
+					}
+				],
+				"tiles" : 
+				[
+					{
+						"expression" : "swamp_biome_glowing_mushroom.png",
+						"filename" : "swamp_biome_glowing_mushroom.png"
+					}
+				],
+				"wield_image" : null
+			},
+			"type" : "food"
+		}
+	],
+	"exported_at" : "2026-10-24T17:04:01Z",
+	"format_version" : 1.0
+}

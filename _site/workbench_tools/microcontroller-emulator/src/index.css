@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --mx: 50vw;
+  --my: 40vh;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #000000;
+  color: #f4f7ee;
+  font-family: var(--font-sans);
+}
+
+/* Pistachio green architectural grid on pure black */
+.pistachio-grid {
+  background-color: #000000;
+  background-image:
+    linear-gradient(to right, rgba(190, 242, 100, 0.11) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(190, 242, 100, 0.11) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Highlighted grid layer revealed strictly around the mouse cursor */
+.pistachio-grid-cursor {
+  background-image:
+    linear-gradient(to right, rgba(190, 242, 100, 0.42) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(190, 242, 100, 0.42) 1px, transparent 1px);
+  background-size: 40px 40px;
+  -webkit-mask-image: radial-gradient(280px circle at var(--mx) var(--my), rgba(0, 0, 0, 0.95), transparent 78%);
+  mask-image: radial-gradient(280px circle at var(--mx) var(--my), rgba(0, 0, 0, 0.95), transparent 78%);
+}
+
+/* Soft pistachio aura that follows the mouse cursor */
+.pistachio-mouse-glow {
+  background: radial-gradient(
+    460px circle at var(--mx) var(--my),
+    rgba(190, 242, 100, 0.16),
+    rgba(190, 242, 100, 0.05) 45%,
+    transparent 75%
+  );
+}
+
+/* Custom sleek dark scrollbar for editor and log */
+.pistachio-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.pistachio-scroll::-webkit-scrollbar-track {
+  background: #050705;
+}
+.pistachio-scroll::-webkit-scrollbar-thumb {
+  background: rgba(190, 242, 100, 0.22);
+  border-radius: 4px;
+}
+.pistachio-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(190, 242, 100, 0.42);
+}

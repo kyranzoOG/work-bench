@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiCraft Seed Viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Mobile Navigation Topbar -->
+    <header class="mobile-topbar">
+        <div class="mobile-brand">
+            <span class="sidebar-title">MULTICRAFT</span>
+        </div>
+        <button type="button" class="btn-mobile-toggle" id="btnMobileToggle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <span>Controls</span>
+        </button>
+    </header>
+
+    <!-- Mobile Backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Controls -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <span class="sidebar-title">MULTICRAFT MAPGEN</span>
+                <button type="button" class="btn-close-sidebar" id="btnCloseSidebar" aria-label="Close">✕</button>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="seedInput">WORLD SEED</label>
+                <input type="text" id="seedInput" value="592101399" spellcheck="false" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">CENTER (X / Z)</label>
+                <div class="input-row">
+                    <input type="number" id="centerXInput" value="-7000" step="50" placeholder="X">
+                    <input type="number" id="centerZInput" value="3000" step="50" placeholder="Z">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="viewWidthInput">VIEW WIDTH (NODES)</label>
+                <input type="number" id="viewWidthInput" value="500" min="50" max="20000" step="50">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="resolutionInput">SAMPLE RESOLUTION (CANVAS PX)</label>
+                <input type="number" id="resolutionInput" value="500" min="64" max="1024" step="50">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="colorBySelect">COLOR BY</label>
+                <select id="colorBySelect">
+                    <option value="combined" selected>Combined (elevation + biome)</option>
+                    <option value="biome_only">Biome only</option>
+                    <option value="elevation">Elevation only (heightmap)</option>
+                    <option value="heat">Heat map</option>
+                    <option value="humidity">Humidity map</option>
+                    <option value="rivers">Rivers / Ridges</option>
+                </select>
+            </div>
+
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="showRiversCheck" checked>
+                    <span class="checkbox-text">SHOW RIVERS / LAKES / CANYONS</span>
+                </label>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="showCavesCheck">
+                    <span class="checkbox-text">SHOW CAVES (Y-SLICE MODE ONLY, ONE CHUNK)</span>
+                </label>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="showDungeonsCheck">
+                    <span class="checkbox-text">SHOW DUNGEONS (Y-SLICE MODE ONLY, ONE CHUNK)</span>
+                </label>
+            </div>
+
+            <!-- Optional Y-slice slider, active when caves/dungeons enabled -->
+            <div class="slider-group" id="ySliceGroup" style="display: none;">
+                <div class="slider-header">
+                    <span>Y-SLICE ELEVATION:</span>
+                    <span id="ySliceValueText">0</span>
+                </div>
+                <input type="range" id="ySliceSlider" min="-64" max="128" value="0" step="1">
+            </div>
+
+            <button type="button" class="btn-render" id="btnRender">RENDER HEIGHTMAP</button>
+
+            <!-- Quick toolbar for user convenience -->
+            <div class="tools-row">
+                <button type="button" class="btn-secondary" id="btnPresetScreenshot"
+                    title="Restore exact view from screenshot">Screenshot View</button>
+                <button type="button" class="btn-secondary" id="btnRandomSeed"
+                    title="Generate a random world seed">Random Seed</button>
+                <button type="button" class="btn-secondary" id="btnPresetOrigin"
+                    title="Center on coordinates (0, 0)">World Origin</button>
+                <button type="button" class="btn-secondary" id="btnExportPng"
+                    title="Export current canvas to PNG">Export PNG</button>
+            </div>
+        </aside>
+
+        <!-- Main Map View Area -->
+        <main class="main-content">
+            <div class="map-wrapper">
+                <div class="canvas-container">
+                    <canvas id="mapCanvas" width="500" height="500"></canvas>
+
+                    <!-- Overlay Nav Controls -->
+                    <div class="canvas-nav-overlay">
+                        <button type="button" class="nav-btn" id="zoomInBtn" title="Zoom In">+</button>
+                        <button type="button" class="nav-btn" id="zoomOutBtn" title="Zoom Out">−</button>
+                        <button type="button" class="nav-btn" id="resetNavBtn" title="Reset View">⟲</button>
+                    </div>
+
+                    <!-- Loading Spinner -->
+                    <div class="loading-overlay" id="loadingOverlay">
+                        <div class="spinner"></div>
+                        <span class="loading-text">GENERATING TERRAIN...</span>
+                    </div>
+                </div>
+
+                <!-- Bottom Status & Palette Section -->
+                <div class="status-section">
+                    <div class="palette-bar" id="paletteBar"></div>
+                    <div class="biomes-list-text" id="biomesListText">Loading biomes in view...</div>
+                    <div class="inspector-text" id="inspectorText">
+                        <span class="inspector-coords" id="inspectorCoords">(-6869, 3173)</span>
+                        <span class="inspector-height" id="inspectorHeight">- height 35.2</span>
+                        <span class="inspector-biome" id="inspectorBiome">- pink_biome</span>
+                        <span class="inspector-extra" id="inspectorExtra"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Hover tooltip -->
+    <div class="map-tooltip" id="mapTooltip"></div>
+
+    <script src="seed_viewer.js"></script>
+</body>
+
+</html>

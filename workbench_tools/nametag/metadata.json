@@ -1,0 +1,6 @@
+{
+  "name": "Name Tag",
+  "description": "Comprehensive item, block, tool, food and mob catalog and inspector for game assets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

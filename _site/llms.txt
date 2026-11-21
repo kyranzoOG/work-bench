@@ -1,0 +1,31 @@
+# Workbench
+
+> Workbench is a free, browser-based low-poly 3D modeling, texturing, animation, and MultiCraft/Luanti creation studio. Build, paint, rig, and export 3D models alongside integrated game asset and WorldEdit utilities directly in the browser.
+
+## Core Studio
+
+- [Workbench Web Studio](https://workbench.bond/): Interactive WebGL low-poly 3D modeling, UV texturing, pixel painting, and keyframe animation editor.
+- [Workbench Wiki](https://about.workbench.bond/wiki): Official documentation, guides, and tutorials for Workbench.
+- [Full Documentation (llms-full.txt)](https://workbench.bond/llms-full.txt): Complete reference covering all modeling formats, editor modes, export codecs, and built-in Workbench tools.
+- [Sitemap](https://workbench.bond/sitemap.xml): XML index of public Workbench pages and integrated tools.
+
+## 3D Modeling & Formats
+
+- **MultiCraft Character & Generic Models**: Create low-poly 3D meshes, character rigs, props, and voxel geometry with per-face UV mapping and bone hierarchies.
+- **Blitz3D (`.b3d`) Support**: Built-in support for importing and opening `.b3d` models directly into Generic Model projects.
+- **Voxel & Game Formats**: Support for `.bbmodel`, Minecraft Java Block/Item JSON, Bedrock Entity/Block geometry, Wavefront `.obj`, `.gltf`/`.glb`, `.fbx`, and `.dae`.
+- **Editor Modes**: Edit (modeling & UV), Paint (3D mesh & 2D texture pixel painting), Animate (bone keyframe timeline), and Display (item/camera previews).
+
+## Integrated Workbench Tools
+
+- [Luanti Skin Studio](https://workbench.bond/workbench_tools/luanti-skin-studio/index.html): Design, customize, and export HD 128x64 character skins for MultiCraft and Luanti with real-time 3D preview, color palettes, and layers.
+- [Multicraft Seed Viewer](https://workbench.bond/workbench_tools/mtc-seed-viewer/index.html): Explore and visualize MultiCraft mapgen v7 seeds, biomes, and terrain elevations with interactive 2D coordinates.
+- [Luanti Brush Studio](https://workbench.bond/workbench_tools/brush_metadata_editor/dist/index.html): Minetest and Luanti WorldEdit/Terraform brush command generator with live isometric voxel preview.
+- [MultiCraft Metadata Editor](https://workbench.bond/workbench_tools/metadata/dist/index.html): Build item metadata, tool capabilities, custom color formatting, lore, and enchantments with instant command export.
+- [Microcontroller Emulator](https://workbench.bond/workbench_tools/microcontroller-emulator/dist/index.html): Mesecons microcontroller logic sandbox and emulator with A-D pins, 256-byte EEPROM, step debugger, and scripting.
+- [Name Tag Asset Catalog](https://workbench.bond/workbench_tools/nametag/index.html): Searchable MultiCraft & Minetest technical ID catalog for blocks, items, tools, food, and mobs.
+
+## Community & Partners
+
+- [Workbench Community Discord](https://discord.gg/HMDT9pWWcz): Join for Workbench updates, community builds, and support.
+- [MultiCraft Build Tiers Discord](https://discord.gg/h3kwTkmHZw): Official community partner showcasing popular builders and well-known building creators in MultiCraft.
