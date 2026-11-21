@@ -1,11 +1,66 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": null,
-  "installCommand": "ELECTRON_SKIP_BINARY_DOWNLOAD=1 npm install --include=dev --legacy-peer-deps --no-audit --no-fund",
-  "buildCommand": "node ./build.js --target=web && node ./scripts/prepare_vercel.js",
-  "outputDirectory": "_site",
   "cleanUrls": false,
   "trailingSlash": false,
+  "services": {
+    "app": {
+      "root": ".",
+      "framework": null,
+      "installCommand": "ELECTRON_SKIP_BINARY_DOWNLOAD=1 npm install --include=dev --legacy-peer-deps --no-audit --no-fund",
+      "buildCommand": "node ./build.js --target=web && node ./scripts/prepare_vercel.js",
+      "devCommand": "node ./build.js --target=web --serve",
+      "outputDirectory": "_site"
+    },
+    "3d-to-worldedit": {
+      "root": "workbench_tools/3d-to-worldedit",
+      "framework": null,
+      "buildCommand": "npm run build",
+      "devCommand": "npm run dev",
+      "outputDirectory": "dist"
+    },
+    "brush_metadata_editor": {
+      "root": "workbench_tools/brush_metadata_editor",
+      "framework": "vite",
+      "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
+      "buildCommand": "npx vite build --base=./",
+      "outputDirectory": "dist"
+    },
+    "luanti-skin-studio": {
+      "root": "workbench_tools/luanti-skin-studio",
+      "framework": "vite",
+      "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
+      "buildCommand": "npx vite build --base=./",
+      "outputDirectory": "dist"
+    },
+    "metadata": {
+      "root": "workbench_tools/metadata",
+      "framework": "vite",
+      "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
+      "buildCommand": "npx vite build --base=./",
+      "outputDirectory": "dist"
+    },
+    "microcontroller-emulator": {
+      "root": "workbench_tools/microcontroller-emulator",
+      "framework": "vite",
+      "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
+      "buildCommand": "npx vite build --base=./",
+      "outputDirectory": "dist"
+    },
+    "nametag": {
+      "root": "workbench_tools/nametag",
+      "framework": "vite",
+      "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
+      "buildCommand": "npx vite build --base=./",
+      "outputDirectory": "dist"
+    },
+    "pixel-art-generator": {
+      "root": "workbench_tools/pixel-art-generator",
+      "framework": "vite",
+      "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
+      "buildCommand": "npx vite build --base=./",
+      "outputDirectory": "dist"
+    }
+  },
   "rewrites": [
     {
       "source": "/llmsfull.txt",
@@ -18,6 +73,12 @@
     {
       "source": "/lllmsfull.txt",
       "destination": "/llms-full.txt"
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "app"
+      }
     }
   ],
   "headers": [
