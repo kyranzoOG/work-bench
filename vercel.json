@@ -5,15 +5,13 @@
   "services": {
     "app": {
       "root": ".",
-      "framework": null,
       "installCommand": "ELECTRON_SKIP_BINARY_DOWNLOAD=1 npm install --include=dev --legacy-peer-deps --no-audit --no-fund",
       "buildCommand": "node ./build.js --target=web && node ./scripts/prepare_vercel.js",
       "devCommand": "node ./build.js --target=web --serve",
       "outputDirectory": "_site"
     },
-    "3d-to-worldedit": {
+    "worldedit-converter": {
       "root": "workbench_tools/3d-to-worldedit",
-      "framework": null,
       "buildCommand": "npm run build",
       "devCommand": "npm run dev",
       "outputDirectory": "dist"
